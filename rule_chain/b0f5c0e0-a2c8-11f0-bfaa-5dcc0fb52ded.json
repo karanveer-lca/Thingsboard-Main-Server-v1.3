@@ -10,7 +10,10 @@
       "entityType" : "RULE_CHAIN",
       "id" : "b0f5c0e0-a2c8-11f0-bfaa-5dcc0fb52ded"
     },
-    "firstRuleNodeId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "f0074171-b8c9-11f0-95d9-fff9d6e53631"
+    },
     "id" : {
       "entityType" : "RULE_CHAIN",
       "id" : "b0f5c0e0-a2c8-11f0-bfaa-5dcc0fb52ded"
@@ -145,7 +148,7 @@
       "toIndex" : 19,
       "type" : "Success"
     } ],
-    "firstNodeIndex" : null,
+    "firstNodeIndex" : 11,
     "nodes" : [ {
       "additionalInfo" : {
         "description" : "",
