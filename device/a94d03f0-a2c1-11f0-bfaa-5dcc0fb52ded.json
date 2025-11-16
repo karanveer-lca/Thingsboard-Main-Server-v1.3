@@ -1,0 +1,144 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "a1954eb0-a2c1-11f0-bfaa-5dcc0fb52ded"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "a94d03f0-a2c1-11f0-bfaa-5dcc0fb52ded"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "a94d03f0-a2c1-11f0-bfaa-5dcc0fb52ded"
+    },
+    "label" : "",
+    "name" : "MACHINE #1",
+    "ownerId" : null,
+    "softwareId" : null,
+    "type" : "Machines"
+  },
+  "credentials" : {
+    "credentialsId" : "PMfy1JJkWfd1w9BBVgei",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "a94d03f0-a2c1-11f0-bfaa-5dcc0fb52ded"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "14ef5300-b646-11f0-abd1-35cd8f2e0c31"
+    },
+    "type" : "ACTIVE_JOB",
+    "typeGroup" : "COMMON",
+    "version" : 11418
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1762351577599,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1762351577593,
+      "longValue" : 1762351577593,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1762350936422,
+      "longValue" : 1762350935762,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machine_number",
+      "lastUpdateTs" : 1760450909937,
+      "longValue" : 1,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "downtime_percent",
+      "lastUpdateTs" : 1759764626878,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "shift_progress",
+      "lastUpdateTs" : 1759764626879,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "shift_progress_percent",
+      "lastUpdateTs" : 1759764626880,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "total_duration",
+      "lastUpdateTs" : 1759764626878,
+      "longValue" : 15857,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "total_occurrences",
+      "lastUpdateTs" : 1759764626878,
+      "longValue" : 4,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "total_uptime",
+      "lastUpdateTs" : 1759764626878,
+      "longValue" : 0,
+      "strValue" : null
+    } ]
+  },
+  "calculatedFields" : [ ]
+}
