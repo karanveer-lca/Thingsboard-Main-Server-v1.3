@@ -12,7 +12,7 @@
     },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "4439f250-ae8f-11f0-a60f-a7f9e67d958a"
+      "id" : "f18e56a0-b8c9-11f0-95d9-fff9d6e53631"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -45,7 +45,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 0,
+      "toIndex" : 4,
       "type" : "False"
     }, {
       "fromIndex" : 5,
@@ -82,7 +82,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "44395610-ae8f-11f0-a60f-a7f9e67d958a"
+        "id" : "f18e0880-b8c9-11f0-95d9-fff9d6e53631"
       },
       "name" : "Format into TB Compatible",
       "queueName" : null,
@@ -110,7 +110,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "44397d20-ae8f-11f0-a60f-a7f9e67d958a"
+        "id" : "f18e2f90-b8c9-11f0-95d9-fff9d6e53631"
       },
       "name" : "Fan out meters",
       "queueName" : null,
@@ -149,7 +149,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "4439a430-ae8f-11f0-a60f-a7f9e67d958a"
+        "id" : "f18e2f91-b8c9-11f0-95d9-fff9d6e53631"
       },
       "name" : "Change",
       "queueName" : null,
@@ -179,7 +179,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "4439a431-ae8f-11f0-a60f-a7f9e67d958a"
+        "id" : "f18e2f92-b8c9-11f0-95d9-fff9d6e53631"
       },
       "name" : "1",
       "queueName" : null,
@@ -205,7 +205,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "4439cb40-ae8f-11f0-a60f-a7f9e67d958a"
+        "id" : "f18e2f93-b8c9-11f0-95d9-fff9d6e53631"
       },
       "name" : "1",
       "queueName" : null,
@@ -233,7 +233,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "4439f250-ae8f-11f0-a60f-a7f9e67d958a"
+        "id" : "f18e56a0-b8c9-11f0-95d9-fff9d6e53631"
       },
       "name" : "Filter the rut device",
       "queueName" : null,
@@ -261,7 +261,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "4439f251-ae8f-11f0-a60f-a7f9e67d958a"
+        "id" : "f18e56a1-b8c9-11f0-95d9-fff9d6e53631"
       },
       "name" : "Calculate the fields",
       "queueName" : null,
@@ -288,7 +288,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "443a1960-ae8f-11f0-a60f-a7f9e67d958a"
+        "id" : "f18e56a2-b8c9-11f0-95d9-fff9d6e53631"
       },
       "name" : "To Job Calculator",
       "queueName" : null,
@@ -318,7 +318,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "443a6780-ae8f-11f0-a60f-a7f9e67d958a"
+        "id" : "f18e56a3-b8c9-11f0-95d9-fff9d6e53631"
       },
       "name" : "Save Raw Data",
       "queueName" : null,
@@ -340,9 +340,10 @@
     },
     "type" : "Uses",
     "typeGroup" : "COMMON",
-    "version" : 11958
+    "version" : 13291
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
-  }
+  },
+  "calculatedFields" : [ ]
 }
