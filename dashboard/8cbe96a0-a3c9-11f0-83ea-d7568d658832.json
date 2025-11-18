@@ -20173,11 +20173,11 @@
               "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
               "dataKeys" : [ {
                 "name" : "bad_qty_pcs",
-                "type" : "timeseries",
+                "type" : "attribute",
                 "label" : "bad_qty_pcs",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.17437646215232172
+                "_hash" : 0.7487195597212778
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
