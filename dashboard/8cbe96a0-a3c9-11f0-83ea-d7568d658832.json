@@ -20231,10 +20231,7 @@
             "title" : "",
             "dropShadow" : true,
             "enableFullscreen" : false,
-            "widgetStyle" : {
-              "color" : "ffffff",
-              "cursor" : "pointer"
-            },
+            "widgetStyle" : null,
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
