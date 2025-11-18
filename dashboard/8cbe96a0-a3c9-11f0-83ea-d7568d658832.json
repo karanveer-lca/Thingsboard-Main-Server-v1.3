@@ -19860,10 +19860,12 @@
             "noDataDisplayMessage" : "",
             "actions" : {
               "headerButton" : [ {
-                "name" : "Change value",
-                "buttonType" : "icon",
-                "icon" : "pie_chart",
-                "buttonColor" : "rgba(0, 0, 0, 0.87)",
+                "name" : "Update Value",
+                "buttonType" : "raised",
+                "showIcon" : true,
+                "icon" : "edit",
+                "buttonColor" : "#ffffff",
+                "buttonFillColor" : "var(--tb-primary-A200)",
                 "customButtonStyle" : { },
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
