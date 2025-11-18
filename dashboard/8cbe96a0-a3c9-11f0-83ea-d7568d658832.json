@@ -19865,7 +19865,7 @@
                 "showIcon" : true,
                 "icon" : "edit",
                 "buttonColor" : "#ffffff",
-                "buttonFillColor" : "var(--tb-primary-A200)",
+                "buttonFillColor" : "#0F243E",
                 "customButtonStyle" : { },
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
