@@ -20388,12 +20388,12 @@
               "name" : "",
               "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
               "dataKeys" : [ {
-                "name" : "bad_total",
+                "name" : "bad_qty_pcs",
                 "type" : "timeseries",
-                "label" : "bad_total",
+                "label" : "bad_qty_pcs",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.63372852323539
+                "_hash" : 0.1453959334524525
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
