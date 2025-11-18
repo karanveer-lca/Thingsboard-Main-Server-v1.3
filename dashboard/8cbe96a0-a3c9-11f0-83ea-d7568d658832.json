@@ -19865,7 +19865,7 @@
                 "showIcon" : true,
                 "icon" : "edit",
                 "buttonColor" : "#FFFFFF",
-                "buttonBorderColor" : "#FFFFFF1F",
+                "buttonBorderColor" : "#FFFFFF",
                 "customButtonStyle" : { },
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
