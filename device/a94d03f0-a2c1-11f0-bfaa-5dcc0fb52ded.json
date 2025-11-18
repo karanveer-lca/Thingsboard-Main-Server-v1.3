@@ -42,20 +42,7 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "a94d03f0-a2c1-11f0-bfaa-5dcc0fb52ded"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "14ef5300-b646-11f0-abd1-35cd8f2e0c31"
-    },
-    "type" : "ACTIVE_JOB",
-    "typeGroup" : "COMMON",
-    "version" : 11418
-  } ],
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,
