@@ -17462,20 +17462,14 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
               "dataKeys" : [ {
-                "name" : "cfg_min_benchmark",
-                "type" : "attribute",
-                "label" : "cfg_min_benchmark",
+                "name" : "oee_quality",
+                "type" : "timeseries",
+                "label" : "oee_quality",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.07843563767400386,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value == null) return null;\r\nvar n = Math.round(Number(value));   // 0 decimals\r\nreturn String(n);                    // <-- return STRING, not number\r\n"
+                "_hash" : 0.4080124578117166
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -17518,7 +17512,7 @@
             "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : false,
-              "markdownTextPattern" : "<!-- Right cell: Value -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#95b3d7;              /* same background */\r\n    color:#244062;                    /* red value */\r\n    padding:10px 16px;\r\n    border:2px solid #001f33;\r\n    border-left:1;                    /* connects seamlessly with left cell */\r\n    <!--border-radius:0 8px 8px 0;        /* round RIGHT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\">\r\n    ${cfg_min_benchmark}%\r\n  </div>\r\n</div>\r\n",
+              "markdownTextPattern" : "<!-- Right cell: Value -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#95b3d7;              /* same background */\r\n    color:#244062;                    /* red value */\r\n    padding:10px 16px;\r\n    border:2px solid #001f33;\r\n    border-left:1;                    /* connects seamlessly with left cell */\r\n    <!--border-radius:0 8px 8px 0;        /* round RIGHT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\">\r\n    ${oee_quality}%\r\n  </div>\r\n</div>\r\n",
               "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
@@ -21419,13 +21413,13 @@
                 "15bde888-5c9f-6242-2d81-6cb79cfda481" : {
                   "sizeX" : 36,
                   "sizeY" : 3,
-                  "row" : 26,
+                  "row" : 29,
                   "col" : 0
                 },
                 "13d79f53-6a0d-5195-df83-f8e8b2155b42" : {
                   "sizeX" : 11,
                   "sizeY" : 3,
-                  "row" : 26,
+                  "row" : 29,
                   "col" : 36
                 },
                 "39e0eae7-5598-3408-91ba-afc720796a5b" : {
@@ -21443,13 +21437,13 @@
                 "72b74bbd-cde3-5416-67b2-196968dedc47" : {
                   "sizeX" : 36,
                   "sizeY" : 3,
-                  "row" : 29,
+                  "row" : 26,
                   "col" : 0
                 },
                 "cac50c3d-61ab-b2d4-497f-a027d29c3867" : {
                   "sizeX" : 11,
                   "sizeY" : 3,
-                  "row" : 29,
+                  "row" : 26,
                   "col" : 36
                 },
                 "980665b6-9ed9-f6fa-66c2-2da0faf039a7" : {
