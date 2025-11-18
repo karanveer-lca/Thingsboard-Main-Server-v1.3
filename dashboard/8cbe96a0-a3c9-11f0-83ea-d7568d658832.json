@@ -19861,11 +19861,11 @@
             "actions" : {
               "headerButton" : [ {
                 "name" : "Update Value",
-                "buttonType" : "raised",
+                "buttonType" : "stroked",
                 "showIcon" : true,
                 "icon" : "edit",
-                "buttonColor" : "#ffffff",
-                "buttonFillColor" : "#0F243E",
+                "buttonColor" : "#FFFFFF",
+                "buttonBorderColor" : "#FFFFFF1F",
                 "customButtonStyle" : { },
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
