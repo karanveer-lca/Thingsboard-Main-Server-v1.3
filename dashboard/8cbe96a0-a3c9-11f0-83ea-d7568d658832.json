@@ -19884,87 +19884,6 @@
           "col" : 0,
           "id" : "de7798a2-b386-05ad-1e17-1f17270834dd"
         },
-        "d8cacdd5-297a-e0e3-a83f-6c32c02dbd87" : {
-          "typeFullFqn" : "system.cards.markdown_card",
-          "type" : "latest",
-          "sizeX" : 5,
-          "sizeY" : 3.5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
-              "dataKeys" : [ ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1758311408678,
-                  "endTimeMs" : 1758397808678
-                },
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "useMarkdownTextFunction" : false,
-              "markdownTextPattern" : "<!-- Left cell: Label -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:Left;\r\n    background:#0f243e;              /* dark blue like sheet */\r\n    color:#ffffff;\r\n    padding:10px 16px;\r\n    border:1px solid #001f33;\r\n    border-right:1px;                   /* avoid double border in the middle */\r\n    <!--border-radius:8px 0 0 8px;        /* round LEFT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\r\n  \">\r\n    ACTUAL\r\n  </div>\r\n</div>\r\n",
-              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
-              "applyDefaultMarkdownStyle" : true,
-              "markdownCss" : ""
-            },
-            "title" : "Markdown/HTML Card",
-            "showTitleIcon" : false,
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "showLegend" : false,
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true,
-            "enableDataExport" : false,
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "d8cacdd5-297a-e0e3-a83f-6c32c02dbd87"
-        },
         "5542525f-3322-ceee-e12b-05a7a4314d5d" : {
           "typeFullFqn" : "system.cards.markdown_card",
           "type" : "latest",
@@ -21504,12 +21423,6 @@
                   "sizeX" : 36,
                   "sizeY" : 3,
                   "row" : 23,
-                  "col" : 0
-                },
-                "d8cacdd5-297a-e0e3-a83f-6c32c02dbd87" : {
-                  "sizeX" : 36,
-                  "sizeY" : 3,
-                  "row" : 60,
                   "col" : 0
                 },
                 "5542525f-3322-ceee-e12b-05a7a4314d5d" : {
