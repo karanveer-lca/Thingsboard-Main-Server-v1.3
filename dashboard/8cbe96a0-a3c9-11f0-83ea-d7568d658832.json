@@ -20218,11 +20218,23 @@
             "backgroundColor" : "#FFFFFF",
             "color" : "rgba(255, 255, 255, 0.87)",
             "padding" : "8px",
-            "settings" : { },
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : true,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : true,
+              "labelValue" : "Enter a value for bad products",
+              "minValue" : 0,
+              "maxValue" : null
+            },
             "title" : "",
             "dropShadow" : true,
             "enableFullscreen" : false,
-            "widgetStyle" : null,
+            "widgetStyle" : {
+              "color" : "ffffff",
+              "cursor" : "pointer"
+            },
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
