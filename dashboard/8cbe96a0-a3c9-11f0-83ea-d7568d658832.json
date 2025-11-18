@@ -20376,81 +20376,6 @@
           "row" : 0,
           "col" : 0,
           "id" : "1a5477a6-4179-4d9c-01a3-d7305a2651b3"
-        },
-        "2632f9fa-17ac-d052-e499-bed0984149fc" : {
-          "typeFullFqn" : "system.input_widgets.update_integer_timeseries",
-          "type" : "latest",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
-              "dataKeys" : [ {
-                "name" : "bad_qty_pcs",
-                "type" : "timeseries",
-                "label" : "bad_qty_pcs",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.1453959334524525
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1763330114060,
-                  "endTimeMs" : 1763416514060
-                },
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : true,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : { },
-            "title" : "Update integer timeseries",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "actions" : { },
-            "displayTimewindow" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "2632f9fa-17ac-d052-e499-bed0984149fc"
         }
       },
       "states" : {
@@ -21748,12 +21673,6 @@
                   "sizeY" : 8,
                   "row" : 0,
                   "col" : 103
-                },
-                "2632f9fa-17ac-d052-e499-bed0984149fc" : {
-                  "sizeX" : 62,
-                  "sizeY" : 25,
-                  "row" : 60,
-                  "col" : 0
                 }
               },
               "gridSettings" : {
