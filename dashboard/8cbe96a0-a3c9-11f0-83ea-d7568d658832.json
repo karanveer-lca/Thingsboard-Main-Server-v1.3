@@ -19869,11 +19869,19 @@
                 "customButtonStyle" : { },
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
-                "type" : "updateDashboardState",
-                "targetDashboardStateId" : null,
-                "openRightLayout" : false,
+                "type" : "openDashboardState",
+                "targetDashboardStateId" : "update_bad_production",
                 "setEntityId" : true,
-                "stateEntityParamName" : null,
+                "stateEntityParamName" : "jobcard",
+                "openRightLayout" : false,
+                "popoverPreferredPlacement" : "top",
+                "popoverHideOnClickOutside" : true,
+                "popoverHideDashboardToolbar" : true,
+                "popoverWidth" : "25vw",
+                "popoverHeight" : "25vh",
+                "popoverStyle" : { },
+                "openInSeparateDialog" : false,
+                "openInPopover" : true,
                 "id" : "5d5867b5-92dc-e087-88f8-6839af7a77b3"
               } ]
             }
