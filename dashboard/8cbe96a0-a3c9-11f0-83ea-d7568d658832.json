@@ -20781,6 +20781,181 @@
           "row" : 0,
           "col" : 0,
           "id" : "befe7a8a-6597-8a4c-ec3d-cbb17faffb59"
+        },
+        "76b2ba06-4fb0-b76d-d834-e91258678bdc" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1758311408678,
+                  "endTimeMs" : 1758397808678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#0f243e; color:#ffffff;\r\n    border:1px solid #001f33;   /* last cell on the right */\r\n    padding:6px 12px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700; line-height:1; text-transform:none; letter-spacing:0.3px;\r\n    font-size: clamp(14px, 1.9vw, 16px);\r\n    box-sizing:border-box;\r\n  \">\r\n    SHIFT HOURS\r\n  </div>\r\n</div>\r\n",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "76b2ba06-4fb0-b76d-d834-e91258678bdc"
+        },
+        "bde4a520-db51-f2a5-5a74-6758108b79ad" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "dataKeys" : [ {
+                "name" : "cfg_shift_hours",
+                "type" : "attribute",
+                "label" : "cfg_shift_hours",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.4097991065347818,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Math.round(Number(value));   // 0 decimals\r\nreturn String(n);                    // <-- return STRING, not number\r\n"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1758311408678,
+                  "endTimeMs" : 1758397808678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#244062; color:#ff5a5a;\r\n    border:1px solid #001f33;    /* last cell on the right */\r\n    border-left:1;  \r\n    padding:6px 12px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700; line-height:1; text-transform:none; letter-spacing:0.3px;\r\n    font-size: clamp(14px, 1.9vw, 20px);\r\n    box-sizing:border-box;\r\n  \">\r\n    ${cfg_shift_hours}\r\n  </div>\r\n</div>\r\n",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "bde4a520-db51-f2a5-5a74-6758108b79ad"
         }
       },
       "states" : {
@@ -21908,13 +22083,13 @@
                 "33fa0f5c-c363-795a-8bdb-1f81697e5c75" : {
                   "sizeX" : 33,
                   "sizeY" : 3,
-                  "row" : 14,
+                  "row" : 17,
                   "col" : 0
                 },
                 "68d4e8a5-75e2-31a4-008a-872b7ed51fec" : {
                   "sizeX" : 11,
                   "sizeY" : 3,
-                  "row" : 17,
+                  "row" : 20,
                   "col" : 33
                 },
                 "73c2a07f-0555-acb8-5e5b-544a3e436503" : {
@@ -21932,31 +22107,31 @@
                 "1030c6d8-0412-e3c4-c53f-647ab3e787de" : {
                   "sizeX" : 33,
                   "sizeY" : 3,
-                  "row" : 17,
+                  "row" : 20,
                   "col" : 0
                 },
                 "39e0eae7-5598-3408-91ba-afc720796a5b" : {
                   "sizeX" : 33,
                   "sizeY" : 3,
-                  "row" : 20,
+                  "row" : 29,
                   "col" : 0
                 },
                 "19d55115-6ade-f29c-f4c3-14aef717d242" : {
                   "sizeX" : 11,
                   "sizeY" : 3,
-                  "row" : 20,
+                  "row" : 29,
                   "col" : 33
                 },
                 "72b74bbd-cde3-5416-67b2-196968dedc47" : {
                   "sizeX" : 33,
                   "sizeY" : 3,
-                  "row" : 38,
+                  "row" : 32,
                   "col" : 0
                 },
                 "cac50c3d-61ab-b2d4-497f-a027d29c3867" : {
                   "sizeX" : 11,
                   "sizeY" : 3,
-                  "row" : 38,
+                  "row" : 32,
                   "col" : 33
                 },
                 "980665b6-9ed9-f6fa-66c2-2da0faf039a7" : {
@@ -22022,7 +22197,7 @@
                 "bb00c8b9-b27c-b53b-b5d2-7c9f0e0a6bc0" : {
                   "sizeX" : 11,
                   "sizeY" : 3,
-                  "row" : 14,
+                  "row" : 17,
                   "col" : 33
                 },
                 "075d8860-7b45-00e4-79c4-37c2051e27ba" : {
@@ -22071,6 +22246,18 @@
                   "sizeX" : 11,
                   "sizeY" : 3,
                   "row" : 47,
+                  "col" : 33
+                },
+                "76b2ba06-4fb0-b76d-d834-e91258678bdc" : {
+                  "sizeX" : 33,
+                  "sizeY" : 3,
+                  "row" : 14,
+                  "col" : 0
+                },
+                "bde4a520-db51-f2a5-5a74-6758108b79ad" : {
+                  "sizeX" : 11,
+                  "sizeY" : 3,
+                  "row" : 14,
                   "col" : 33
                 }
               },
