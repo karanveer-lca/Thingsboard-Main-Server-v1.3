@@ -20274,6 +20274,513 @@
           "row" : 0,
           "col" : 0,
           "id" : "780544af-694d-5f22-ccfd-9a07c9f721d7"
+        },
+        "67dfe663-44b6-a104-3ce4-ef9787812792" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1758311408678,
+                  "endTimeMs" : 1758397808678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<!-- Left cell: Label -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:left;\r\n    background:#0f243e;              /* dark blue like sheet */\r\n    color:#ffffff;\r\n    padding:10px 16px;\r\n    border:1px solid #001f33;\r\n    border-right:1px;                   /* avoid double border in the middle */\r\n    <!--border-radius:8px 0 0 8px;        /* round LEFT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\r\n  \">\r\n    AVAILABILITY %\r\n  </div>\r\n</div>\r\n",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "67dfe663-44b6-a104-3ce4-ef9787812792"
+        },
+        "27d58bbc-d521-5de3-2a5c-a4823216986c" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1758311408678,
+                  "endTimeMs" : 1758397808678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<!-- Left cell: Label -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:left;\r\n    background:#0f243e;              /* dark blue like sheet */\r\n    color:#ffffff;\r\n    padding:10px 16px;\r\n    border:1px solid #001f33;\r\n    border-right:1px;                   /* avoid double border in the middle */\r\n    <!--border-radius:8px 0 0 8px;        /* round LEFT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\r\n  \">\r\n    PERFORMANCE %\r\n  </div>\r\n</div>\r\n",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "27d58bbc-d521-5de3-2a5c-a4823216986c"
+        },
+        "08918696-f132-3677-f266-d97352638c98" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1758311408678,
+                  "endTimeMs" : 1758397808678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<!-- Left cell: Label -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:left;\r\n    background:#0f243e;              /* dark blue like sheet */\r\n    color:#ffffff;\r\n    padding:10px 16px;\r\n    border:1px solid #001f33;\r\n    border-right:1px;                   /* avoid double border in the middle */\r\n    <!--border-radius:8px 0 0 8px;        /* round LEFT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\r\n  \">\r\n    QUALITY %\r\n  </div>\r\n</div>\r\n",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "08918696-f132-3677-f266-d97352638c98"
+        },
+        "317fd8f8-e817-da23-e75f-d35331892305" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "dataKeys" : [ {
+                "name" : "availability_pct",
+                "type" : "timeseries",
+                "label" : "availability_pct",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.9614795373936617
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1758311408678,
+                  "endTimeMs" : 1758397808678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<!-- Right cell: Value -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#95b3d7;              /* same background */\r\n    color:#244062;                    /* red value */\r\n    padding:10px 16px;\r\n    border:2px solid #001f33;\r\n    border-left:1;                    /* connects seamlessly with left cell */\r\n    <!--border-radius:0 8px 8px 0;        /* round RIGHT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\">\r\n    ${availability_pct}%\r\n  </div>\r\n</div>\r\n",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "317fd8f8-e817-da23-e75f-d35331892305"
+        },
+        "158e8090-0cf8-aab0-17cd-81a820170287" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "dataKeys" : [ {
+                "name" : "performance_pct",
+                "type" : "timeseries",
+                "label" : "performance_pct",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.3462941839597167
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1758311408678,
+                  "endTimeMs" : 1758397808678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<!-- Right cell: Value -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#95b3d7;              /* same background */\r\n    color:#244062;                    /* red value */\r\n    padding:10px 16px;\r\n    border:2px solid #001f33;\r\n    border-left:1;                    /* connects seamlessly with left cell */\r\n    <!--border-radius:0 8px 8px 0;        /* round RIGHT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\">\r\n    ${performance_pct}%\r\n  </div>\r\n</div>\r\n",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "158e8090-0cf8-aab0-17cd-81a820170287"
+        },
+        "befe7a8a-6597-8a4c-ec3d-cbb17faffb59" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "dataKeys" : [ {
+                "name" : "quality_pct",
+                "type" : "timeseries",
+                "label" : "quality_pct",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.08455753531577503
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1758311408678,
+                  "endTimeMs" : 1758397808678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<!-- Right cell: Value -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#95b3d7;              /* same background */\r\n    color:#244062;                    /* red value */\r\n    padding:10px 16px;\r\n    border:2px solid #001f33;\r\n    border-left:1;                    /* connects seamlessly with left cell */\r\n    <!--border-radius:0 8px 8px 0;        /* round RIGHT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\">\r\n    ${quality_pct}%\r\n  </div>\r\n</div>\r\n",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "befe7a8a-6597-8a4c-ec3d-cbb17faffb59"
         }
       },
       "states" : {
@@ -21553,6 +22060,42 @@
                   "sizeY" : 3,
                   "row" : 5,
                   "col" : 0
+                },
+                "67dfe663-44b6-a104-3ce4-ef9787812792" : {
+                  "sizeX" : 33,
+                  "sizeY" : 3,
+                  "row" : 29,
+                  "col" : 0
+                },
+                "27d58bbc-d521-5de3-2a5c-a4823216986c" : {
+                  "sizeX" : 33,
+                  "sizeY" : 3,
+                  "row" : 32,
+                  "col" : 0
+                },
+                "08918696-f132-3677-f266-d97352638c98" : {
+                  "sizeX" : 33,
+                  "sizeY" : 3,
+                  "row" : 35,
+                  "col" : 0
+                },
+                "317fd8f8-e817-da23-e75f-d35331892305" : {
+                  "sizeX" : 11,
+                  "sizeY" : 3,
+                  "row" : 29,
+                  "col" : 33
+                },
+                "158e8090-0cf8-aab0-17cd-81a820170287" : {
+                  "sizeX" : 11,
+                  "sizeY" : 3,
+                  "row" : 32,
+                  "col" : 33
+                },
+                "befe7a8a-6597-8a4c-ec3d-cbb17faffb59" : {
+                  "sizeX" : 11,
+                  "sizeY" : 3,
+                  "row" : 35,
+                  "col" : 33
                 }
               },
               "gridSettings" : {
