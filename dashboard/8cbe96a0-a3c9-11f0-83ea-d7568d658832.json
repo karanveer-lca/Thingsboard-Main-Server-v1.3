@@ -19712,11 +19712,9 @@
             "actions" : {
               "headerButton" : [ {
                 "name" : "Update Value",
-                "buttonType" : "stroked",
-                "showIcon" : true,
+                "buttonType" : "icon",
                 "icon" : "edit",
-                "buttonColor" : "#FFFFFF",
-                "buttonBorderColor" : "#FFFFFF",
+                "buttonColor" : "rgba(0, 0, 0, 0.87)",
                 "customButtonStyle" : { },
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
