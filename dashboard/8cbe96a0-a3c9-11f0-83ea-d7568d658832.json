@@ -15004,7 +15004,7 @@
               "headerButton" : [ {
                 "name" : "Full screen",
                 "buttonType" : "icon",
-                "icon" : "more_horiz",
+                "icon" : "mdi:arrow-expand-all",
                 "buttonColor" : "rgba(0, 0, 0, 0.87)",
                 "customButtonStyle" : { },
                 "useShowWidgetActionFunction" : null,
