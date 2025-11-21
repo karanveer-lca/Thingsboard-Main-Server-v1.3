@@ -1,0 +1,348 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : true,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "923e18e0-92e3-11f0-adaa-3dca45c43107"
+    },
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "f18e56a0-b8c9-11f0-95d9-fff9d6e53631"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "923e18e0-92e3-11f0-adaa-3dca45c43107"
+    },
+    "name" : "ROOT_PARSER_CHAIN",
+    "root" : true,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 0,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 4,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 4,
+      "type" : "False"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 6,
+      "type" : "True"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 8,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 7,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : 5,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 837,
+        "layoutY" : 311
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "/*\r\n * Accepts:\r\n *   {\"d\":[{\"tag\":\"Meter_1:current_a\",\"value\":0.90}], \"ts\":\"2025-08-01T11:56:12Z\"}\r\n *   {\"tag\":\"Meter_1:current_a\",\"value\":0.90, \"ts\":\"2025-08-01T11:56:12Z\"}\r\n * Converts \":\" → \"_\"   →  Meter_1_current_a\r\n */\r\n\r\nvar outMsg = {};\r\n\r\n/* helper */\r\nfunction put(entry) {\r\n    if (!entry || entry.tag === undefined || entry.value === undefined) {\r\n        return;\r\n    }\r\n    var keyClean = entry.tag.replace(/[:]/g, \"_\");  // Meter_1_current_a\r\n    outMsg[keyClean] = entry.value;\r\n}\r\n\r\n/* 1) Bulk array payload */\r\nif (msg.d instanceof Array) {\r\n    for (var i = 0; i < msg.d.length; i++) {\r\n        put(msg.d[i]);\r\n    }\r\n\r\n/* 2) Single tag/value payload */\r\n} else if (msg.tag !== undefined && msg.value !== undefined) {\r\n    put(msg);\r\n\r\n/* 3) Already flat → pass through unchanged */\r\n} else {\r\n    outMsg = msg;\r\n}\r\n\r\n/* Map ISO-8601 ts (if present) to metadata.ts = epoch-ms */\r\nif (msg.ts) {\r\n    metadata.ts = Date.parse(msg.ts);   // milliseconds\r\n}\r\n\r\n/* Return transformed message */\r\nreturn { msg: outMsg, metadata: metadata, msgType: msgType };\r\n",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1759661331238,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f18e0880-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Format into TB Compatible",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1171,
+        "layoutY" : 307
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "/*\r\n * Accepts (from Node A):\r\n *   { \"60E85B1B96ED_1_2008\": 11.1, \"60E85B1B96ED_1_2002\": 22.2, \"60E85B1B96ED_2_2008\": 33.3 }\r\n *   { \"Meter_1_current_a\": 0.9, \"Meter_2_current_a\": 1.2 }\r\n *\r\n * Splits by meter number (the digits between two underscores),\r\n * produces one message per meter, and sets metadata.targetDeviceName = \"Meter-<n>\".\r\n */\r\n\r\nvar grouped = {};   // meterNo -> { kv... }\r\n\r\n/* helper: add <key,value> into grouped by meterNo */\r\nfunction addOne(flatKey, value) {\r\n    if (value === undefined || value === null) return;\r\n\r\n    // Match \"_<digits>_<rest>\" from the RIGHT-ish side without being strict about the prefix\r\n    // Examples:\r\n    //  - \"60E85B1B96ED_1_2008\"   -> meter=1, tag=\"2008\"\r\n    //  - \"Meter_1_current_a\"     -> meter=1, tag=\"current_a\"\r\n    var m = String(flatKey).match(/_(\\d+)_(.+)$/);\r\n    if (!m) return;                  // key doesn't follow MAC_meter_tag pattern\r\n\r\n    var meterNo = m[1];\r\n    var tagPart = m[2];              // keep exactly as-is (already sanitized by Node A)\r\n\r\n    if (!grouped[meterNo]) grouped[meterNo] = {};\r\n    grouped[meterNo][tagPart] = value;   // e.g. { \"2008\": 11.1 } or { \"current_a\": 0.9 }\r\n}\r\n\r\n/* 1) Walk all keys of Node-A flat object */\r\nfor (var k in msg) {\r\n    if (!Object.prototype.hasOwnProperty.call(msg, k)) continue;\r\n    addOne(k, msg[k]);\r\n}\r\n\r\n/* 2) Build outgoing message(s) */\r\nvar outs = [];\r\nfor (var meter in grouped) {\r\n    if (!Object.prototype.hasOwnProperty.call(grouped, meter)) continue;\r\n\r\n    // clone metadata (shallow)\r\n    var md = {};\r\n    for (var mk in metadata) {\r\n        if (Object.prototype.hasOwnProperty.call(metadata, mk)) {\r\n            md[mk] = metadata[mk];\r\n        }\r\n    }\r\n    md.targetDeviceName = \"Meter-\" + meter;\r\n\r\n    outs.push({\r\n        msg: grouped[meter],\r\n        metadata: md,\r\n        msgType: msgType\r\n    });\r\n}\r\n\r\n/* 3) Tester-friendly: 0/1/Many behavior */\r\nif (outs.length === 0) {\r\n    // nothing matched → return an empty object to avoid tester/engine nulls\r\n    return { msg: {}, metadata: metadata, msgType: msgType };\r\n}\r\nif (outs.length === 1) {\r\n    // tester prefers a single object when possible\r\n    return outs[0];\r\n}\r\nreturn outs;  // 2+ meters → fan-out (runtime supports arrays)\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1758022779266,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f18e2f90-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Fan out meters",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1032,
+        "layoutY" : 459
+      },
+      "configuration" : {
+        "originatorSource" : "ENTITY",
+        "preserveOriginatorIfCustomer" : false,
+        "entityType" : "DEVICE",
+        "entityNamePattern" : "${targetDeviceName}",
+        "relationsQuery" : {
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "Contains",
+            "entityTypes" : [ ],
+            "negate" : false
+          } ],
+          "fetchLastLevelOnly" : false
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1758020054559,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f18e2f91-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Change",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbChangeOriginatorNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 836,
+        "layoutY" : 568
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1758020095849,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f18e2f92-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "1",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 545,
+        "layoutY" : 926
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1758020117149,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f18e2f93-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "1",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainOutputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 418,
+        "layoutY" : 150
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Accept only if the very first top-level key equals this device name\r\nvar TARGET_NAME = \"MACHINE-1\";\r\n\r\n// Find the first own key in the incoming message\r\nfunction firstKey(o) {\r\n  for (var k in o) {\r\n    if (o.hasOwnProperty(k)) {\r\n      return k;\r\n    }\r\n  }\r\n  return null;\r\n}\r\n\r\nvar fk = firstKey(msg);\r\n\r\n// Optional debug:\r\n// print(\"[Filter] firstKey=\" + fk + \" expect=\" + TARGET_NAME);\r\n\r\nvar pass = (fk === TARGET_NAME);\r\nreturn pass;  // true -> Success, false -> Failure\r\n",
+        "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761909253768,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f18e56a0-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Filter the rut device",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 192,
+        "layoutY" : 360
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// ===== Config =====\r\nvar TIMESTAMP_KEY = 'timestamp'; // name of the telemetry key\r\nvar TS_UNIT = 's';               // 's' for Unix seconds, 'ms' for milliseconds\r\nvar IST_OFFSET_MIN = 330;        // Asia/Kolkata = UTC+05:30\r\nvar DROP_SECOND_ITEM = true;     // drop index 1 from bracketed arrays (e.g., \"[Y, X, M, D, h, m, s, ms?]\")\r\n\r\n// ===== Helpers =====\r\nfunction toNum(v){ var n = Number(v); return isFinite(n) ? n : 0; }\r\nfunction firstKey(o){ for (var k in o){ if (o && o.hasOwnProperty && o.hasOwnProperty(k)) return k; } return null; }\r\nfunction toDesiredUnit(ms){ return TS_UNIT === 's' ? Math.floor(ms/1000) : ms; }\r\n\r\n// Parse a bracketed timestamp string like \"[2025,4,10,9,12,9,31]\"\r\n// 1) Optionally drop the 2nd item\r\n// 2) Interpret result as IST local time [Y,M,D,h,m,s,ms?]\r\n// 3) Convert to epoch ms\r\nfunction parseBracketAsISTEpochMs(tsStr){\r\n  if (typeof tsStr !== 'string') return null;\r\n  var s = tsStr.replace(/^\\s*\\[/,'').replace(/\\]\\s*$/,'');\r\n  var parts = s.split(',').map(function(x){ return Number(String(x).trim()); });\r\n\r\n  if (DROP_SECOND_ITEM && parts.length >= 7) {\r\n    // Remove the 2nd element (index 1), shifting the rest left.\r\n    parts.splice(1, 1);\r\n  }\r\n\r\n  // Now expect [Y, M, D, h, m, s, ms?]\r\n  if (parts.length < 6) return null;\r\n\r\n  var Y = parts[0],\r\n      M = parts[1], // 1..12\r\n      D = parts[2],\r\n      h = parts[3],\r\n      m = parts[4],\r\n      sec = parts[5],\r\n      ms = (parts.length >= 7 ? parts[6] : 0);\r\n\r\n  // Build a UTC time from the IST wall-clock minus +05:30\r\n  var naiveUtcMs = Date.UTC(Y, (M|0)-1, D, h, m, sec, ms);\r\n  var epochMs = naiveUtcMs - IST_OFFSET_MIN*60*1000;\r\n\r\n  return isFinite(epochMs) ? epochMs : null;\r\n}\r\n\r\n// ===== 1) Top-level device name and array payload =====\r\nvar devName = firstKey(msg);\r\nvar arr = devName ? msg[devName] : null;\r\nif (!devName || !arr || !(arr instanceof Array)) { return null; }\r\n\r\n// ===== 2) Flatten the array; convert timestamp =====\r\nvar flat = {};\r\nvar tsEpochMs = null;\r\n\r\nfor (var i = 0; i < arr.length; i++) {\r\n  var obj = arr[i];\r\n  if (!obj) continue;\r\n\r\n  for (var k in obj) {\r\n    if (!obj.hasOwnProperty(k)) continue;\r\n\r\n    if (String(k).toLowerCase() === 'timestamp') {\r\n      var raw = obj[k];\r\n      var parsed = null;\r\n\r\n      if (typeof raw === 'string' && raw.indexOf('[') !== -1) {\r\n        // Bracketed form -> drop 2nd item, interpret as IST\r\n        parsed = parseBracketAsISTEpochMs(raw);\r\n      } else {\r\n        // Numeric epoch: keep the instant (seconds auto-scaled to ms)\r\n        var n = Number(raw);\r\n        if (isFinite(n)) parsed = (n < 1e12) ? (n * 1000) : n;\r\n      }\r\n\r\n      if (parsed !== null) tsEpochMs = parsed;\r\n    } else {\r\n      flat[k] = toNum(obj[k]);\r\n    }\r\n  }\r\n}\r\n\r\n// Emit timestamp as a normal telemetry key\r\nif (tsEpochMs !== null) {\r\n  flat[TIMESTAMP_KEY] = toDesiredUnit(tsEpochMs);\r\n}\r\n\r\n// ===== 3) Target device for Change Originator =====\r\nmetadata.targetDeviceName = devName;\r\n\r\n// ===== 4) Emit plain KV telemetry =====\r\nreturn {\r\n  msg: flat,\r\n  metadata: metadata,\r\n  msgType: 'POST_TELEMETRY_REQUEST'\r\n};\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761909253768,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f18e56a1-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Calculate the fields",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 204,
+        "layoutY" : 597
+      },
+      "configuration" : {
+        "forwardMsgToDefaultRuleChain" : false,
+        "ruleChainId" : "b0f5c0e0-a2c8-11f0-bfaa-5dcc0fb52ded"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1759766148473,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f18e56a2-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "To Job Calculator",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 199,
+        "layoutY" : 472
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1759766798204,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f18e56a3-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Save Raw Data",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "923e18e0-92e3-11f0-adaa-3dca45c43107"
+    },
+    "to" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "b0f5c0e0-a2c8-11f0-bfaa-5dcc0fb52ded"
+    },
+    "type" : "Uses",
+    "typeGroup" : "COMMON",
+    "version" : 13291
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

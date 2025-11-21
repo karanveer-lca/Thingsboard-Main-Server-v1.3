@@ -1,0 +1,25 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "my_widgets2",
+    "description" : null,
+    "externalId" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "721a5e90-9174-11f0-84d5-efc64010e13c"
+    },
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "721a5e90-9174-11f0-84d5-efc64010e13c"
+    },
+    "image" : null,
+    "name" : "My widgets",
+    "order" : null,
+    "scada" : false,
+    "title" : "My widgets"
+  },
+  "fqns" : [ ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

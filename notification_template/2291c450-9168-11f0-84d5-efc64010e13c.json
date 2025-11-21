@@ -1,0 +1,42 @@
+{
+  "entityType" : "NOTIFICATION_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "attachReport" : false,
+      "deliveryMethodsTemplates" : {
+        "WEB" : {
+          "method" : "WEB",
+          "additionalConfig" : {
+            "icon" : {
+              "enabled" : true,
+              "icon" : "description",
+              "color" : "#757575"
+            },
+            "actionButtonConfig" : {
+              "enabled" : true,
+              "text" : "Go to reports",
+              "linkType" : "LINK",
+              "link" : "/reporting/reports"
+            }
+          },
+          "body" : "${reportFormat} report '${reportName}' is ready",
+          "enabled" : true,
+          "subject" : "Report generated"
+        }
+      },
+      "reportTemplateId" : null,
+      "timezone" : null,
+      "userId" : null
+    },
+    "externalId" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "2291c450-9168-11f0-84d5-efc64010e13c"
+    },
+    "id" : {
+      "entityType" : "NOTIFICATION_TEMPLATE",
+      "id" : "2291c450-9168-11f0-84d5-efc64010e13c"
+    },
+    "name" : "Report generated notification",
+    "notificationType" : "REPORT_GENERATED"
+  }
+}

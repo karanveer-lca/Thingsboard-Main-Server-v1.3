@@ -1,0 +1,37 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "ems_widget_1",
+    "name" : "EMS_WIDGET_1",
+    "deprecated" : false,
+    "image" : null,
+    "description" : null,
+    "descriptor" : {
+      "type" : "latest",
+      "sizeX" : 7.5,
+      "sizeY" : 3,
+      "resources" : [ ],
+      "templateCss" : "/* ─────────── CSS ─────────── */\r\n:host {\r\n  /* Remove outer card background and shadow */\r\n  background: transparent !important;\r\n  box-shadow: none    !important;\r\n}\r\n\r\n/* Your widget container */\r\n.re-card {\r\n  background-color: #3D3D3C !important;\r\n  color: #fff;\r\n  border-radius: 8px;\r\n  width: 100%;\r\n  height: 100%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;  /* vertical centering */\r\n  align-items: flex-start;  /* left-align content */\r\n  padding: 16px;\r\n  box-sizing: border-box;\r\n}\r\n\r\n.re-title {\r\n  font-family: Arial, sans-serif;\r\n  font-size: 18px;\r\n  margin: 0 0 8px 0;\r\n}\r\n\r\n.re-value {\r\n  font-family: Arial, sans-serif;\r\n  font-size: 36px;\r\n  font-weight: bold;\r\n  margin: 0;\r\n}\r\n",
+      "settingsForm" : [ ],
+      "templateHtml" : "",
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"function\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":60000}},\"showTitle\":true,\"backgroundColor\":\"#fff\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"8px\",\"settings\":{},\"title\":\"EMS_WIDGET_1\",\"decimals\":null}",
+      "controllerScript" : "// ─────────── JavaScript ───────────\r\nself.onInit = function() {\r\n  // Clear everything, inject only our dark card\r\n  self.ctx.$container\r\n    .empty()\r\n    .append(`\r\n      <div class=\"re-card\">\r\n        <div class=\"re-title\">Real Energy Into Load</div>\r\n        <div class=\"re-value\" id=\"reValue\">–</div>\r\n      </div>\r\n    `);\r\n\r\n  // Force parent widget element transparent (in case host styling differs)\r\n  this.ctx.$container.closest('.tb-widget').css({\r\n    'background': 'transparent',\r\n    'box-shadow': 'none'\r\n  });\r\n\r\n  self.onResize();\r\n};\r\n\r\nself.onDataUpdated = function() {\r\n  const d = self.ctx.data[0];\r\n  if (d && d.data && d.data.length) {\r\n    const raw = d.data[d.data.length - 1][1];\r\n    let txt = raw;\r\n    if (!isNaN(parseFloat(raw))) {\r\n      const dec  = (d.dataKey.decimals===0||d.dataKey.decimals)?d.dataKey.decimals:self.ctx.decimals;\r\n      const unit = d.dataKey.units || self.ctx.units;\r\n      txt = this.ctx.utils.formatValue(raw, dec, unit, true);\r\n    }\r\n    $('#reValue').html(txt);\r\n  }\r\n};\r\n\r\nself.onResize = function() {\r\n  const H = this.ctx.height, W = this.ctx.width;\r\n  const titleSz = Math.min(H/10, W/15, 18);\r\n  const valueSz = Math.min(H/2.5, W/4, 36);\r\n  $('.re-title').css('font-size', titleSz + 'px');\r\n  $('.re-value').css('font-size', valueSz + 'px');\r\n};\r\n\r\nself.onDestroy = function() {\r\n  // Nothing to clean up\r\n};\r\n",
+      "dataKeySettingsForm" : [ ]
+    },
+    "externalId" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "da367090-9282-11f0-8111-6db5412d1741"
+    },
+    "resources" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "da367090-9282-11f0-8111-6db5412d1741"
+    },
+    "scada" : false,
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
