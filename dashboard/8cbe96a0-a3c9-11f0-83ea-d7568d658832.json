@@ -23026,7 +23026,7 @@
         "titleColor" : "rgba(0,0,0,0.870588)",
         "showDashboardLogo" : false,
         "dashboardLogoUrl" : null,
-        "hideToolbar" : false,
+        "hideToolbar" : true,
         "showFilters" : false,
         "showUpdateDashboardImage" : false,
         "dashboardCss" : ""
