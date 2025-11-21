@@ -15001,7 +15001,20 @@
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "actions" : {
-              "headerButton" : [ ]
+              "headerButton" : [ {
+                "name" : "Full Screen",
+                "buttonType" : "icon",
+                "icon" : "more_horiz",
+                "buttonColor" : "rgba(0, 0, 0, 0.87)",
+                "customButtonStyle" : { },
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "// Toggle browser fullscreen on click\r\n\r\nfunction isFullscreen() {\r\n    return document.fullscreenElement ||\r\n           document.webkitFullscreenElement ||\r\n           document.msFullscreenElement;\r\n}\r\n\r\nvar elem = document.documentElement;\r\n\r\nif (!isFullscreen()) {\r\n    // Enter fullscreen\r\n    if (elem.requestFullscreen) {\r\n        elem.requestFullscreen();\r\n    } else if (elem.webkitRequestFullscreen) {\r\n        elem.webkitRequestFullscreen();\r\n    } else if (elem.msRequestFullscreen) {\r\n        elem.msRequestFullscreen();\r\n    }\r\n} else {\r\n    // Exit fullscreen\r\n    if (document.exitFullscreen) {\r\n        document.exitFullscreen();\r\n    } else if (document.webkitExitFullscreen) {\r\n        document.webkitExitFullscreen();\r\n    } else if (document.msExitFullscreen) {\r\n        document.msExitFullscreen();\r\n    }\r\n}\r\n",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "a43f22f4-12b0-c79f-4cd5-b64bc9fe62ce"
+              } ]
             }
           },
           "row" : 0,
@@ -18114,20 +18127,7 @@
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "actions" : {
-              "headerButton" : [ {
-                "name" : "Full Screen",
-                "buttonType" : "icon",
-                "icon" : "mdi:arrow-expand-all",
-                "buttonColor" : "rgba(0, 0, 0, 0.87)",
-                "customButtonStyle" : { },
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "document.documentElement.requestFullscreen()",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "c1fce68d-245a-e2bc-5b7d-0559c167574f"
-              } ]
+              "headerButton" : [ ]
             }
           },
           "row" : 0,
