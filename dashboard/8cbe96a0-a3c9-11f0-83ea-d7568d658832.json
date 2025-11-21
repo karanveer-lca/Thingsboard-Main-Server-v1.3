@@ -15001,20 +15001,7 @@
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "actions" : {
-              "headerButton" : [ {
-                "name" : "Full screen",
-                "buttonType" : "icon",
-                "icon" : "mdi:arrow-expand-all",
-                "buttonColor" : "rgba(0, 0, 0, 0.87)",
-                "customButtonStyle" : { },
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "custom",
-                "customFunction" : "document.documentElement.requestFullscreen()",
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "e296f807-e9f4-9349-8ae2-2aae762853ad"
-              } ]
+              "headerButton" : [ ]
             }
           },
           "row" : 0,
@@ -18125,7 +18112,23 @@
             "enableDataExport" : false,
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "actions" : {
+              "headerButton" : [ {
+                "name" : "Full Screen",
+                "buttonType" : "icon",
+                "icon" : "mdi:arrow-expand-all",
+                "buttonColor" : "rgba(0, 0, 0, 0.87)",
+                "customButtonStyle" : { },
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "document.documentElement.requestFullscreen()",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "c1fce68d-245a-e2bc-5b7d-0559c167574f"
+              } ]
+            }
           },
           "row" : 0,
           "col" : 0,
