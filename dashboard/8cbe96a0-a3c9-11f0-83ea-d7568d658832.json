@@ -21054,7 +21054,13 @@
                 "label" : "parts_per_hour",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.7203656699845615
+                "_hash" : 0.7203656699845615,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value.toFixed(0);"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
