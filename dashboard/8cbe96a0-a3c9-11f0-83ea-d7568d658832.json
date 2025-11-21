@@ -15001,7 +15001,20 @@
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
             "actions" : {
-              "headerButton" : [ ]
+              "headerButton" : [ {
+                "name" : "Full screen",
+                "buttonType" : "icon",
+                "icon" : "more_horiz",
+                "buttonColor" : "rgba(0, 0, 0, 0.87)",
+                "customButtonStyle" : { },
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "document.documentElement.requestFullscreen()",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "e296f807-e9f4-9349-8ae2-2aae762853ad"
+              } ]
             }
           },
           "row" : 0,
