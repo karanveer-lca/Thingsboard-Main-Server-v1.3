@@ -18021,7 +18021,7 @@
             "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : false,
-              "markdownTextPattern" : "<!-- Left cell: Label -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#f2ddc7;              /* dark blue like sheet */\r\n    color:#000000;\r\n    padding:10px 16px;\r\n    border:1px solid #001f33;\r\n    border-right:1px;                   /* avoid double border in the middle */\r\n    <!--border-radius:8px 0 0 8px;        /* round LEFT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\r\n  \">\r\n    MACHINE STOPPAGE TREND\r\n  </div>\r\n</div>\r\n",
+              "markdownTextPattern" : "<!-- Left cell: Label -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#f2ddc7;              /* dark blue like sheet */\r\n    color:#000000;\r\n    padding:10px 16px;\r\n    border:1px solid #001f33;\r\n    border-left:0px;                   /* avoid double border in the middle */\r\n    <!--border-radius:8px 0 0 8px;        /* round LEFT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\r\n  \">\r\n    MACHINE STOPPAGE TREND\r\n  </div>\r\n</div>\r\n",
               "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
@@ -18102,7 +18102,7 @@
             "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : false,
-              "markdownTextPattern" : "<!-- Left cell: Label -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#f2ddc7;              /* dark blue like sheet */\r\n    color:#000000;\r\n    padding:10px 16px;\r\n    border:1px solid #001f33;                  /* avoid double border in the middle */\r\n    <!--border-radius:8px 0 0 8px;        /* round LEFT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\r\n  \">\r\n    MACHINE DOWNTIME TREND (Minutes)\r\n  </div>\r\n</div>\r\n",
+              "markdownTextPattern" : "<!-- Left cell: Label -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#f2ddc7;              /* dark blue like sheet */\r\n    color:#000000;\r\n    padding:10px 16px;\r\n    border:1px solid #001f33;                  /* avoid double border in the middle */\r\n    border-left:0px solid black;\r\n    <!--border-radius:8px 0 0 8px;        /* round LEFT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\r\n  \">\r\n    MACHINE DOWNTIME TREND (Minutes)\r\n  </div>\r\n</div>\r\n",
               "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
@@ -20181,7 +20181,7 @@
             "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : false,
-              "markdownTextPattern" : "<!-- Left cell: Label -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#f2ddc7;              /* dark blue like sheet */\r\n    color:#000000;\r\n    padding:10px 16px;\r\n    border:0px solid #001f33;\r\n    border-left:0px;                   /* avoid double border in the middle */\r\n    <!--border-radius:8px 0 0 8px;        /* round LEFT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\r\n  \">\r\n  </div>\r\n</div>\r\n",
+              "markdownTextPattern" : "<!-- Left cell: Label -->\r\n<div style=\"\r\n  position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\r\n\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#f2ddc7;              /* dark blue like sheet */\r\n    color:#000000;\r\n    padding:10px 16px;\r\n    border:0px solid #001f33;\r\n    border-top:1px;                   /* avoid double border in the middle */\r\n    <!--border-radius:8px 0 0 8px;        /* round LEFT only */-->\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700;\r\n    line-height:1;\r\n    font-size: clamp(25px, 2.2vw, 25px);\r\n    letter-spacing:0.3px;\r\n    box-sizing:border-box;\r\n  \">\r\n  </div>\r\n</div>\r\n",
               "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
@@ -22393,8 +22393,8 @@
                 },
                 "075d8860-7b45-00e4-79c4-37c2051e27ba" : {
                   "sizeX" : 3,
-                  "sizeY" : 60,
-                  "row" : 5,
+                  "sizeY" : 56,
+                  "row" : 9,
                   "col" : 44
                 },
                 "780544af-694d-5f22-ccfd-9a07c9f721d7" : {
