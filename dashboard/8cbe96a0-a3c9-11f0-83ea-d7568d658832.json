@@ -15004,7 +15004,7 @@
               "headerButton" : [ {
                 "name" : "Full Screen",
                 "buttonType" : "icon",
-                "icon" : "more_horiz",
+                "icon" : "mdi:arrow-expand-all",
                 "buttonColor" : "rgba(0, 0, 0, 0.87)",
                 "customButtonStyle" : { },
                 "useShowWidgetActionFunction" : null,
@@ -23029,7 +23029,7 @@
         "titleColor" : "rgba(0,0,0,0.870588)",
         "showDashboardLogo" : false,
         "dashboardLogoUrl" : null,
-        "hideToolbar" : false,
+        "hideToolbar" : true,
         "showFilters" : false,
         "showUpdateDashboardImage" : false,
         "dashboardCss" : ""
