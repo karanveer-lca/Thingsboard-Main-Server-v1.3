@@ -6961,20 +6961,14 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
               "dataKeys" : [ {
-                "name" : "cfg_start_ts",
+                "name" : "machine_device_name",
                 "type" : "attribute",
-                "label" : "cfg_start_ts",
+                "label" : "machine_device_name",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.6073335651604582,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value == null) return null;\r\n\r\nvar n = Number(value);\r\nif (!isFinite(n)) return null;\r\n\r\n// seconds → ms if needed; otherwise just round\r\nvar ms = n < 1e11 ? Math.round(n) * 1000 : Math.round(n);\r\n\r\nvar d = new Date(ms);\r\nvar hh = String(d.getHours()).padStart(2, \"0\");\r\nvar mm = String(d.getMinutes()).padStart(2, \"0\");\r\nvar ss = String(d.getSeconds()).padStart(2, \"0\");\r\n\r\nreturn hh + \":\" + mm + \":\" + ss;  // e.g., \"09:45:03\"\r\n"
+                "_hash" : 0.3872679191733457
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -7017,7 +7011,7 @@
             "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : false,
-              "markdownTextPattern" : "<div style=\"position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#244062; color:#ff5a5a;\r\n    border:1px solid #001f33;   /* last cell on the right */\r\n    border-left:1;  \r\n    padding:6px 12px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700; line-height:1; text-transform:none; letter-spacing:0.3px;\r\n    font-size: clamp(14px, 1.9vw, 20px);\r\n    box-sizing:border-box;\r\n  \">\r\n    ${cfg_start_ts}\r\n  </div>\r\n</div>\r\n",
+              "markdownTextPattern" : "<div style=\"position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#244062; color:#ff5a5a;\r\n    border:1px solid #001f33;   /* last cell on the right */\r\n    border-left:1;  \r\n    padding:6px 12px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700; line-height:1; text-transform:none; letter-spacing:0.3px;\r\n    font-size: clamp(14px, 1.9vw, 20px);\r\n    box-sizing:border-box;\r\n  \">\r\n    ${machine_device_name}\r\n  </div>\r\n</div>\r\n",
               "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
@@ -7721,7 +7715,7 @@
                       "col" : 0
                     },
                     "24927fd2-6e85-ec50-79c7-f2f916bf4036" : {
-                      "sizeX" : 9,
+                      "sizeX" : 8,
                       "sizeY" : 3,
                       "row" : 8,
                       "col" : 9
@@ -7730,13 +7724,13 @@
                       "sizeX" : 9,
                       "sizeY" : 3,
                       "row" : 8,
-                      "col" : 18
+                      "col" : 17
                     },
                     "a6997098-97cd-293c-7b96-ed0d82f326af" : {
                       "sizeX" : 9,
                       "sizeY" : 3,
                       "row" : 8,
-                      "col" : 27
+                      "col" : 26
                     },
                     "7f7a7db3-7750-af8f-b4df-7667af12d0cc" : {
                       "sizeX" : 9,
@@ -7745,7 +7739,7 @@
                       "col" : 0
                     },
                     "564c3569-1df4-8fd3-c545-7e3e1a58ed19" : {
-                      "sizeX" : 9,
+                      "sizeX" : 8,
                       "sizeY" : 3,
                       "row" : 11,
                       "col" : 9
@@ -7754,13 +7748,13 @@
                       "sizeX" : 9,
                       "sizeY" : 3,
                       "row" : 11,
-                      "col" : 18
+                      "col" : 17
                     },
                     "dfc83aa9-476e-7370-ac7c-d48ea4d03099" : {
                       "sizeX" : 9,
                       "sizeY" : 3,
                       "row" : 11,
-                      "col" : 27
+                      "col" : 26
                     },
                     "87a7e163-ede0-2604-acb8-1a2b58ae0b74" : {
                       "sizeX" : 9,
@@ -8015,16 +8009,16 @@
                       "col" : 0
                     },
                     "c5f27599-0f12-c3f7-3669-c631e161ab56" : {
-                      "sizeX" : 10,
+                      "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 8,
-                      "col" : 36
+                      "col" : 35
                     },
                     "96fa4807-931f-c325-5eeb-87aa3b94e7c9" : {
-                      "sizeX" : 10,
+                      "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 11,
-                      "col" : 36
+                      "col" : 35
                     }
                   }
                 }
