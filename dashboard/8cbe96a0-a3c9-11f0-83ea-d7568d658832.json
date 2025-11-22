@@ -3259,32 +3259,6 @@
                 "funcBody" : null,
                 "usePostProcessing" : true,
                 "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
-              }, {
-                "name" : "act_duration_s_9",
-                "type" : "timeseries",
-                "label" : "DUR-9",
-                "color" : "#044AD3",
-                "settings" : { },
-                "_hash" : 0.8640608037284795,
-                "decimals" : 0,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
-              }, {
-                "name" : "act_duration_s_10",
-                "type" : "timeseries",
-                "label" : "DUR-10",
-                "color" : "#4CAF50",
-                "settings" : { },
-                "_hash" : 0.9955035896767224,
-                "decimals" : 0,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -3833,32 +3807,6 @@
                 "color" : "#F5DD00",
                 "settings" : { },
                 "_hash" : 0.6626913623026339,
-                "decimals" : 0,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "act_occ_9",
-                "type" : "timeseries",
-                "label" : "OCC-9",
-                "color" : "#044AD3",
-                "settings" : { },
-                "_hash" : 0.9050972980942752,
-                "decimals" : 0,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "act_occ_10",
-                "type" : "timeseries",
-                "label" : "OCC-10",
-                "color" : "#4CAF50",
-                "settings" : { },
-                "_hash" : 0.9573388131936205,
                 "decimals" : 0,
                 "aggregationType" : "NONE",
                 "units" : null,
