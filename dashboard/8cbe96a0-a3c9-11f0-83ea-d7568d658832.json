@@ -4531,7 +4531,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "imageUrl" : "tb-image;/api/images/tenant/plant_blueprint.jpg",
+              "imageUrl" : "tb-image;/api/images/tenant/floorplan.webp",
               "groupId" : "45504450-ae8f-11f0-a60f-a7f9e67d958a",
               "targetStateId" : "machine_dashboard",
               "stateParamName" : "jobcard",
