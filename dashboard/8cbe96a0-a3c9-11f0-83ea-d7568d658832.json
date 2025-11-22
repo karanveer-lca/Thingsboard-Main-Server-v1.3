@@ -21731,43 +21731,6 @@
             }
           }
         },
-        "machine_list" : {
-          "name" : "Machine list",
-          "root" : true,
-          "layouts" : {
-            "main" : {
-              "widgets" : {
-                "922f72e5-a582-fcd6-c9a8-7dfa283e585f" : {
-                  "sizeX" : 25,
-                  "sizeY" : 12,
-                  "row" : 1,
-                  "col" : 0
-                },
-                "cefb73d5-cf20-db72-ee92-044b927f7b6c" : {
-                  "sizeX" : 25,
-                  "sizeY" : 1,
-                  "row" : 0,
-                  "col" : 0
-                }
-              },
-              "gridSettings" : {
-                "layoutType" : "default",
-                "backgroundColor" : "#07111D",
-                "columns" : 24,
-                "margin" : 5,
-                "outerMargin" : true,
-                "backgroundSizeMode" : "100%",
-                "minColumns" : 24,
-                "viewFormat" : "grid",
-                "autoFillHeight" : true,
-                "rowHeight" : 70,
-                "backgroundImageUrl" : null,
-                "mobileAutoFillHeight" : false,
-                "mobileRowHeight" : 70
-              }
-            }
-          }
-        },
         "abs_dashboard" : {
           "name" : "Abs Dashboard",
           "root" : false,
@@ -22244,8 +22207,217 @@
             }
           }
         },
-        "job_dashboard" : {
-          "name" : "Job Dashboard",
+        "duration_details" : {
+          "name" : "Duration Details",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "daa5fe67-b2ce-792c-3132-f7958d12e63f" : {
+                  "sizeX" : 24,
+                  "sizeY" : 10,
+                  "row" : 1,
+                  "col" : 0
+                },
+                "ecf16151-2bae-76b9-f4e8-8b1264790462" : {
+                  "sizeX" : 24,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#07111D",
+                "columns" : 24,
+                "margin" : 5,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "occurrence_details" : {
+          "name" : "Occurrence Details",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "fd130d13-51f8-311e-3dcd-18f5ae151ed0" : {
+                  "sizeX" : 24,
+                  "sizeY" : 10,
+                  "row" : 1,
+                  "col" : 0
+                },
+                "cb37a3fe-cabe-31d8-a8cc-17341c96dd51" : {
+                  "sizeX" : 24,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#07111D",
+                "columns" : 24,
+                "margin" : 5,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "job_duration_details" : {
+          "name" : "Job Duration Details",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "a59c0072-2f2f-92f7-a9d8-42cbfa84837e" : {
+                  "sizeX" : 24,
+                  "sizeY" : 10,
+                  "row" : 1,
+                  "col" : 0
+                },
+                "0db78566-99ae-6da5-0464-63765c3f7637" : {
+                  "sizeX" : 24,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#07111D",
+                "columns" : 24,
+                "margin" : 5,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "job_occurrence_details" : {
+          "name" : "Job Occurrence Details",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "360d117d-a7a5-7732-ae05-2d3199430489" : {
+                  "sizeX" : 24,
+                  "sizeY" : 10,
+                  "row" : 1,
+                  "col" : 0
+                },
+                "960d2463-8db1-2b2d-eff8-f5eca1146806" : {
+                  "sizeX" : 24,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#07111D",
+                "columns" : 24,
+                "margin" : 5,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : false,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "update_bad_production" : {
+          "name" : "update_bad_production",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "cf9fd1f2-31cf-6fa2-e059-40ebb7025fad" : {
+                  "sizeX" : 26,
+                  "sizeY" : 12,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        },
+        "plant_sld" : {
+          "name" : "SLD Plant View",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "922f72e5-a582-fcd6-c9a8-7dfa283e585f" : {
+                  "sizeX" : 25,
+                  "sizeY" : 12,
+                  "row" : 1,
+                  "col" : 0
+                },
+                "cefb73d5-cf20-db72-ee92-044b927f7b6c" : {
+                  "sizeX" : 25,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#07111D",
+                "columns" : 24,
+                "margin" : 5,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "machine_dashboard" : {
+          "name" : "Machine Dashboard",
           "root" : false,
           "layouts" : {
             "main" : {
@@ -22832,178 +23004,6 @@
                     }
                   }
                 }
-              }
-            }
-          }
-        },
-        "duration_details" : {
-          "name" : "Duration Details",
-          "root" : false,
-          "layouts" : {
-            "main" : {
-              "widgets" : {
-                "daa5fe67-b2ce-792c-3132-f7958d12e63f" : {
-                  "sizeX" : 24,
-                  "sizeY" : 10,
-                  "row" : 1,
-                  "col" : 0
-                },
-                "ecf16151-2bae-76b9-f4e8-8b1264790462" : {
-                  "sizeX" : 24,
-                  "sizeY" : 1,
-                  "row" : 0,
-                  "col" : 0
-                }
-              },
-              "gridSettings" : {
-                "layoutType" : "default",
-                "backgroundColor" : "#07111D",
-                "columns" : 24,
-                "margin" : 5,
-                "outerMargin" : true,
-                "backgroundSizeMode" : "100%",
-                "minColumns" : 24,
-                "viewFormat" : "grid",
-                "autoFillHeight" : false,
-                "rowHeight" : 70,
-                "backgroundImageUrl" : null,
-                "mobileAutoFillHeight" : false,
-                "mobileRowHeight" : 70
-              }
-            }
-          }
-        },
-        "occurrence_details" : {
-          "name" : "Occurrence Details",
-          "root" : false,
-          "layouts" : {
-            "main" : {
-              "widgets" : {
-                "fd130d13-51f8-311e-3dcd-18f5ae151ed0" : {
-                  "sizeX" : 24,
-                  "sizeY" : 10,
-                  "row" : 1,
-                  "col" : 0
-                },
-                "cb37a3fe-cabe-31d8-a8cc-17341c96dd51" : {
-                  "sizeX" : 24,
-                  "sizeY" : 1,
-                  "row" : 0,
-                  "col" : 0
-                }
-              },
-              "gridSettings" : {
-                "layoutType" : "default",
-                "backgroundColor" : "#07111D",
-                "columns" : 24,
-                "margin" : 5,
-                "outerMargin" : true,
-                "backgroundSizeMode" : "100%",
-                "minColumns" : 24,
-                "viewFormat" : "grid",
-                "autoFillHeight" : false,
-                "rowHeight" : 70,
-                "backgroundImageUrl" : null,
-                "mobileAutoFillHeight" : false,
-                "mobileRowHeight" : 70
-              }
-            }
-          }
-        },
-        "job_duration_details" : {
-          "name" : "Job Duration Details",
-          "root" : false,
-          "layouts" : {
-            "main" : {
-              "widgets" : {
-                "a59c0072-2f2f-92f7-a9d8-42cbfa84837e" : {
-                  "sizeX" : 24,
-                  "sizeY" : 10,
-                  "row" : 1,
-                  "col" : 0
-                },
-                "0db78566-99ae-6da5-0464-63765c3f7637" : {
-                  "sizeX" : 24,
-                  "sizeY" : 1,
-                  "row" : 0,
-                  "col" : 0
-                }
-              },
-              "gridSettings" : {
-                "layoutType" : "default",
-                "backgroundColor" : "#07111D",
-                "columns" : 24,
-                "margin" : 5,
-                "outerMargin" : true,
-                "backgroundSizeMode" : "100%",
-                "minColumns" : 24,
-                "viewFormat" : "grid",
-                "autoFillHeight" : false,
-                "rowHeight" : 70,
-                "backgroundImageUrl" : null,
-                "mobileAutoFillHeight" : false,
-                "mobileRowHeight" : 70
-              }
-            }
-          }
-        },
-        "job_occurrence_details" : {
-          "name" : "Job Occurrence Details",
-          "root" : false,
-          "layouts" : {
-            "main" : {
-              "widgets" : {
-                "360d117d-a7a5-7732-ae05-2d3199430489" : {
-                  "sizeX" : 24,
-                  "sizeY" : 10,
-                  "row" : 1,
-                  "col" : 0
-                },
-                "960d2463-8db1-2b2d-eff8-f5eca1146806" : {
-                  "sizeX" : 24,
-                  "sizeY" : 1,
-                  "row" : 0,
-                  "col" : 0
-                }
-              },
-              "gridSettings" : {
-                "layoutType" : "default",
-                "backgroundColor" : "#07111D",
-                "columns" : 24,
-                "margin" : 5,
-                "outerMargin" : true,
-                "backgroundSizeMode" : "100%",
-                "minColumns" : 24,
-                "viewFormat" : "grid",
-                "autoFillHeight" : false,
-                "rowHeight" : 70,
-                "backgroundImageUrl" : null,
-                "mobileAutoFillHeight" : false,
-                "mobileRowHeight" : 70
-              }
-            }
-          }
-        },
-        "update_bad_production" : {
-          "name" : "update_bad_production",
-          "root" : false,
-          "layouts" : {
-            "main" : {
-              "widgets" : {
-                "cf9fd1f2-31cf-6fa2-e059-40ebb7025fad" : {
-                  "sizeX" : 26,
-                  "sizeY" : 12,
-                  "row" : 0,
-                  "col" : 0
-                }
-              },
-              "gridSettings" : {
-                "layoutType" : "default",
-                "backgroundColor" : "#eeeeee",
-                "columns" : 24,
-                "margin" : 10,
-                "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
               }
             }
           }
