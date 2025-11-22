@@ -4176,7 +4176,7 @@
               "dataKeys" : [ {
                 "name" : "DURATION_1",
                 "type" : "timeseries",
-                "label" : "DURATION_1",
+                "label" : "DURATION 1",
                 "color" : "#3f51b5",
                 "settings" : { },
                 "_hash" : 0.41233672082217177,
@@ -4189,7 +4189,7 @@
               }, {
                 "name" : "DURATION_2",
                 "type" : "timeseries",
-                "label" : "DURATION_2",
+                "label" : "DURATION 2",
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.12367413553910722,
@@ -4202,7 +4202,7 @@
               }, {
                 "name" : "DURATION_3",
                 "type" : "timeseries",
-                "label" : "DURATION_3",
+                "label" : "DURATION 3",
                 "color" : "#f44336",
                 "settings" : { },
                 "_hash" : 0.7775026613887461,
@@ -4215,7 +4215,7 @@
               }, {
                 "name" : "DURATION_4",
                 "type" : "timeseries",
-                "label" : "DURATION_4",
+                "label" : "DURATION 4",
                 "color" : "#ffc107",
                 "settings" : { },
                 "_hash" : 0.24009798738565324,
@@ -4228,7 +4228,7 @@
               }, {
                 "name" : "DURATION_5",
                 "type" : "timeseries",
-                "label" : "DURATION_5",
+                "label" : "DURATION 5",
                 "color" : "#607d8b",
                 "settings" : { },
                 "_hash" : 0.28477164479377515,
@@ -4241,7 +4241,7 @@
               }, {
                 "name" : "DURATION_6",
                 "type" : "timeseries",
-                "label" : "DURATION_6",
+                "label" : "DURATION 6",
                 "color" : "#9c27b0",
                 "settings" : { },
                 "_hash" : 0.7474744072160737,
@@ -4254,7 +4254,7 @@
               }, {
                 "name" : "DURATION_7",
                 "type" : "timeseries",
-                "label" : "DURATION_7",
+                "label" : "DURATION 7",
                 "color" : "#8bc34a",
                 "settings" : { },
                 "_hash" : 0.8467074853780997,
@@ -4267,7 +4267,7 @@
               }, {
                 "name" : "DURATION_8",
                 "type" : "timeseries",
-                "label" : "DURATION_9",
+                "label" : "DURATION 9",
                 "color" : "#3f51b5",
                 "settings" : { },
                 "_hash" : 0.09041505341686795,
