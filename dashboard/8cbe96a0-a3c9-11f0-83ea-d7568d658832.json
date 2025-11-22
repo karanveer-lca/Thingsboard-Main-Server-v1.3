@@ -7513,6 +7513,45 @@
                 "backgroundImageUrl" : null,
                 "mobileAutoFillHeight" : false,
                 "mobileRowHeight" : 70
+              },
+              "breakpoints" : {
+                "xl" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "#07111D",
+                    "columns" : 200,
+                    "margin" : 0,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "100%",
+                    "minColumns" : 10,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : true,
+                    "rowHeight" : 70,
+                    "backgroundImageUrl" : null,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "960d2463-8db1-2b2d-eff8-f5eca1146806" : {
+                      "sizeX" : 200,
+                      "sizeY" : 8,
+                      "row" : 0,
+                      "col" : 0
+                    },
+                    "4002f844-0060-3aad-afb5-5a7a5a189580" : {
+                      "sizeX" : 200,
+                      "sizeY" : 83,
+                      "row" : 8,
+                      "col" : 0
+                    },
+                    "cc47361f-bc1d-e030-f774-e01dade825b3" : {
+                      "sizeX" : 200,
+                      "sizeY" : 8,
+                      "row" : 92,
+                      "col" : 0
+                    }
+                  }
+                }
               }
             }
           }
