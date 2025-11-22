@@ -6454,7 +6454,7 @@
           "col" : 0,
           "id" : "4002f844-0060-3aad-afb5-5a7a5a189580"
         },
-        "39599364-a307-1046-77f6-36647dcfa6dc" : {
+        "6e582c1c-54ca-d7b3-59f7-13a193281b10" : {
           "typeFullFqn" : "tenant.navigation_ribbon",
           "type" : "static",
           "sizeX" : 7.5,
@@ -6483,20 +6483,15 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "navigationStates" : "[\r\n  { \"id\": \"plant_sld\", \"label\": \"SLD Plant View\" },\r\n  { \"id\": \"machine_dashboard\", \"label\": \"Machine Dashboard\" },\r\n  { \"id\": \"duration_header\", \"label\": \"Duration Header\" },\r\n  { \"id\": \"occurrence_header\", \"label\": \"Occurrence Header\" },\r\n  { \"id\": \"job_card\", \"label\": \"Job Card Panel\" },\r\n  { \"id\": \"control_panel\", \"label\": \"Control Panel\" },\r\n  { \"id\": \"ai_analysis\", \"label\": \"AI Analysis\" }\r\n]\r\n"
+              "cardHtml" : "<div class='card'>HTML code here</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
             },
             "title" : "HTML Card",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "enableDataExport" : true,
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "dropShadow" : true
           },
           "row" : 0,
           "col" : 0,
-          "id" : "39599364-a307-1046-77f6-36647dcfa6dc"
+          "id" : "6e582c1c-54ca-d7b3-59f7-13a193281b10"
         }
       },
       "states" : {
@@ -6861,9 +6856,9 @@
                   "row" : 14,
                   "col" : 33
                 },
-                "39599364-a307-1046-77f6-36647dcfa6dc" : {
+                "6e582c1c-54ca-d7b3-59f7-13a193281b10" : {
                   "sizeX" : 113,
-                  "sizeY" : 6,
+                  "sizeY" : 25,
                   "row" : 71,
                   "col" : 0
                 }
