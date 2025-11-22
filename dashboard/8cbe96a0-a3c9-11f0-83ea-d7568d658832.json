@@ -7073,7 +7073,7 @@
                 "backgroundSizeMode" : "100%",
                 "minColumns" : 10,
                 "viewFormat" : "grid",
-                "autoFillHeight" : true,
+                "autoFillHeight" : false,
                 "rowHeight" : 70,
                 "backgroundImageUrl" : null,
                 "mobileAutoFillHeight" : false,
