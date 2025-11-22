@@ -6635,6 +6635,52 @@
           "row" : 0,
           "col" : 0,
           "id" : "cc47361f-bc1d-e030-f774-e01dade825b3"
+        },
+        "e4fe5530-635a-c134-0c73-d5bf207bfa05" : {
+          "typeFullFqn" : "tenant.navigation_ribbon",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>HTML code here</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "HTML Card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "margin" : "0px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e4fe5530-635a-c134-0c73-d5bf207bfa05"
         }
       },
       "states" : {
@@ -7419,7 +7465,14 @@
           "root" : false,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "e4fe5530-635a-c134-0c73-d5bf207bfa05" : {
+                  "sizeX" : 23,
+                  "sizeY" : 1,
+                  "row" : 10,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "layoutType" : "default",
                 "backgroundColor" : "#eeeeee",
