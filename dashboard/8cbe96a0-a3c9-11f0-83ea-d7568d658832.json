@@ -4179,7 +4179,13 @@
                 "label" : "DURATION_1",
                 "color" : "#3f51b5",
                 "settings" : { },
-                "_hash" : 0.41233672082217177
+                "_hash" : 0.41233672082217177,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "var oneDecimal = Math.round(value * 10) / 10;\r\nreturn (100 - oneDecimal.toFixed(1)).toFixed(1) + \"%\";\r\n"
               }, {
                 "name" : "DURATION_2",
                 "type" : "timeseries",
