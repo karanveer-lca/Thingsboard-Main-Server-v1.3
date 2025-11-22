@@ -4181,60 +4181,102 @@
                 "settings" : { },
                 "_hash" : 0.41233672082217177,
                 "aggregationType" : null,
-                "units" : null,
+                "units" : "min",
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "var oneDecimal = Math.round(value * 10) / 10;\r\nreturn (100 - oneDecimal.toFixed(1)).toFixed(1) + \"%\";\r\n"
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
               }, {
                 "name" : "DURATION_2",
                 "type" : "timeseries",
                 "label" : "DURATION_2",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.12367413553910722
+                "_hash" : 0.12367413553910722,
+                "aggregationType" : null,
+                "units" : "min",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
               }, {
                 "name" : "DURATION_3",
                 "type" : "timeseries",
                 "label" : "DURATION_3",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.7775026613887461
+                "_hash" : 0.7775026613887461,
+                "aggregationType" : null,
+                "units" : "min",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
               }, {
                 "name" : "DURATION_4",
                 "type" : "timeseries",
                 "label" : "DURATION_4",
                 "color" : "#ffc107",
                 "settings" : { },
-                "_hash" : 0.24009798738565324
+                "_hash" : 0.24009798738565324,
+                "aggregationType" : null,
+                "units" : "min",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
               }, {
                 "name" : "DURATION_5",
                 "type" : "timeseries",
                 "label" : "DURATION_5",
                 "color" : "#607d8b",
                 "settings" : { },
-                "_hash" : 0.28477164479377515
+                "_hash" : 0.28477164479377515,
+                "aggregationType" : null,
+                "units" : "min",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
               }, {
                 "name" : "DURATION_6",
                 "type" : "timeseries",
                 "label" : "DURATION_6",
                 "color" : "#9c27b0",
                 "settings" : { },
-                "_hash" : 0.7474744072160737
+                "_hash" : 0.7474744072160737,
+                "aggregationType" : null,
+                "units" : "min",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
               }, {
                 "name" : "DURATION_7",
                 "type" : "timeseries",
                 "label" : "DURATION_7",
                 "color" : "#8bc34a",
                 "settings" : { },
-                "_hash" : 0.8467074853780997
+                "_hash" : 0.8467074853780997,
+                "aggregationType" : null,
+                "units" : "min",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
               }, {
                 "name" : "DURATION_8",
                 "type" : "timeseries",
                 "label" : "DURATION_9",
                 "color" : "#3f51b5",
                 "settings" : { },
-                "_hash" : 0.09041505341686795
+                "_hash" : 0.09041505341686795,
+                "aggregationType" : null,
+                "units" : "min",
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -4313,7 +4355,7 @@
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
             "displayTimewindow" : true,
-            "configMode" : "advanced",
+            "configMode" : "basic",
             "titleFont" : null,
             "titleColor" : null,
             "titleIcon" : null,
