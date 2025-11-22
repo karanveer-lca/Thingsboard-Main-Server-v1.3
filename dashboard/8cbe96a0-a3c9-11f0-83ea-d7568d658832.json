@@ -6259,56 +6259,56 @@
               "dataKeys" : [ {
                 "name" : "OCCURRENCE_1",
                 "type" : "timeseries",
-                "label" : "OCC-1",
+                "label" : "OCCURRENCE 1",
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.8213593363335148
               }, {
                 "name" : "OCCURRENCE_2",
                 "type" : "timeseries",
-                "label" : "OCC-2",
+                "label" : "OCCURRENCE 2",
                 "color" : "#4caf50",
                 "settings" : { },
                 "_hash" : 0.598957492892101
               }, {
                 "name" : "OCCURRENCE_3",
                 "type" : "timeseries",
-                "label" : "OCC-3",
+                "label" : "OCCURRENCE 3",
                 "color" : "#f44336",
                 "settings" : { },
                 "_hash" : 0.07489542819270922
               }, {
                 "name" : "OCCURRENCE_4",
                 "type" : "timeseries",
-                "label" : "OCC-4",
+                "label" : "OCCURRENCE 4",
                 "color" : "#ffc107",
                 "settings" : { },
                 "_hash" : 0.7797987748335016
               }, {
                 "name" : "OCCURRENCE_5",
                 "type" : "timeseries",
-                "label" : "OCC-5",
+                "label" : "OCCURRENCE 5",
                 "color" : "#607d8b",
                 "settings" : { },
                 "_hash" : 0.6033076415743063
               }, {
                 "name" : "OCCURRENCE_6",
                 "type" : "timeseries",
-                "label" : "OCC-6",
+                "label" : "OCCURRENCE 6",
                 "color" : "#9c27b0",
                 "settings" : { },
                 "_hash" : 0.8460145617263857
               }, {
                 "name" : "OCCURRENCE_7",
                 "type" : "timeseries",
-                "label" : "OCC-7",
+                "label" : "OCCURRENCE 7",
                 "color" : "#8bc34a",
                 "settings" : { },
                 "_hash" : 0.291078213780656
               }, {
                 "name" : "OCCURRENCE_9",
                 "type" : "timeseries",
-                "label" : "OCC-8",
+                "label" : "OCCURRENCE 8",
                 "color" : "#3f51b5",
                 "settings" : { },
                 "_hash" : 0.8649144542781827
