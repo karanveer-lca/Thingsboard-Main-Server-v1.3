@@ -438,8 +438,8 @@
               }, {
                 "name" : "Duration",
                 "icon" : "timer",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
+                "useShowWidgetActionFunction" : true,
+                "showWidgetActionFunction" : "return false;",
                 "type" : "openDashboardState",
                 "targetDashboardStateId" : "job_duration_details",
                 "setEntityId" : true,
@@ -451,8 +451,8 @@
               }, {
                 "name" : "Occurrence",
                 "icon" : "mark_chat_unread",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
+                "useShowWidgetActionFunction" : true,
+                "showWidgetActionFunction" : "return false;",
                 "type" : "openDashboardState",
                 "targetDashboardStateId" : "job_occurrence_details",
                 "setEntityId" : true,
