@@ -6482,7 +6482,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "n8nUrl" : "https://n8n.lcaforyou.com/webhook/ai_summary",
+              "n8nUrl" : "https://n8n.lcaforyou.com/webhook-test/ai_summary",
               "deviceId" : "6bb3a990-c328-11f0-9786-450cd38b38bb",
               "assetId" : "996da650-b8ca-11f0-95d9-fff9d6e53631",
               "attributeName" : "ai_response",
