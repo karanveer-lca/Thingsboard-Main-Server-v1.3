@@ -4600,7 +4600,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "updateDashboardState",
-                "targetDashboardStateId" : "control_panel",
+                "targetDashboardStateId" : "job_card",
                 "setEntityId" : false,
                 "stateEntityParamName" : null,
                 "openRightLayout" : false,
