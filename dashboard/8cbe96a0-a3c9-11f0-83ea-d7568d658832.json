@@ -6486,7 +6486,13 @@
               "navigationStates" : "[\r\n  { \"id\": \"plant_sld\", \"label\": \"SLD Plant View\" },\r\n  { \"id\": \"machine_dashboard\", \"label\": \"Machine Dashboard\" },\r\n  { \"id\": \"duration_header\", \"label\": \"Duration Header\" },\r\n  { \"id\": \"occurrence_header\", \"label\": \"Occurrence Header\" },\r\n  { \"id\": \"job_card\", \"label\": \"Job Card Panel\" },\r\n  { \"id\": \"control_panel\", \"label\": \"Control Panel\" },\r\n  { \"id\": \"ai_analysis\", \"label\": \"AI Analysis\" }\r\n]\r\n"
             },
             "title" : "HTML Card",
-            "dropShadow" : true
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
