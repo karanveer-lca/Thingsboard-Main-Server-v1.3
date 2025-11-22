@@ -21694,43 +21694,6 @@
             }
           }
         },
-        "control_panel" : {
-          "name" : "Control Panel",
-          "root" : false,
-          "layouts" : {
-            "main" : {
-              "widgets" : {
-                "59cf5a8f-a433-5d60-9767-9d570bbf7ad6" : {
-                  "sizeX" : 24,
-                  "sizeY" : 1,
-                  "row" : 0,
-                  "col" : 0
-                },
-                "8664cd6c-dce6-3826-d50d-cf9ef7922b3e" : {
-                  "sizeX" : 24,
-                  "sizeY" : 12,
-                  "row" : 1,
-                  "col" : 0
-                }
-              },
-              "gridSettings" : {
-                "layoutType" : "default",
-                "backgroundColor" : "#07111D",
-                "columns" : 24,
-                "margin" : 5,
-                "outerMargin" : true,
-                "backgroundSizeMode" : "100%",
-                "minColumns" : 24,
-                "viewFormat" : "grid",
-                "autoFillHeight" : true,
-                "rowHeight" : 70,
-                "backgroundImageUrl" : null,
-                "mobileAutoFillHeight" : false,
-                "mobileRowHeight" : 70
-              }
-            }
-          }
-        },
         "abs_dashboard" : {
           "name" : "Abs Dashboard",
           "root" : false,
@@ -23004,6 +22967,43 @@
                     }
                   }
                 }
+              }
+            }
+          }
+        },
+        "job_card" : {
+          "name" : "Job Card Panel",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "59cf5a8f-a433-5d60-9767-9d570bbf7ad6" : {
+                  "sizeX" : 24,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "8664cd6c-dce6-3826-d50d-cf9ef7922b3e" : {
+                  "sizeX" : 24,
+                  "sizeY" : 12,
+                  "row" : 1,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#07111D",
+                "columns" : 24,
+                "margin" : 5,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
               }
             }
           }
