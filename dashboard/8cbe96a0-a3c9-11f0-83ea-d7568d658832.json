@@ -6871,7 +6871,7 @@
               "isRequired" : true,
               "requiredErrorMessage" : "",
               "showResultMessage" : true,
-              "labelValue" : "",
+              "labelValue" : "0: INPUT, 1: MACH, 2: SUM",
               "minValue" : 0,
               "maxValue" : 2
             },
@@ -6888,7 +6888,7 @@
             "actions" : { },
             "displayTimewindow" : true,
             "showTitleIcon" : false,
-            "titleTooltip" : "\"0\" for user input, \"1\" for machine's value, \"2\" for sum",
+            "titleTooltip" : "",
             "enableDataExport" : false,
             "widgetCss" : "",
             "pageSize" : 1024,
