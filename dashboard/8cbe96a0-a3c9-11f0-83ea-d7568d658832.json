@@ -8158,13 +8158,13 @@
                   "widgets" : {
                     "a59c0072-2f2f-92f7-a9d8-42cbfa84837e" : {
                       "sizeX" : 113,
-                      "sizeY" : 61,
-                      "row" : 8,
+                      "sizeY" : 64,
+                      "row" : 5,
                       "col" : 0
                     },
                     "0db78566-99ae-6da5-0464-63765c3f7637" : {
                       "sizeX" : 113,
-                      "sizeY" : 8,
+                      "sizeY" : 5,
                       "row" : 0,
                       "col" : 0
                     },
