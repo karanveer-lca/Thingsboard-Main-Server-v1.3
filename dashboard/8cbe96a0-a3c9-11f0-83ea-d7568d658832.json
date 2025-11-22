@@ -4524,7 +4524,7 @@
             "dropShadow" : true,
             "actions" : {
               "headerButton" : [ {
-                "name" : "Control Panel",
+                "name" : "Job Card",
                 "buttonType" : "raised",
                 "showIcon" : true,
                 "icon" : "more_horiz",
