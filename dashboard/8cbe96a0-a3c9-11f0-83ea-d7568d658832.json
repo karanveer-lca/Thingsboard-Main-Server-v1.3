@@ -423,24 +423,6 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "019c3228-5791-7fdc-a5b7-14f377330b70"
-              }, {
-                "name" : "Machine list",
-                "buttonType" : "stroked",
-                "showIcon" : true,
-                "icon" : "more_horiz",
-                "buttonColor" : "#FFFFFF",
-                "buttonBorderColor" : "#FFFFFF",
-                "customButtonStyle" : { },
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "plant_sld",
-                "setEntityId" : true,
-                "stateEntityParamName" : null,
-                "openRightLayout" : false,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "087610ea-08be-d3f6-939a-3c4fef731cc3"
               } ],
               "actionCellButton" : [ {
                 "name" : "Edit asset",
