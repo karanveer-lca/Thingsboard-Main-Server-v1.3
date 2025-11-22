@@ -434,7 +434,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "machine_list",
+                "targetDashboardStateId" : "plant_sld",
                 "setEntityId" : true,
                 "stateEntityParamName" : null,
                 "openRightLayout" : false,
