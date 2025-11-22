@@ -1,0 +1,25 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "custom",
+    "description" : null,
+    "externalId" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "cc4c4680-9282-11f0-8111-6db5412d1741"
+    },
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "cc4c4680-9282-11f0-8111-6db5412d1741"
+    },
+    "image" : null,
+    "name" : "PMS WIDGETS",
+    "order" : null,
+    "scada" : false,
+    "title" : "PMS WIDGETS"
+  },
+  "fqns" : [ "sld_diagram", "ai_summary", "navigation_ribbon" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

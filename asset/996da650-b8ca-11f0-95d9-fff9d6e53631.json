@@ -1,0 +1,41 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "228456d0-9168-11f0-84d5-efc64010e13c"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : {
+      "entityType" : "ASSET",
+      "id" : "996da650-b8ca-11f0-95d9-fff9d6e53631"
+    },
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "996da650-b8ca-11f0-95d9-fff9d6e53631"
+    },
+    "label" : null,
+    "name" : "VARIABLES",
+    "ownerId" : null,
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ai_response",
+      "lastUpdateTs" : 1763853147254,
+      "longValue" : null,
+      "strValue" : "{\n  \"summary\": \"The production system is experiencing significant downtime due to a few critical alarms with high durations and occurrences. Alarm 2, in particular, is responsible for the majority of the production impact and requires immediate attention.\",\n  \"criticalIssues\": [\n    \"Alarm 2 shows extreme duration and impact scores, contributing to the majority of downtime.\",\n    \"Alarm 5 has a high duration and moderate occurrence, indicating a significant impact.\",\n    \"Alarm 4's duration and occurrences suggest it is a chronic issue that needs resolution.\"\n  ],\n  \"metrics\": {\n    \"totalDowntime\": \"287328 seconds (15.9% of potential production time)\",\n    \"mostProblematicAlarm\": \"Alarm 2 - extremely high duration of 199473 seconds despite only triggering 4 times\",\n    \"estimatedProductionLoss\": \"2873 units\"\n  },\n  \"recommendations\": [\n    \"Prioritize resolving Alarm 2 immediately as it accounts for the majority of downtime with only a few occurrences, indicating a major systemic issue.\",\n    \"Investigate Alarm 5 for recurring causes as its impact score suggests it is contributing significantly to downtime.\",\n    \"Analyze Alarm 4 and Alarm 9 for patterns indicating chronic issues and implement preventive measures to reduce their frequency.\",\n    \"Implement predictive maintenance protocols for alarms with moderate durations and high occurrences, focusing on Alarm 1 and Alarm 3.\",\n    \"Provide operator training focused on handling and mitigating alarms contributing to cascading failures.\"\n  ],\n  \"predictions\": \"In the next 8 hours, Alarm 2 is likely to cause significant downtime unless addressed. Alarms 4 and 5 are trending upward and may result in chronic disruptions if not mitigated. Production loss may exceed 700 units if current patterns persist.\",\n  \"urgencyLevel\": \"CRITICAL\"\n}"
+    } ]
+  },
+  "calculatedFields" : [ ]
+}
