@@ -338,6 +338,13 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
+              }, {
+                "name" : "oee_pct",
+                "type" : "timeseries",
+                "label" : "oee_pct",
+                "color" : "#ff9800",
+                "settings" : { },
+                "_hash" : 0.17221561005434338
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
