@@ -6890,6 +6890,7 @@
             "showTitleIcon" : false,
             "titleTooltip" : "",
             "enableDataExport" : false,
+            "borderRadius" : "10px",
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
