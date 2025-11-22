@@ -45,11 +45,11 @@
       "type" : "Success"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 4,
+      "toIndex" : 9,
       "type" : "False"
     }, {
       "fromIndex" : 5,
-      "toIndex" : 4,
+      "toIndex" : 9,
       "type" : "True"
     }, {
       "fromIndex" : 6,
@@ -58,6 +58,10 @@
     }, {
       "fromIndex" : 8,
       "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 4,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 5,
@@ -325,6 +329,36 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 425,
+        "layoutY" : 355
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6e160130-c7d6-11f0-ba24-45a5d1fbd209"
+      },
+      "name" : "Save Raw Data",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
     } ],
     "ruleChainConnections" : null
   },
@@ -340,7 +374,7 @@
     },
     "type" : "Uses",
     "typeGroup" : "COMMON",
-    "version" : 13452
+    "version" : 13491
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
