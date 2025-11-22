@@ -826,7 +826,7 @@
             "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : false,
-              "markdownTextPattern" : "<div style=\"position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#0f243e; color:#ffffff;\r\n    border:1px solid #001f33;\r\n    padding:6px 12px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700; line-height:1; text-transform:none; letter-spacing:0.3px;\r\n    font-size: clamp(14px, 1.9vw, 16px);\r\n    box-sizing:border-box;\r\n  \">\r\n    SHIFT START TIME\r\n  </div>\r\n</div>\r\n",
+              "markdownTextPattern" : "<div style=\"position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#0f243e; color:#ffffff;\r\n    border:1px solid #001f33;\r\n    padding:6px 12px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700; line-height:1; text-transform:none; letter-spacing:0.3px;\r\n    font-size: clamp(14px, 1.9vw, 16px);\r\n    box-sizing:border-box;\r\n  \">\r\n    SHIFT START\r\n  </div>\r\n</div>\r\n",
               "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
@@ -6870,6 +6870,181 @@
           "row" : 0,
           "col" : 0,
           "id" : "95a520a8-be88-89ea-69f5-59a762e3814c"
+        },
+        "c5f27599-0f12-c3f7-3669-c631e161ab56" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1758311408678,
+                  "endTimeMs" : 1758397808678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#0f243e; color:#ffffff;\r\n    border:1px solid #001f33;\r\n    padding:6px 12px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700; line-height:1; text-transform:none; letter-spacing:0.3px;\r\n    font-size: clamp(14px, 1.9vw, 16px);\r\n    box-sizing:border-box;\r\n  \">\r\n    MACHINE\r\n  </div>\r\n</div>\r\n",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "c5f27599-0f12-c3f7-3669-c631e161ab56"
+        },
+        "96fa4807-931f-c325-5eeb-87aa3b94e7c9" : {
+          "typeFullFqn" : "system.cards.markdown_card",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 3.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "dataKeys" : [ {
+                "name" : "cfg_start_ts",
+                "type" : "attribute",
+                "label" : "cfg_start_ts",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6073335651604582,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\n\r\nvar n = Number(value);\r\nif (!isFinite(n)) return null;\r\n\r\n// seconds → ms if needed; otherwise just round\r\nvar ms = n < 1e11 ? Math.round(n) * 1000 : Math.round(n);\r\n\r\nvar d = new Date(ms);\r\nvar hh = String(d.getHours()).padStart(2, \"0\");\r\nvar mm = String(d.getMinutes()).padStart(2, \"0\");\r\nvar ss = String(d.getSeconds()).padStart(2, \"0\");\r\n\r\nreturn hh + \":\" + mm + \":\" + ss;  // e.g., \"09:45:03\"\r\n"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1758311408678,
+                  "endTimeMs" : 1758397808678
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "useMarkdownTextFunction" : false,
+              "markdownTextPattern" : "<div style=\"position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#244062; color:#ff5a5a;\r\n    border:1px solid #001f33;   /* last cell on the right */\r\n    border-left:1;  \r\n    padding:6px 12px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700; line-height:1; text-transform:none; letter-spacing:0.3px;\r\n    font-size: clamp(14px, 1.9vw, 20px);\r\n    box-sizing:border-box;\r\n  \">\r\n    ${cfg_start_ts}\r\n  </div>\r\n</div>\r\n",
+              "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
+              "applyDefaultMarkdownStyle" : true,
+              "markdownCss" : ""
+            },
+            "title" : "Markdown/HTML Card",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "enableDataExport" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "96fa4807-931f-c325-5eeb-87aa3b94e7c9"
         }
       },
       "states" : {
@@ -7546,55 +7721,55 @@
                       "col" : 0
                     },
                     "24927fd2-6e85-ec50-79c7-f2f916bf4036" : {
-                      "sizeX" : 11,
+                      "sizeX" : 9,
                       "sizeY" : 3,
                       "row" : 8,
-                      "col" : 11
+                      "col" : 9
                     },
                     "0a56916b-40e1-efcc-86dd-aef25ac85350" : {
-                      "sizeX" : 11,
+                      "sizeX" : 9,
                       "sizeY" : 3,
                       "row" : 8,
-                      "col" : 22
+                      "col" : 18
                     },
                     "a6997098-97cd-293c-7b96-ed0d82f326af" : {
-                      "sizeX" : 11,
+                      "sizeX" : 9,
                       "sizeY" : 3,
                       "row" : 8,
-                      "col" : 33
+                      "col" : 27
                     },
                     "7f7a7db3-7750-af8f-b4df-7667af12d0cc" : {
-                      "sizeX" : 11,
+                      "sizeX" : 9,
                       "sizeY" : 3,
                       "row" : 8,
                       "col" : 0
                     },
                     "564c3569-1df4-8fd3-c545-7e3e1a58ed19" : {
-                      "sizeX" : 11,
+                      "sizeX" : 9,
                       "sizeY" : 3,
                       "row" : 11,
-                      "col" : 11
+                      "col" : 9
                     },
                     "73c8aba0-caeb-945f-4c67-f5c7f6f1c661" : {
-                      "sizeX" : 11,
+                      "sizeX" : 9,
                       "sizeY" : 3,
                       "row" : 11,
-                      "col" : 22
+                      "col" : 18
                     },
                     "dfc83aa9-476e-7370-ac7c-d48ea4d03099" : {
-                      "sizeX" : 11,
+                      "sizeX" : 9,
                       "sizeY" : 3,
                       "row" : 11,
-                      "col" : 33
+                      "col" : 27
                     },
                     "87a7e163-ede0-2604-acb8-1a2b58ae0b74" : {
-                      "sizeX" : 11,
+                      "sizeX" : 9,
                       "sizeY" : 3,
                       "row" : 11,
                       "col" : 0
                     },
                     "9b5e7b12-d863-8d49-b964-58da38cd1d0d" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 50,
                       "col" : 0
@@ -7603,22 +7778,22 @@
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 50,
-                      "col" : 33
+                      "col" : 35
                     },
                     "1bf20d2b-807a-93fa-e465-677539ad1eff" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 53,
                       "col" : 0
                     },
                     "3d5595fd-2f1b-9a4b-5273-639a3beac8d2" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 59,
                       "col" : 0
                     },
                     "161afa1a-3850-dd8e-1147-d9aff509952a" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 56,
                       "col" : 0
@@ -7627,22 +7802,22 @@
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 59,
-                      "col" : 33
+                      "col" : 35
                     },
                     "c2f6f9d4-2b56-dbc1-2a96-cdb350552324" : {
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 53,
-                      "col" : 33
+                      "col" : 35
                     },
                     "18d3a429-e12c-b2c4-34fa-efc70603ea06" : {
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 56,
-                      "col" : 33
+                      "col" : 35
                     },
                     "33fa0f5c-c363-795a-8bdb-1f81697e5c75" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 17,
                       "col" : 0
@@ -7651,10 +7826,10 @@
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 20,
-                      "col" : 33
+                      "col" : 35
                     },
                     "73c2a07f-0555-acb8-5e5b-544a3e436503" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 62,
                       "col" : 0
@@ -7663,16 +7838,16 @@
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 62,
-                      "col" : 33
+                      "col" : 35
                     },
                     "1030c6d8-0412-e3c4-c53f-647ab3e787de" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 20,
                       "col" : 0
                     },
                     "39e0eae7-5598-3408-91ba-afc720796a5b" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 29,
                       "col" : 0
@@ -7681,10 +7856,10 @@
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 29,
-                      "col" : 33
+                      "col" : 35
                     },
                     "72b74bbd-cde3-5416-67b2-196968dedc47" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 32,
                       "col" : 0
@@ -7693,37 +7868,37 @@
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 32,
-                      "col" : 33
+                      "col" : 35
                     },
                     "980665b6-9ed9-f6fa-66c2-2da0faf039a7" : {
-                      "sizeX" : 66,
+                      "sizeX" : 64,
                       "sizeY" : 27,
                       "row" : 8,
-                      "col" : 47
+                      "col" : 49
                     },
                     "207e175c-197b-327a-8b7a-fb05b4a40f58" : {
-                      "sizeX" : 44,
+                      "sizeX" : 46,
                       "sizeY" : 3,
                       "row" : 35,
                       "col" : 0
                     },
                     "e6403d54-8003-3713-2bd3-10957a960792" : {
-                      "sizeX" : 66,
+                      "sizeX" : 64,
                       "sizeY" : 3,
                       "row" : 35,
-                      "col" : 47
+                      "col" : 49
                     },
                     "9e206bbd-9e37-d4ac-b2a2-81337d822a72" : {
-                      "sizeX" : 66,
+                      "sizeX" : 64,
                       "sizeY" : 3,
                       "row" : 5,
-                      "col" : 47
+                      "col" : 49
                     },
                     "932b0386-178b-9dae-140b-8e7f5873f61d" : {
-                      "sizeX" : 66,
+                      "sizeX" : 64,
                       "sizeY" : 27,
                       "row" : 38,
-                      "col" : 47
+                      "col" : 49
                     },
                     "ca567571-6ff8-6685-963b-4189bd428ce2" : {
                       "sizeX" : 113,
@@ -7732,13 +7907,13 @@
                       "col" : 0
                     },
                     "e8e01d6c-4cde-7a38-5cd2-9533e516f07e" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 23,
                       "col" : 0
                     },
                     "de7798a2-b386-05ad-1e17-1f17270834dd" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 26,
                       "col" : 0
@@ -7747,46 +7922,46 @@
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 23,
-                      "col" : 33
+                      "col" : 35
                     },
                     "2f738dc6-90ca-3b73-cd6e-56a4d1960cd1" : {
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 26,
-                      "col" : 33
+                      "col" : 35
                     },
                     "bb00c8b9-b27c-b53b-b5d2-7c9f0e0a6bc0" : {
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 17,
-                      "col" : 33
+                      "col" : 35
                     },
                     "075d8860-7b45-00e4-79c4-37c2051e27ba" : {
                       "sizeX" : 3,
                       "sizeY" : 60,
                       "row" : 5,
-                      "col" : 44
+                      "col" : 46
                     },
                     "780544af-694d-5f22-ccfd-9a07c9f721d7" : {
-                      "sizeX" : 44,
+                      "sizeX" : 46,
                       "sizeY" : 3,
                       "row" : 5,
                       "col" : 0
                     },
                     "67dfe663-44b6-a104-3ce4-ef9787812792" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 41,
                       "col" : 0
                     },
                     "27d58bbc-d521-5de3-2a5c-a4823216986c" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 44,
                       "col" : 0
                     },
                     "08918696-f132-3677-f266-d97352638c98" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 47,
                       "col" : 0
@@ -7795,22 +7970,22 @@
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 41,
-                      "col" : 33
+                      "col" : 35
                     },
                     "158e8090-0cf8-aab0-17cd-81a820170287" : {
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 44,
-                      "col" : 33
+                      "col" : 35
                     },
                     "befe7a8a-6597-8a4c-ec3d-cbb17faffb59" : {
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 47,
-                      "col" : 33
+                      "col" : 35
                     },
                     "988c6097-fe43-2143-247c-cf0c02f5b762" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 38,
                       "col" : 0
@@ -7819,10 +7994,10 @@
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 38,
-                      "col" : 33
+                      "col" : 35
                     },
                     "f8202545-4a4e-aabf-6cb4-644bc7680a57" : {
-                      "sizeX" : 33,
+                      "sizeX" : 35,
                       "sizeY" : 3,
                       "row" : 14,
                       "col" : 0
@@ -7831,13 +8006,25 @@
                       "sizeX" : 11,
                       "sizeY" : 3,
                       "row" : 14,
-                      "col" : 33
+                      "col" : 35
                     },
                     "6e582c1c-54ca-d7b3-59f7-13a193281b10" : {
                       "sizeX" : 113,
                       "sizeY" : 5,
                       "row" : 69,
                       "col" : 0
+                    },
+                    "c5f27599-0f12-c3f7-3669-c631e161ab56" : {
+                      "sizeX" : 10,
+                      "sizeY" : 3,
+                      "row" : 8,
+                      "col" : 36
+                    },
+                    "96fa4807-931f-c325-5eeb-87aa3b94e7c9" : {
+                      "sizeX" : 10,
+                      "sizeY" : 3,
+                      "row" : 11,
+                      "col" : 36
                     }
                   }
                 }
