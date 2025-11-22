@@ -4177,9 +4177,9 @@
                 "name" : "DURATION_1",
                 "type" : "timeseries",
                 "label" : "DURATION_1",
-                "color" : "#2196f3",
+                "color" : "#3f51b5",
                 "settings" : { },
-                "_hash" : 0.37417634045378234
+                "_hash" : 0.41233672082217177
               }, {
                 "name" : "DURATION_2",
                 "type" : "timeseries",
@@ -4307,7 +4307,7 @@
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
             "displayTimewindow" : true,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "titleFont" : null,
             "titleColor" : null,
             "titleIcon" : null,
