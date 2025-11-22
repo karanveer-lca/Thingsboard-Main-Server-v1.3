@@ -7598,10 +7598,7 @@
             "type" : "stateEntity",
             "resolveMultiple" : false,
             "stateEntityParamName" : "machineId",
-            "defaultStateEntity" : {
-              "entityType" : "DEVICE",
-              "id" : "a94d03f0-a2c1-11f0-bfaa-5dcc0fb52ded"
-            }
+            "defaultStateEntity" : null
           }
         }
       },
