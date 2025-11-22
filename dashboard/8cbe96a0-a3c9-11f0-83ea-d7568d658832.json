@@ -7099,7 +7099,7 @@
           "col" : 0,
           "id" : "ed85003b-2761-44b9-ecc2-96c1b5444439"
         },
-        "e0fadd3b-abe8-806a-8a99-97a004c3c428" : {
+        "aeb2e97f-f1ea-48ab-73ba-7a0048bd706c" : {
           "typeFullFqn" : "system.cards.markdown_card",
           "type" : "latest",
           "sizeX" : 5,
@@ -7178,7 +7178,7 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "e0fadd3b-abe8-806a-8a99-97a004c3c428"
+          "id" : "aeb2e97f-f1ea-48ab-73ba-7a0048bd706c"
         }
       },
       "states" : {
@@ -8274,19 +8274,19 @@
                   },
                   "widgets" : {
                     "a59c0072-2f2f-92f7-a9d8-42cbfa84837e" : {
-                      "sizeX" : 200,
+                      "sizeX" : 113,
                       "sizeY" : 61,
                       "row" : 8,
                       "col" : 0
                     },
                     "0db78566-99ae-6da5-0464-63765c3f7637" : {
-                      "sizeX" : 200,
+                      "sizeX" : 113,
                       "sizeY" : 8,
                       "row" : 0,
                       "col" : 0
                     },
                     "c360985b-be27-9b9e-53cd-55bcee548ba1" : {
-                      "sizeX" : 200,
+                      "sizeX" : 113,
                       "sizeY" : 5,
                       "row" : 69,
                       "col" : 0
@@ -8295,16 +8295,16 @@
                       "sizeX" : 10,
                       "sizeY" : 69,
                       "row" : 0,
-                      "col" : 200
+                      "col" : 113
                     },
                     "6389875a-45d9-8dd4-bfdc-8b94b92e8233" : {
                       "sizeX" : 9,
                       "sizeY" : 5,
                       "row" : 69,
-                      "col" : 200
+                      "col" : 113
                     },
-                    "e0fadd3b-abe8-806a-8a99-97a004c3c428" : {
-                      "sizeX" : 200,
+                    "aeb2e97f-f1ea-48ab-73ba-7a0048bd706c" : {
+                      "sizeX" : 113,
                       "sizeY" : 5,
                       "row" : 74,
                       "col" : 0
