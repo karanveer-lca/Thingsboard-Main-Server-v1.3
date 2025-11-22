@@ -6224,78 +6224,64 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "entityAliasId" : "577f7cce-91ca-ceb3-dcb7-0a5fbcbc1c85",
               "filterId" : null,
               "dataKeys" : [ {
-                "name" : "act_occ_1",
+                "name" : "OCCURRENCE-1",
                 "type" : "timeseries",
                 "label" : "OCC-1",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.5389109144216451
+                "_hash" : 0.10919510964116619
               }, {
-                "name" : "act_occ_2",
+                "name" : "OCCURRENCE-2",
                 "type" : "timeseries",
                 "label" : "OCC-2",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.8543435497859834
+                "_hash" : 0.47789465591879654
               }, {
-                "name" : "act_occ_3",
+                "name" : "OCCURRENCE-3",
                 "type" : "timeseries",
                 "label" : "OCC-3",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.043880623059022295
+                "_hash" : 0.6843930005919528
               }, {
-                "name" : "act_occ_4",
+                "name" : "OCCURRENCE-4",
                 "type" : "timeseries",
                 "label" : "OCC-4",
                 "color" : "#ffc107",
                 "settings" : { },
-                "_hash" : 0.08979787893262914
+                "_hash" : 0.03087340488101664
               }, {
-                "name" : "act_occ_5",
+                "name" : "OCCURRENCE-5",
                 "type" : "timeseries",
                 "label" : "OCC-5",
                 "color" : "#607d8b",
                 "settings" : { },
-                "_hash" : 0.7285047099512698
+                "_hash" : 0.8405016064506897
               }, {
-                "name" : "act_occ_6",
+                "name" : "OCCURRENCE-6",
                 "type" : "timeseries",
                 "label" : "OCC-6",
                 "color" : "#9c27b0",
                 "settings" : { },
-                "_hash" : 0.3826474245531727
+                "_hash" : 0.6353872355040941
               }, {
-                "name" : "act_occ_7",
+                "name" : "OCCURRENCE-7",
                 "type" : "timeseries",
                 "label" : "OCC-7",
                 "color" : "#8bc34a",
                 "settings" : { },
-                "_hash" : 0.9601725555400343
+                "_hash" : 0.49627781406078164
               }, {
-                "name" : "act_occ_8",
+                "name" : "OCCURRENCE-8",
                 "type" : "timeseries",
                 "label" : "OCC-8",
                 "color" : "#3f51b5",
                 "settings" : { },
-                "_hash" : 0.6966393172884743
-              }, {
-                "name" : "act_occ_9",
-                "type" : "timeseries",
-                "label" : "OCC-9",
-                "color" : "#e91e63",
-                "settings" : { },
-                "_hash" : 0.48388960793677094
-              }, {
-                "name" : "act_duration_s_10",
-                "type" : "timeseries",
-                "label" : "OCC-10",
-                "color" : "#ffeb3b",
-                "settings" : { },
-                "_hash" : 0.39798243918003817
+                "_hash" : 0.9989526430720053
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
