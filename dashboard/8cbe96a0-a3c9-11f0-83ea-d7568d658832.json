@@ -4179,7 +4179,7 @@
                 "label" : "DURATION-1",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.8250854477114702
+                "_hash" : 0.37417634045378234
               }, {
                 "name" : "DURATION_2",
                 "type" : "timeseries",
