@@ -6480,7 +6480,7 @@
             "showTitle" : false,
             "backgroundColor" : "rgb(255, 255, 255)",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
+            "padding" : "0px",
             "settings" : {
               "n8nUrl" : "https://n8n.lcaforyou.com/webhook/ai_summary",
               "deviceId" : "6bb3a990-c328-11f0-9786-450cd38b38bb",
@@ -6491,7 +6491,13 @@
               "includePayload" : true
             },
             "title" : "HTML Card",
-            "dropShadow" : true
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
