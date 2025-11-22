@@ -6542,51 +6542,6 @@
           "row" : 0,
           "col" : 0,
           "id" : "2b5002ff-3460-7727-39dd-76e0e8b57388"
-        },
-        "3a3cae5c-3cfe-dd22-dc12-fc42d46a35cd" : {
-          "typeFullFqn" : "tenant.collibellex.static",
-          "type" : "static",
-          "sizeX" : 7.5,
-          "sizeY" : 2.5,
-          "config" : {
-            "datasources" : [ {
-              "type" : "static",
-              "name" : "function",
-              "dataKeys" : [ {
-                "name" : "f(x)",
-                "type" : "function",
-                "label" : "Random",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.15479322438769105,
-                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
-              } ]
-            } ],
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "dashboardStateList" : [ {
-                "name" : "test",
-                "dashboardAlias" : "CAG1D1",
-                "listEntry" : "Device 1"
-              } ],
-              "fontSize" : 16,
-              "fontColor" : "#008a00",
-              "labelText" : "Change Dashboard State"
-            },
-            "title" : "Change Dashboard State",
-            "dropShadow" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "3a3cae5c-3cfe-dd22-dc12-fc42d46a35cd"
         }
       },
       "states" : {
@@ -6953,14 +6908,8 @@
                 },
                 "6e582c1c-54ca-d7b3-59f7-13a193281b10" : {
                   "sizeX" : 113,
-                  "sizeY" : 25,
+                  "sizeY" : 6,
                   "row" : 71,
-                  "col" : 0
-                },
-                "3a3cae5c-3cfe-dd22-dc12-fc42d46a35cd" : {
-                  "sizeX" : 62,
-                  "sizeY" : 20,
-                  "row" : 96,
                   "col" : 0
                 }
               },
