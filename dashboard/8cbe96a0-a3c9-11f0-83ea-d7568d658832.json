@@ -6937,7 +6937,7 @@
           "col" : 0,
           "id" : "fef4b1cb-27fb-f938-53e3-4fa385b52bae"
         },
-        "2f0e9841-0c10-913d-c842-84d13c74bde4" : {
+        "5e4afe8c-2994-8c5b-5cb7-e032d4d6f466" : {
           "typeFullFqn" : "system.cards.markdown_card",
           "type" : "latest",
           "sizeX" : 5,
@@ -7016,7 +7016,7 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "2f0e9841-0c10-913d-c842-84d13c74bde4"
+          "id" : "5e4afe8c-2994-8c5b-5cb7-e032d4d6f466"
         }
       },
       "states" : {
@@ -8195,27 +8195,27 @@
                     },
                     "4002f844-0060-3aad-afb5-5a7a5a189580" : {
                       "sizeX" : 113,
-                      "sizeY" : 83,
+                      "sizeY" : 61,
                       "row" : 8,
                       "col" : 0
                     },
                     "cc47361f-bc1d-e030-f774-e01dade825b3" : {
                       "sizeX" : 113,
                       "sizeY" : 9,
-                      "row" : 91,
+                      "row" : 69,
                       "col" : 0
                     },
                     "26fc9b06-2c1e-23bf-8607-6974a0b85e02" : {
                       "sizeX" : 113,
                       "sizeY" : 6,
-                      "row" : 100,
+                      "row" : 78,
                       "col" : 0
                     },
-                    "2f0e9841-0c10-913d-c842-84d13c74bde4" : {
+                    "5e4afe8c-2994-8c5b-5cb7-e032d4d6f466" : {
                       "sizeX" : 8,
-                      "sizeY" : 74,
+                      "sizeY" : 69,
                       "row" : 0,
-                      "col" : 114
+                      "col" : 113
                     }
                   }
                 }
