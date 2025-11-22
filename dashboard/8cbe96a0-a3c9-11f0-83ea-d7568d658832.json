@@ -7400,7 +7400,7 @@
               "widgets" : {
                 "a59c0072-2f2f-92f7-a9d8-42cbfa84837e" : {
                   "sizeX" : 24,
-                  "sizeY" : 10,
+                  "sizeY" : 11,
                   "row" : 1,
                   "col" : 0
                 },
@@ -7413,7 +7413,7 @@
                 "c360985b-be27-9b9e-53cd-55bcee548ba1" : {
                   "sizeX" : 24,
                   "sizeY" : 1,
-                  "row" : 11,
+                  "row" : 12,
                   "col" : 0
                 }
               },
