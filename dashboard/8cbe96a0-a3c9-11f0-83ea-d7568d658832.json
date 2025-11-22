@@ -5987,7 +5987,7 @@
                 "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value.toFixed(0);"
+                "postFuncBody" : "if (value === null || value === undefined || value === '') {\r\n  return 0;\r\n}\r\nreturn Number(value).toFixed(0);\r\n"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
