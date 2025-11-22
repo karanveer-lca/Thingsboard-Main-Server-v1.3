@@ -5023,12 +5023,12 @@
               "name" : "",
               "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
               "dataKeys" : [ {
-                "name" : "bad_qty_pcs",
+                "name" : "user_bad_prod_count_pcs",
                 "type" : "attribute",
-                "label" : "bad_qty_pcs",
+                "label" : "user_bad_prod_count_pcs",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.7487195597212778
+                "_hash" : 0.1588732616442763
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
