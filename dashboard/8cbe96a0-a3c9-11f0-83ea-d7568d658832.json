@@ -494,7 +494,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "openDashboardState",
-                "targetDashboardStateId" : "job_dashboard",
+                "targetDashboardStateId" : "machine_dashboard",
                 "setEntityId" : true,
                 "stateEntityParamName" : "jobcard",
                 "openRightLayout" : false,
