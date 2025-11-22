@@ -4331,31 +4331,13 @@
             "showLegend" : false,
             "widgetStyle" : { },
             "actions" : {
-              "headerButton" : [ {
-                "name" : "Control Panel",
-                "buttonType" : "stroked",
-                "showIcon" : true,
-                "icon" : "tune",
-                "buttonColor" : "#FFFFFF",
-                "buttonBorderColor" : "#FFFFFF",
-                "customButtonStyle" : { },
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "openDashboardState",
-                "targetDashboardStateId" : "control_panel",
-                "setEntityId" : true,
-                "stateEntityParamName" : null,
-                "openRightLayout" : false,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "d15bf987-bd21-d309-c8f0-6e54237a5100"
-              } ]
+              "headerButton" : [ ]
             },
             "showTitleIcon" : false,
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
             "displayTimewindow" : true,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "titleFont" : null,
             "titleColor" : null,
             "titleIcon" : null,
