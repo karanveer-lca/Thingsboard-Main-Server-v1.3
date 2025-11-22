@@ -8240,14 +8240,14 @@
                   "widgets" : {
                     "960d2463-8db1-2b2d-eff8-f5eca1146806" : {
                       "sizeX" : 113,
-                      "sizeY" : 8,
+                      "sizeY" : 5,
                       "row" : 0,
                       "col" : 0
                     },
                     "4002f844-0060-3aad-afb5-5a7a5a189580" : {
                       "sizeX" : 113,
-                      "sizeY" : 61,
-                      "row" : 8,
+                      "sizeY" : 64,
+                      "row" : 5,
                       "col" : 0
                     },
                     "cc47361f-bc1d-e030-f774-e01dade825b3" : {
