@@ -4171,78 +4171,64 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "entityAliasId" : "577f7cce-91ca-ceb3-dcb7-0a5fbcbc1c85",
               "filterId" : null,
               "dataKeys" : [ {
-                "name" : "act_duration_s_1",
+                "name" : "DURATION-1",
                 "type" : "timeseries",
                 "label" : "DURATION-1",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.381519829400198
+                "_hash" : 0.5797267968252287
               }, {
-                "name" : "act_duration_s_2",
+                "name" : "DURATION-2",
                 "type" : "timeseries",
                 "label" : "DURATION-2",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.8827885311577193
+                "_hash" : 0.04305403223339488
               }, {
-                "name" : "act_duration_s_3",
+                "name" : "DURATION-3",
                 "type" : "timeseries",
                 "label" : "DURATION-3",
                 "color" : "#f44336",
                 "settings" : { },
-                "_hash" : 0.4717069818422872
+                "_hash" : 0.2740587631182205
               }, {
-                "name" : "act_duration_s_4",
+                "name" : "DURATION-4",
                 "type" : "timeseries",
                 "label" : "DURATION-4",
                 "color" : "#ffc107",
                 "settings" : { },
-                "_hash" : 0.5229871407456452
+                "_hash" : 0.854790542202637
               }, {
-                "name" : "act_duration_s_5",
+                "name" : "DURATION-5",
                 "type" : "timeseries",
                 "label" : "DURATION-5",
                 "color" : "#607d8b",
                 "settings" : { },
-                "_hash" : 0.5493289760835972
+                "_hash" : 0.9329796355002151
               }, {
-                "name" : "act_duration_s_6",
+                "name" : "DURATION-6",
                 "type" : "timeseries",
                 "label" : "DURATION-6",
                 "color" : "#9c27b0",
                 "settings" : { },
-                "_hash" : 0.5837504398987319
+                "_hash" : 0.2829750163752718
               }, {
-                "name" : "act_duration_s_7",
+                "name" : "DURATION-7",
                 "type" : "timeseries",
                 "label" : "DURATION-7",
                 "color" : "#8bc34a",
                 "settings" : { },
-                "_hash" : 0.5728033238324883
+                "_hash" : 0.2105315417356497
               }, {
-                "name" : "act_duration_s_8",
+                "name" : "DURATION-8",
                 "type" : "timeseries",
                 "label" : "DURATION-8",
                 "color" : "#3f51b5",
                 "settings" : { },
-                "_hash" : 0.9198458104666984
-              }, {
-                "name" : "act_duration_s_9",
-                "type" : "timeseries",
-                "label" : "DURATION-9",
-                "color" : "#e91e63",
-                "settings" : { },
-                "_hash" : 0.4721523528114069
-              }, {
-                "name" : "act_duration_s_10",
-                "type" : "timeseries",
-                "label" : "DURATION-10",
-                "color" : "#ffeb3b",
-                "settings" : { },
-                "_hash" : 0.8705408934010034
+                "_hash" : 0.4235284412135003
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
