@@ -6542,50 +6542,6 @@
           "row" : 0,
           "col" : 0,
           "id" : "2b5002ff-3460-7727-39dd-76e0e8b57388"
-        },
-        "c911544e-8984-c98c-9890-030cab02dcb7" : {
-          "typeFullFqn" : "tenant.ai_summary",
-          "type" : "static",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "static",
-              "name" : "function",
-              "dataKeys" : [ {
-                "name" : "f(x)",
-                "type" : "function",
-                "label" : "Random",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.15479322438769105,
-                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
-              } ]
-            } ],
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "n8nUrl" : "https://your-n8n-instance.com/webhook/ai-analysis",
-              "deviceId" : "6bb3a990-c328-11f0-9786-450cd38b38bb",
-              "assetId" : "996da650-b8ca-11f0-95d9-fff9d6e53631",
-              "attributeName" : "ai_response",
-              "attributeScope" : "SERVER_SCOPE",
-              "requestMethod" : "GET",
-              "includePayload" : true
-            },
-            "title" : "HTML Card",
-            "dropShadow" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "c911544e-8984-c98c-9890-030cab02dcb7"
         }
       },
       "states" : {
@@ -6955,12 +6911,6 @@
                   "sizeY" : 25,
                   "row" : 71,
                   "col" : 0
-                },
-                "c911544e-8984-c98c-9890-030cab02dcb7" : {
-                  "sizeX" : 83,
-                  "sizeY" : 41,
-                  "row" : 12,
-                  "col" : 113
                 }
               },
               "gridSettings" : {
