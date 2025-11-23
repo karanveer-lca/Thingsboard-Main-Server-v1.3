@@ -8970,19 +8970,27 @@
               "dataKeys" : [ {
                 "name" : "good_qty_pcs",
                 "type" : "timeseries",
-                "label" : "good_qty_pcs",
-                "color" : "#2196f3",
+                "label" : "Good Prod.",
+                "color" : "#4CAF50",
                 "settings" : { },
                 "_hash" : 0.1849468806537634,
-                "decimals" : 0
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "bad_qty_pcs",
                 "type" : "timeseries",
-                "label" : "bad_qty_pcs",
-                "color" : "#4caf50",
+                "label" : "Bad Prod.",
+                "color" : "#F44336",
                 "settings" : { },
                 "_hash" : 0.4726955113600746,
-                "decimals" : 0
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -9020,7 +9028,7 @@
               }
             },
             "showTitle" : true,
-            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "backgroundColor" : "#07111D",
             "color" : null,
             "padding" : "0px",
             "settings" : {
@@ -9045,7 +9053,7 @@
                 "weight" : "400",
                 "lineHeight" : "16px"
               },
-              "legendLabelColor" : "rgba(0, 0, 0, 0.38)",
+              "legendLabelColor" : "rgba(255, 255, 255, 0.38)",
               "legendValueFont" : {
                 "family" : "Roboto",
                 "size" : 14,
@@ -9054,7 +9062,7 @@
                 "weight" : "500",
                 "lineHeight" : "20px"
               },
-              "legendValueColor" : "rgba(0, 0, 0, 0.87)",
+              "legendValueColor" : "rgba(255, 255, 255, 0.87)",
               "legendShowTotal" : true,
               "showTooltip" : true,
               "tooltipValueType" : "percentage",
@@ -9067,17 +9075,18 @@
                 "weight" : "500",
                 "lineHeight" : "16px"
               },
-              "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipValueColor" : "rgba(255, 255, 255, 0.76)",
               "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
               "tooltipBackgroundBlur" : 4,
               "background" : {
                 "type" : "color",
-                "color" : "#fff",
+                "color" : "#07111D",
                 "overlay" : {
                   "enabled" : false,
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 3
-                }
+                },
+                "imageUrl" : null
               },
               "padding" : "12px",
               "barSettings" : {
@@ -9094,7 +9103,7 @@
                   "weight" : "400",
                   "lineHeight" : "1"
                 },
-                "labelColor" : "rgba(0, 0, 0, 0.76)",
+                "labelColor" : "rgba(255, 255, 255, 0.76)",
                 "enableLabelBackground" : false,
                 "labelBackground" : "rgba(255,255,255,0.56)",
                 "backgroundSettings" : {
@@ -9119,7 +9128,7 @@
               },
               "axisTickLabelColor" : "rgba(0, 0, 0, 0.54)"
             },
-            "title" : "Bars",
+            "title" : "Good V/s Bad Production",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : {
@@ -9130,11 +9139,13 @@
             "decimals" : 0,
             "useDashboardTimewindow" : true,
             "showLegend" : false,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "border" : "2px solid white"
+            },
             "actions" : {
               "headerButton" : [ ]
             },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "displayTimewindow" : true,
             "margin" : "0px",
             "borderRadius" : "",
@@ -9171,7 +9182,7 @@
               "displayTypePrefix" : true
             },
             "enableDataExport" : false,
-            "titleColor" : null
+            "titleColor" : "#FFFFFF"
           },
           "row" : 0,
           "col" : 0,
