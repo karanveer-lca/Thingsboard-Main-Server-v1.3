@@ -9340,7 +9340,7 @@
             },
             "title" : "Time Breakdown ",
             "dropShadow" : true,
-            "enableFullscreen" : true,
+            "enableFullscreen" : false,
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
@@ -9349,7 +9349,9 @@
             "decimals" : 0,
             "useDashboardTimewindow" : true,
             "showLegend" : false,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "border" : "2px solid white"
+            },
             "actions" : {
               "headerButton" : [ ]
             },
@@ -10867,9 +10869,9 @@
                       "col" : 87
                     },
                     "748caa06-5ec2-0da8-b993-bd6f0104aee1" : {
-                      "sizeX" : 28,
-                      "sizeY" : 27,
-                      "row" : 41,
+                      "sizeX" : 38,
+                      "sizeY" : 38,
+                      "row" : 30,
                       "col" : 0
                     }
                   }
