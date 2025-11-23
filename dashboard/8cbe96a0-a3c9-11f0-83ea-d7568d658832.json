@@ -8826,7 +8826,7 @@
                     "layoutType" : "default",
                     "backgroundColor" : "#07111D",
                     "columns" : 200,
-                    "margin" : 5,
+                    "margin" : 8,
                     "outerMargin" : true,
                     "backgroundSizeMode" : "contain",
                     "minColumns" : 10,
