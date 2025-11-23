@@ -6576,7 +6576,7 @@
               }
             },
             "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
+            "backgroundColor" : "#0F243E",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
@@ -6587,11 +6587,14 @@
             "dropShadow" : false,
             "enableFullscreen" : false,
             "enableDataExport" : true,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "border" : "2px solid #ffffff"
+            },
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
-            "margin" : "0px"
+            "margin" : "0px",
+            "borderRadius" : "10px"
           },
           "row" : 0,
           "col" : 0,
