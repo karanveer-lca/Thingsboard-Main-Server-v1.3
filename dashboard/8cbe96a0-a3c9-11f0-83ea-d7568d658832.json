@@ -4380,7 +4380,8 @@
             "titleTooltip" : "",
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "10px"
           },
           "row" : 0,
           "col" : 0,
