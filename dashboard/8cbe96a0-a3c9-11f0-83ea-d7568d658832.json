@@ -4342,7 +4342,9 @@
             },
             "useDashboardTimewindow" : false,
             "showLegend" : false,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "border" : "2px solid #ffffff"
+            },
             "actions" : {
               "headerButton" : [ {
                 "name" : "Download Report",
