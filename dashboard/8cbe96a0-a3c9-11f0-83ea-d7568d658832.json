@@ -4611,7 +4611,7 @@
                 "buttonFillColor" : "#0F243E",
                 "customButtonStyle" : { },
                 "useShowWidgetActionFunction" : true,
-                "showWidgetActionFunction" : "return false;",
+                "showWidgetActionFunction" : "return true;",
                 "type" : "updateDashboardState",
                 "targetDashboardStateId" : "job_card",
                 "setEntityId" : false,
