@@ -4463,7 +4463,7 @@
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
-            "borderRadius" : "10px"
+            "borderRadius" : "11"
           },
           "row" : 0,
           "col" : 0,
