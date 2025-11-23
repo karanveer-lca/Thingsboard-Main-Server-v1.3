@@ -8153,41 +8153,15 @@
               }
             },
             "showTitle" : false,
-            "backgroundColor" : "#ffffff",
-            "color" : "rgba(0, 0, 0, 0.87)",
+            "backgroundColor" : "#07111D",
+            "color" : "rgba(255, 255, 255, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "maxValue" : 100,
-              "minValue" : 0,
+              "gaugeType" : "donut",
               "donutStartAngle" : 90,
-              "showValue" : true,
               "showMinMax" : true,
-              "gaugeWidthScale" : 0.75,
-              "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
-              "refreshAnimationType" : ">",
-              "refreshAnimationTime" : 700,
-              "startAnimationType" : ">",
-              "startAnimationTime" : 700,
-              "titleFont" : {
-                "family" : "Roboto",
-                "size" : 12,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : null
-              },
-              "labelFont" : {
-                "family" : "Roboto",
-                "size" : 8,
-                "style" : "normal",
-                "weight" : "500"
-              },
-              "valueFont" : {
-                "family" : "Roboto",
-                "style" : "normal",
-                "weight" : "500",
-                "size" : 32,
-                "color" : null
-              },
+              "minValue" : 0,
+              "maxValue" : 100,
               "minMaxFont" : {
                 "family" : "Segment7Standard",
                 "size" : 12,
@@ -8195,12 +8169,42 @@
                 "weight" : "500",
                 "color" : null
               },
+              "minMaxColor" : null,
+              "showValue" : true,
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 32,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#FFFFFF"
+              },
+              "valueColor" : "#FFFFFF",
+              "showTitle" : true,
+              "title" : "OEE %",
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#FFFFFF"
+              },
+              "titleColor" : "#FFFFFF",
+              "showUnitTitle" : false,
+              "unitTitle" : null,
+              "showTimestamp" : false,
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : null
+              },
+              "labelColor" : null,
+              "gaugeWidthScale" : 0.75,
               "neonGlowBrightness" : 0,
               "dashThickness" : 0,
               "roundedLineCap" : true,
-              "gaugeType" : "donut",
-              "showTitle" : null,
-              "title" : null,
               "gaugeColor" : null,
               "barColor" : {
                 "type" : "constant",
@@ -8224,23 +8228,35 @@
                   "maxValue" : 100
                 }
               },
-              "useFixedLevelColor" : false
+              "showTicks" : false,
+              "tickWidth" : 4,
+              "colorTicks" : "#666",
+              "ticksValue" : [ ],
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "useFixedLevelColor" : false,
+              "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ]
             },
             "title" : "Mini gauge",
-            "dropShadow" : true,
-            "enableFullscreen" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
             },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "useDashboardTimewindow" : true,
             "displayTimewindow" : true,
             "actions" : { },
-            "enableDataExport" : true,
+            "enableDataExport" : false,
             "borderRadius" : null,
             "units" : null,
-            "decimals" : 0
+            "decimals" : 0,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
@@ -9683,8 +9699,8 @@
                     "530b4ed3-de5f-9067-307c-6828286916cb" : {
                       "sizeX" : 16,
                       "sizeY" : 16,
-                      "row" : 5,
-                      "col" : 1
+                      "row" : 7,
+                      "col" : 7
                     }
                   }
                 }
