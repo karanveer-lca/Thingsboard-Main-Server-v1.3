@@ -1,0 +1,39 @@
+{
+  "entityType" : "ROLE",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : {
+      "entityType" : "ROLE",
+      "id" : "daba1940-b802-11f0-a460-01c0db8b26bf"
+    },
+    "name" : "Customer (Cust. Role)",
+    "permissions" : {
+      "ASSET" : [ "ALL" ],
+      "ASSET_GROUP" : [ "ALL" ],
+      "ASSET_PROFILE" : [ "ALL" ],
+      "DEVICE" : [ "ALL" ],
+      "DASHBOARD" : [ "ALL" ],
+      "DASHBOARD_GROUP" : [ "ALL" ],
+      "DEVICE_GROUP" : [ "ALL" ],
+      "DEVICE_PROFILE" : [ "ALL" ],
+      "TB_RESOURCE" : [ "ALL" ],
+      "WIDGET_TYPE" : [ "ALL" ]
+    },
+    "type" : "GENERIC",
+    "additionalInfo" : {
+      "description" : "Customers that can create assets"
+    },
+    "id" : {
+      "entityType" : "ROLE",
+      "id" : "daba1940-b802-11f0-a460-01c0db8b26bf"
+    },
+    "ownerId" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
