@@ -6845,7 +6845,7 @@
             "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : false,
-              "markdownTextPattern" : "<div style=\"position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\">\r\n  <div style=\"\r\n    height:100%; width:100%;\r\n    display:flex; align-items:center; justify-content:center;\r\n    background:#0f243e; color:#ffffff;\r\n    border:1px solid #001f33; border-left:1; border-right:1;\r\n    padding:6px 12px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700; line-height:1; text-transform:none; letter-spacing:0.3px;\r\n    font-size: clamp(50px, 1.9vw, 24px);\r\n    box-sizing:border-box;\r\n  \">\r\n    CONTROL PANEL\r\n  </div>\r\n</div>\r\n",
+              "markdownTextPattern" : "<div style=\"position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\">\r\n  <div style=\"\r\n    height:100%; \r\n    width:100%;\r\n    display:flex; \r\n    align-items:center; \r\n    justify-content:center;\r\n    background:#0f243e; \r\n    color:#ffffff;\r\n    <!--border:5px solid #000000;-->\r\n    border-radius:10px;\r\n    padding:6px 12px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700; \r\n    line-height:1; \r\n    text-transform:none; \r\n    letter-spacing:0.3px;\r\n    font-size: clamp(24px, 1.9vw, 50px);\r\n    box-sizing:border-box;\r\n  \">\r\n    CONTROL PANEL\r\n  </div>\r\n</div>\r\n",
               "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
@@ -6857,7 +6857,9 @@
             "titleTooltip" : "",
             "dropShadow" : false,
             "enableFullscreen" : false,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "border" : "2px solid #ffffff"
+            },
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
@@ -6868,7 +6870,8 @@
             "enableDataExport" : false,
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "10px"
           },
           "row" : 0,
           "col" : 0,
@@ -8983,7 +8986,7 @@
                     "layoutType" : "default",
                     "backgroundColor" : "#0F243E",
                     "columns" : 200,
-                    "margin" : 0,
+                    "margin" : 8,
                     "outerMargin" : true,
                     "backgroundSizeMode" : "100%",
                     "minColumns" : 10,
@@ -9010,14 +9013,14 @@
                     "95a520a8-be88-89ea-69f5-59a762e3814c" : {
                       "sizeX" : 23,
                       "sizeY" : 10,
-                      "row" : 11,
+                      "row" : 6,
                       "col" : 1
                     },
                     "a2f2f295-0cdc-bab5-0bf8-05c3b75a253c" : {
                       "sizeX" : 23,
                       "sizeY" : 10,
-                      "row" : 11,
-                      "col" : 26
+                      "row" : 6,
+                      "col" : 25
                     }
                   }
                 }
