@@ -8115,7 +8115,7 @@
                 "label" : "oee_pct",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.3100127925659989
+                "_hash" : 0.86874045762127
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -8163,7 +8163,7 @@
               "showValue" : true,
               "showMinMax" : true,
               "gaugeWidthScale" : 0.75,
-              "levelColors" : [ ],
+              "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
               "refreshAnimationType" : ">",
               "refreshAnimationTime" : 700,
               "startAnimationType" : ">",
