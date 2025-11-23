@@ -7877,6 +7877,101 @@
           "row" : 0,
           "col" : 0,
           "id" : "b992e0d5-8807-6887-af86-bf84f863220e"
+        },
+        "922598ca-5644-ab96-0682-4dad344f11cf" : {
+          "typeFullFqn" : "tenant.navigation_ribbon",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#0F243E",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>HTML code here</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "HTML Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : {
+              "border" : "2px solid #ffffff"
+            },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "margin" : "0px",
+            "borderRadius" : "10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "922598ca-5644-ab96-0682-4dad344f11cf"
+        },
+        "6c7be5d7-8500-6b96-361f-cac2489cb957" : {
+          "typeFullFqn" : "tenant.navigation_ribbon",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>HTML code here</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "HTML Card",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "margin" : "0px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "6c7be5d7-8500-6b96-361f-cac2489cb957"
         }
       },
       "states" : {
@@ -9149,12 +9244,6 @@
                     "mobileRowHeight" : 70
                   },
                   "widgets" : {
-                    "e4fe5530-635a-c134-0c73-d5bf207bfa05" : {
-                      "sizeX" : 113,
-                      "sizeY" : 5,
-                      "row" : 69,
-                      "col" : 0
-                    },
                     "d7d0b944-aecc-9e3d-c00a-1f347d2b37f1" : {
                       "sizeX" : 113,
                       "sizeY" : 5,
@@ -9172,6 +9261,18 @@
                       "sizeY" : 10,
                       "row" : 6,
                       "col" : 25
+                    },
+                    "922598ca-5644-ab96-0682-4dad344f11cf" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 69,
+                      "col" : 0
+                    },
+                    "6c7be5d7-8500-6b96-361f-cac2489cb957" : {
+                      "sizeX" : 1,
+                      "sizeY" : 8,
+                      "row" : 10,
+                      "col" : 0
                     }
                   }
                 }
