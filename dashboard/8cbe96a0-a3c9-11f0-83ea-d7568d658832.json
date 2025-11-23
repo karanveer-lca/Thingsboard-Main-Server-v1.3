@@ -4343,7 +4343,7 @@
             "useDashboardTimewindow" : false,
             "showLegend" : false,
             "widgetStyle" : {
-              "border" : "2px solid #ffffff"
+              "border" : "2px solid #b0b0b0"
             },
             "actions" : {
               "headerButton" : [ {
@@ -4454,7 +4454,7 @@
             "dropShadow" : false,
             "enableFullscreen" : false,
             "widgetStyle" : {
-              "border" : "2px solid #ffffff"
+              "border" : "2px solid #b0b0b0"
             },
             "titleStyle" : {
               "fontSize" : "16px",
