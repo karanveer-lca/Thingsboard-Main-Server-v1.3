@@ -9132,7 +9132,7 @@
             },
             "title" : "Good V/s Bad Production",
             "dropShadow" : true,
-            "enableFullscreen" : true,
+            "enableFullscreen" : false,
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
