@@ -9542,17 +9542,17 @@
                 "limit" : 25000
               }
             },
-            "showTitle" : false,
+            "showTitle" : true,
             "backgroundColor" : "rgba(0, 0, 0, 0)",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
               "layout" : "square",
               "autoScale" : true,
-              "showLabel" : true,
+              "showLabel" : false,
               "labelFont" : {
                 "family" : "Roboto",
-                "size" : 16,
+                "size" : 32,
                 "sizeUnit" : "px",
                 "style" : "normal",
                 "weight" : "500",
@@ -9573,17 +9573,39 @@
                 "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
               },
               "valueFont" : {
-                "family" : "Roboto",
                 "size" : 52,
                 "sizeUnit" : "px",
-                "style" : "normal",
+                "family" : "Roboto",
                 "weight" : "500",
+                "style" : "normal",
                 "lineHeight" : "100%"
               },
               "valueColor" : {
                 "type" : "constant",
-                "color" : "rgba(0, 0, 0, 0.87)",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+                "color" : "rgba(255, 255, 255, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 100
+                },
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ ],
+                  "rangeAdvanced" : [ ]
+                }
               },
               "showDate" : false,
               "dateFormat" : {
@@ -9607,16 +9629,17 @@
               },
               "background" : {
                 "type" : "color",
-                "color" : "#fff",
+                "color" : "#07111D",
                 "overlay" : {
                   "enabled" : false,
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 3
-                }
+                },
+                "imageUrl" : null
               },
               "padding" : ""
             },
-            "title" : "Value card",
+            "title" : "Machine Stopped",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "titleStyle" : {
@@ -9627,9 +9650,11 @@
             "decimals" : 0,
             "useDashboardTimewindow" : true,
             "showLegend" : false,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "border" : "2px solid white"
+            },
             "actions" : { },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "displayTimewindow" : true,
             "margin" : "0px",
             "borderRadius" : "0px",
@@ -9640,12 +9665,12 @@
             "showTitleIcon" : false,
             "titleTooltip" : "",
             "titleFont" : {
-              "size" : 12,
+              "size" : 16,
               "sizeUnit" : "px",
-              "family" : null,
-              "weight" : null,
+              "family" : "Roboto",
+              "weight" : "500",
               "style" : null,
-              "lineHeight" : "1.6"
+              "lineHeight" : "1"
             },
             "titleIcon" : "",
             "iconColor" : "rgba(0, 0, 0, 0.87)",
@@ -9664,7 +9689,8 @@
                 "lineHeight" : "1"
               },
               "color" : null
-            }
+            },
+            "titleColor" : "#FFFFFF"
           },
           "row" : 0,
           "col" : 0,
