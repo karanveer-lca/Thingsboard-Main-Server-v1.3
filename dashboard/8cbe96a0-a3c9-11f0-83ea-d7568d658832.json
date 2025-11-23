@@ -4351,9 +4351,11 @@
             "actions" : {
               "headerButton" : [ {
                 "name" : "Download Report",
-                "buttonType" : "icon",
+                "buttonType" : "stroked",
+                "showIcon" : true,
                 "icon" : "download",
-                "buttonColor" : "rgba(255, 255, 255, 0.87)",
+                "buttonColor" : "#FFFFFF",
+                "buttonBorderColor" : "#FFFFFF",
                 "customButtonStyle" : { },
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
