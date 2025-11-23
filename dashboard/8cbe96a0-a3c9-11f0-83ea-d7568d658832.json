@@ -9707,25 +9707,97 @@
               "name" : "",
               "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
               "dataKeys" : [ {
-                "name" : "uptime_s",
+                "name" : "act_duration_s_1",
                 "type" : "timeseries",
-                "label" : "Uptime",
-                "color" : "#4CAF50",
+                "label" : "DURATION 1",
+                "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.44287917617342865,
-                "units" : "min",
+                "_hash" : 0.8176414331114862,
+                "decimals" : 0,
                 "aggregationType" : "NONE",
                 "funcBody" : null,
                 "usePostProcessing" : true,
                 "postFuncBody" : "if (value == null) return null;\r\n\r\n// Remove decimals first\r\nvar n = Math.round(Number(value));   \r\n\r\n// Convert seconds → minutes (whole minutes only)\r\nvar minutes = (n / 60).toFixed(1);\r\n\r\nreturn String(minutes);  // return STRING, not number\r\n"
               }, {
-                "name" : "downtime_s",
+                "name" : "act_duration_s_2",
                 "type" : "timeseries",
-                "label" : "Downtime",
-                "color" : "#F44336",
+                "label" : "DURATION 2",
+                "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.9423131838575197,
-                "units" : "min",
+                "_hash" : 0.7828286469061473,
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\n\r\n// Remove decimals first\r\nvar n = Math.round(Number(value));   \r\n\r\n// Convert seconds → minutes (whole minutes only)\r\nvar minutes = (n / 60).toFixed(1);\r\n\r\nreturn String(minutes);  // return STRING, not number\r\n"
+              }, {
+                "name" : "act_duration_s_3",
+                "type" : "timeseries",
+                "label" : "DURATION 3",
+                "color" : "#f44336",
+                "settings" : { },
+                "_hash" : 0.15381110740609105,
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\n\r\n// Remove decimals first\r\nvar n = Math.round(Number(value));   \r\n\r\n// Convert seconds → minutes (whole minutes only)\r\nvar minutes = (n / 60).toFixed(1);\r\n\r\nreturn String(minutes);  // return STRING, not number\r\n"
+              }, {
+                "name" : "act_duration_s_4",
+                "type" : "timeseries",
+                "label" : "DURATION 4",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.38397902623796687,
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\n\r\n// Remove decimals first\r\nvar n = Math.round(Number(value));   \r\n\r\n// Convert seconds → minutes (whole minutes only)\r\nvar minutes = (n / 60).toFixed(1);\r\n\r\nreturn String(minutes);  // return STRING, not number\r\n"
+              }, {
+                "name" : "act_duration_s_5",
+                "type" : "timeseries",
+                "label" : "DURATION 5",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.587472642285057,
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\n\r\n// Remove decimals first\r\nvar n = Math.round(Number(value));   \r\n\r\n// Convert seconds → minutes (whole minutes only)\r\nvar minutes = (n / 60).toFixed(1);\r\n\r\nreturn String(minutes);  // return STRING, not number\r\n"
+              }, {
+                "name" : "act_duration_s_6",
+                "type" : "timeseries",
+                "label" : "DURATION 6",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.8681318704572007,
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\n\r\n// Remove decimals first\r\nvar n = Math.round(Number(value));   \r\n\r\n// Convert seconds → minutes (whole minutes only)\r\nvar minutes = (n / 60).toFixed(1);\r\n\r\nreturn String(minutes);  // return STRING, not number\r\n"
+              }, {
+                "name" : "act_duration_s_7",
+                "type" : "timeseries",
+                "label" : "DURATION 7",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.5903690727052353,
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\n\r\n// Remove decimals first\r\nvar n = Math.round(Number(value));   \r\n\r\n// Convert seconds → minutes (whole minutes only)\r\nvar minutes = (n / 60).toFixed(1);\r\n\r\nreturn String(minutes);  // return STRING, not number\r\n"
+              }, {
+                "name" : "act_duration_s_8",
+                "type" : "timeseries",
+                "label" : "DURATION 8",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.9269613311207876,
+                "decimals" : 0,
                 "aggregationType" : "NONE",
                 "funcBody" : null,
                 "usePostProcessing" : true,
@@ -9861,7 +9933,7 @@
             "actions" : {
               "headerButton" : [ ]
             },
-            "configMode" : "advanced",
+            "configMode" : "basic",
             "displayTimewindow" : true,
             "margin" : "0px",
             "borderRadius" : "",
@@ -11393,10 +11465,10 @@
                       "col" : 87
                     },
                     "7dbe9c2f-27c2-1042-89ca-b55e8c087956" : {
-                      "sizeX" : 18,
+                      "sizeX" : 37,
                       "sizeY" : 38,
                       "row" : 30,
-                      "col" : 18
+                      "col" : 1
                     }
                   }
                 }
