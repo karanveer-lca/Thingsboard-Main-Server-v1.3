@@ -11725,6 +11725,103 @@
                       "col" : 44
                     }
                   }
+                },
+                "md" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "#07111D",
+                    "columns" : 200,
+                    "margin" : 0,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "100%",
+                    "minColumns" : 10,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : true,
+                    "rowHeight" : 70,
+                    "backgroundImageUrl" : null,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "601e1427-cb15-8022-0fcd-81d7321e820d" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 0,
+                      "col" : 0
+                    },
+                    "f2d0b56e-c234-8d4a-3fdc-f60aa9de8b7a" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 69,
+                      "col" : 0
+                    },
+                    "530b4ed3-de5f-9067-307c-6828286916cb" : {
+                      "sizeX" : 21,
+                      "sizeY" : 24,
+                      "row" : 6,
+                      "col" : 1
+                    },
+                    "c599e647-2f1b-51e5-f036-6b8aa7635933" : {
+                      "sizeX" : 13,
+                      "sizeY" : 24,
+                      "row" : 6,
+                      "col" : 22
+                    },
+                    "91c8d382-b3ea-ec57-5441-d963f61378ba" : {
+                      "sizeX" : 13,
+                      "sizeY" : 24,
+                      "row" : 6,
+                      "col" : 35
+                    },
+                    "f3a8ec59-2a58-e7be-876d-d17290ac13cf" : {
+                      "sizeX" : 13,
+                      "sizeY" : 24,
+                      "row" : 6,
+                      "col" : 48
+                    },
+                    "d8b8ad88-79e6-142b-94d2-04e245b11e8a" : {
+                      "sizeX" : 26,
+                      "sizeY" : 21,
+                      "row" : 23,
+                      "col" : 87
+                    },
+                    "1b6aa8f3-d856-b3b5-e736-91faf951310f" : {
+                      "sizeX" : 26,
+                      "sizeY" : 24,
+                      "row" : 44,
+                      "col" : 87
+                    },
+                    "748caa06-5ec2-0da8-b993-bd6f0104aee1" : {
+                      "sizeX" : 26,
+                      "sizeY" : 24,
+                      "row" : 6,
+                      "col" : 61
+                    },
+                    "ac3f666d-f16f-f393-31da-216349a185e8" : {
+                      "sizeX" : 24,
+                      "sizeY" : 7,
+                      "row" : 6,
+                      "col" : 88
+                    },
+                    "46f08196-70a0-612b-cf9c-495f2c1e675c" : {
+                      "sizeX" : 26,
+                      "sizeY" : 9,
+                      "row" : 14,
+                      "col" : 87
+                    },
+                    "7dbe9c2f-27c2-1042-89ca-b55e8c087956" : {
+                      "sizeX" : 43,
+                      "sizeY" : 38,
+                      "row" : 30,
+                      "col" : 1
+                    },
+                    "e71140b3-6b64-44fc-2ccc-d404f9b49330" : {
+                      "sizeX" : 43,
+                      "sizeY" : 38,
+                      "row" : 30,
+                      "col" : 44
+                    }
+                  }
                 }
               }
             }
