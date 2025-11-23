@@ -7734,7 +7734,7 @@
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "updateDashboardState",
-                "targetDashboardStateId" : "plant_sld",
+                "targetDashboardStateId" : "machine_dashboard",
                 "setEntityId" : true,
                 "stateEntityParamName" : "jobcard",
                 "openRightLayout" : false,
