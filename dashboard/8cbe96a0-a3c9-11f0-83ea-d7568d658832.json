@@ -6373,7 +6373,7 @@
               "realtime" : {
                 "realtimeType" : 0,
                 "interval" : 1000,
-                "timewindowMs" : 60000,
+                "timewindowMs" : 86400000,
                 "quickInterval" : "CURRENT_DAY",
                 "hideInterval" : false,
                 "hideLastInterval" : false,
