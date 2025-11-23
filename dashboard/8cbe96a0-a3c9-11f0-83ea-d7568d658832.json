@@ -7730,6 +7730,55 @@
           "row" : 0,
           "col" : 0,
           "id" : "3848a788-6595-7b5e-0100-dff91415dfce"
+        },
+        "20952897-9519-ef54-f5ae-40a4c316936e" : {
+          "typeFullFqn" : "tenant.navigation_ribbon",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#0F243E",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>HTML code here</div>",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "HTML Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : {
+              "border" : "2px solid #ffffff"
+            },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "margin" : "0px",
+            "borderRadius" : "10px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "20952897-9519-ef54-f5ae-40a4c316936e"
         }
       },
       "states" : {
@@ -8693,12 +8742,6 @@
                       "row" : 14,
                       "col" : 35
                     },
-                    "6e582c1c-54ca-d7b3-59f7-13a193281b10" : {
-                      "sizeX" : 113,
-                      "sizeY" : 5,
-                      "row" : 69,
-                      "col" : 0
-                    },
                     "c5f27599-0f12-c3f7-3669-c631e161ab56" : {
                       "sizeX" : 11,
                       "sizeY" : 3,
@@ -8710,6 +8753,12 @@
                       "sizeY" : 3,
                       "row" : 11,
                       "col" : 35
+                    },
+                    "20952897-9519-ef54-f5ae-40a4c316936e" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 69,
+                      "col" : 0
                     }
                   }
                 }
