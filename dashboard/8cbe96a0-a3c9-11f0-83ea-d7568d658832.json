@@ -9204,16 +9204,24 @@
                 "name" : "uptime_s",
                 "type" : "timeseries",
                 "label" : "Uptime",
-                "color" : "#08872B",
+                "color" : "#4CAF50",
                 "settings" : { },
-                "_hash" : 0.44287917617342865
+                "_hash" : 0.44287917617342865,
+                "aggregationType" : "NONE",
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\n\r\n// Remove decimals first\r\nvar n = Math.round(Number(value));   \r\n\r\n// Convert seconds → minutes (whole minutes only)\r\nvar minutes = (n / 60).toFixed(1);\r\n\r\nreturn String(minutes);  // return STRING, not number\r\n"
               }, {
                 "name" : "downtime_s",
                 "type" : "timeseries",
                 "label" : "Downtime",
-                "color" : "#FF4D5A",
+                "color" : "#F44336",
                 "settings" : { },
-                "_hash" : 0.9423131838575197
+                "_hash" : 0.9423131838575197,
+                "aggregationType" : "NONE",
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\n\r\n// Remove decimals first\r\nvar n = Math.round(Number(value));   \r\n\r\n// Convert seconds → minutes (whole minutes only)\r\nvar minutes = (n / 60).toFixed(1);\r\n\r\nreturn String(minutes);  // return STRING, not number\r\n"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
