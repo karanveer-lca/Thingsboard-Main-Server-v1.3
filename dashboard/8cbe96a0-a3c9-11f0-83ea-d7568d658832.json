@@ -4381,7 +4381,7 @@
             "titleFont" : null,
             "titleColor" : null,
             "titleIcon" : null,
-            "enableDataExport" : true,
+            "enableDataExport" : false,
             "titleTooltip" : "",
             "widgetCss" : "",
             "pageSize" : 1024,
