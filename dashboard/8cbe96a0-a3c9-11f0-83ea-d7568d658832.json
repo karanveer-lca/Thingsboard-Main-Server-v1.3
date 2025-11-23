@@ -8948,7 +8948,9 @@
             "borderRadius" : null,
             "units" : null,
             "decimals" : 0,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "border" : "2px solid white"
+            },
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
@@ -10647,16 +10649,16 @@
                       "col" : 51
                     },
                     "d8b8ad88-79e6-142b-94d2-04e245b11e8a" : {
-                      "sizeX" : 19,
-                      "sizeY" : 16,
-                      "row" : 12,
-                      "col" : 66
+                      "sizeX" : 26,
+                      "sizeY" : 21,
+                      "row" : 23,
+                      "col" : 87
                     },
                     "1b6aa8f3-d856-b3b5-e736-91faf951310f" : {
-                      "sizeX" : 19,
+                      "sizeX" : 26,
                       "sizeY" : 25,
                       "row" : 44,
-                      "col" : 94
+                      "col" : 87
                     }
                   }
                 }
