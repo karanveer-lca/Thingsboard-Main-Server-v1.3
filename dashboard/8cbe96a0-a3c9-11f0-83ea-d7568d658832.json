@@ -9207,6 +9207,7 @@
                 "color" : "#4CAF50",
                 "settings" : { },
                 "_hash" : 0.44287917617342865,
+                "units" : "min",
                 "aggregationType" : "NONE",
                 "funcBody" : null,
                 "usePostProcessing" : true,
@@ -9218,6 +9219,7 @@
                 "color" : "#F44336",
                 "settings" : { },
                 "_hash" : 0.9423131838575197,
+                "units" : "min",
                 "aggregationType" : "NONE",
                 "funcBody" : null,
                 "usePostProcessing" : true,
@@ -9284,7 +9286,7 @@
                 "weight" : "400",
                 "lineHeight" : "16px"
               },
-              "legendLabelColor" : "rgba(0, 0, 0, 0.38)",
+              "legendLabelColor" : "rgba(255, 255, 255, 0.38)",
               "legendValueFont" : {
                 "family" : "Roboto",
                 "size" : 14,
@@ -9293,7 +9295,7 @@
                 "weight" : "500",
                 "lineHeight" : "20px"
               },
-              "legendValueColor" : "rgba(0, 0, 0, 0.87)",
+              "legendValueColor" : "rgba(255, 255, 255, 0.87)",
               "legendShowTotal" : true,
               "showTooltip" : true,
               "tooltipValueType" : "percentage",
@@ -9306,17 +9308,18 @@
                 "weight" : "500",
                 "lineHeight" : "16px"
               },
-              "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipValueColor" : "rgba(255, 255, 255, 0.76)",
               "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
               "tooltipBackgroundBlur" : 4,
               "background" : {
                 "type" : "color",
-                "color" : "#fff",
+                "color" : "#07111D",
                 "overlay" : {
                   "enabled" : false,
                   "color" : "rgba(255,255,255,0.72)",
                   "blur" : 3
-                }
+                },
+                "imageUrl" : null
               },
               "padding" : "12px",
               "showLabel" : true,
@@ -9329,20 +9332,20 @@
                 "weight" : "normal",
                 "lineHeight" : "1.2"
               },
-              "labelColor" : "#000",
-              "borderWidth" : 0,
+              "labelColor" : "#FFFFFF",
+              "borderWidth" : 4,
               "borderColor" : "#000",
               "radius" : 80,
               "clockwise" : false
             },
-            "title" : "Pie",
+            "title" : "Time Breakdown ",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
             },
-            "units" : null,
+            "units" : "min",
             "decimals" : 0,
             "useDashboardTimewindow" : true,
             "showLegend" : false,
@@ -9350,7 +9353,7 @@
             "actions" : {
               "headerButton" : [ ]
             },
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "displayTimewindow" : true,
             "margin" : "0px",
             "borderRadius" : "",
@@ -9387,7 +9390,7 @@
               "displayTypePrefix" : true
             },
             "enableDataExport" : false,
-            "titleColor" : null
+            "titleColor" : "#FFFFFF"
           },
           "row" : 0,
           "col" : 0,
