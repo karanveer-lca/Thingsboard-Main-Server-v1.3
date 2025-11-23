@@ -8935,7 +8935,7 @@
             },
             "title" : "Gauge",
             "dropShadow" : true,
-            "enableFullscreen" : true,
+            "enableFullscreen" : false,
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
@@ -8944,7 +8944,7 @@
             "useDashboardTimewindow" : true,
             "displayTimewindow" : true,
             "actions" : { },
-            "enableDataExport" : true,
+            "enableDataExport" : false,
             "borderRadius" : null,
             "units" : null,
             "decimals" : 0,
