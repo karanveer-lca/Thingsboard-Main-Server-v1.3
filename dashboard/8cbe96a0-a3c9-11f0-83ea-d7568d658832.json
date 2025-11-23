@@ -6554,7 +6554,8 @@
             "widgetStyle" : { },
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "10px"
           },
           "row" : 0,
           "col" : 0,
@@ -7305,7 +7306,8 @@
             "enableDataExport" : false,
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "10px"
           },
           "row" : 0,
           "col" : 0,
@@ -9061,7 +9063,7 @@
                 "xl" : {
                   "gridSettings" : {
                     "layoutType" : "default",
-                    "backgroundColor" : "#eeeeee",
+                    "backgroundColor" : "#07111D",
                     "columns" : 200,
                     "margin" : 8,
                     "outerMargin" : true,
