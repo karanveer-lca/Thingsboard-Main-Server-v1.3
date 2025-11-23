@@ -6444,9 +6444,11 @@
             "actions" : {
               "headerButton" : [ {
                 "name" : "Download Report",
-                "buttonType" : "icon",
+                "buttonType" : "stroked",
+                "showIcon" : true,
                 "icon" : "download",
-                "buttonColor" : "rgba(255, 255, 255, 0.87)",
+                "buttonColor" : "var(--tb-primary-500)",
+                "buttonBorderColor" : "#0000001F",
                 "customButtonStyle" : { },
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
