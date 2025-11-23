@@ -9724,10 +9724,7 @@
             "type" : "stateEntity",
             "resolveMultiple" : false,
             "stateEntityParamName" : "jobcard",
-            "defaultStateEntity" : {
-              "entityType" : "ASSET",
-              "id" : "40114da0-c7b1-11f0-ba24-45a5d1fbd209"
-            }
+            "defaultStateEntity" : null
           }
         },
         "d0ad4438-face-a4e5-f437-8ec5624fd852" : {
