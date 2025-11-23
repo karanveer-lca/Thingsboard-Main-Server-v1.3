@@ -8972,7 +8972,7 @@
               "dataKeys" : [ {
                 "name" : "good_qty_pcs",
                 "type" : "timeseries",
-                "label" : "Good Prod.",
+                "label" : "Good Qty.",
                 "color" : "#4CAF50",
                 "settings" : { },
                 "_hash" : 0.1849468806537634,
@@ -8984,7 +8984,7 @@
               }, {
                 "name" : "bad_qty_pcs",
                 "type" : "timeseries",
-                "label" : "Bad Prod.",
+                "label" : "Defective Qty.",
                 "color" : "#F44336",
                 "settings" : { },
                 "_hash" : 0.4726955113600746,
