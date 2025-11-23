@@ -4259,7 +4259,7 @@
               }, {
                 "name" : "DURATION_8",
                 "type" : "timeseries",
-                "label" : "DURATION 9",
+                "label" : "DURATION 8",
                 "color" : "#3f51b5",
                 "settings" : { },
                 "_hash" : 0.09041505341686795,
@@ -4379,7 +4379,7 @@
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
             "displayTimewindow" : true,
-            "configMode" : "advanced",
+            "configMode" : "basic",
             "titleFont" : null,
             "titleColor" : null,
             "titleIcon" : null,
