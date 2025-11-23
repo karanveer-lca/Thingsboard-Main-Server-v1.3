@@ -9975,6 +9975,254 @@
           "row" : 0,
           "col" : 0,
           "id" : "7dbe9c2f-27c2-1042-89ca-b55e8c087956"
+        },
+        "e71140b3-6b64-44fc-2ccc-d404f9b49330" : {
+          "typeFullFqn" : "system.pie",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 4,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "dataKeys" : [ {
+                "name" : "act_occ_1",
+                "type" : "timeseries",
+                "label" : "OCCURRENCE 1",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.9654209470617938,
+                "decimals" : 0
+              }, {
+                "name" : "act_occ_2",
+                "type" : "timeseries",
+                "label" : "OCCURRENCE 2",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.11810282038793107,
+                "decimals" : 0
+              }, {
+                "name" : "act_occ_3",
+                "type" : "timeseries",
+                "label" : "OCCURRENCE 3",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.029505985744968766,
+                "decimals" : 0
+              }, {
+                "name" : "act_occ_4",
+                "type" : "timeseries",
+                "label" : "OCCURRENCE 4",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.5770455049149137,
+                "decimals" : 0
+              }, {
+                "name" : "act_occ_5",
+                "type" : "timeseries",
+                "label" : "OCCURRENCE 5",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.7702992997761929,
+                "decimals" : 0
+              }, {
+                "name" : "act_occ_6",
+                "type" : "timeseries",
+                "label" : "OCCURRENCE 6",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.4049439541517924,
+                "decimals" : 0
+              }, {
+                "name" : "act_occ_7",
+                "type" : "timeseries",
+                "label" : "OCCURRENCE 7",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.443319607937919,
+                "decimals" : 0
+              }, {
+                "name" : "act_occ_8",
+                "type" : "timeseries",
+                "label" : "OCCURRENCE 8",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.9387697624551727,
+                "decimals" : 0
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1763832649901,
+                  "endTimeMs" : 1763919049901
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : null,
+            "padding" : "0px",
+            "settings" : {
+              "sortSeries" : false,
+              "animation" : {
+                "animation" : true,
+                "animationThreshold" : 2000,
+                "animationDuration" : 1000,
+                "animationEasing" : "cubicOut",
+                "animationDelay" : 0,
+                "animationDurationUpdate" : 500,
+                "animationEasingUpdate" : "cubicOut",
+                "animationDelayUpdate" : 0
+              },
+              "showLegend" : true,
+              "legendPosition" : "bottom",
+              "legendLabelFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "legendLabelColor" : "rgba(255, 255, 255, 0.38)",
+              "legendValueFont" : {
+                "family" : "Roboto",
+                "size" : 14,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "20px"
+              },
+              "legendValueColor" : "rgba(255, 255, 255, 0.87)",
+              "legendShowTotal" : true,
+              "showTooltip" : true,
+              "tooltipValueType" : "percentage",
+              "tooltipValueDecimals" : 0,
+              "tooltipValueFont" : {
+                "family" : "Roboto",
+                "size" : 13,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "16px"
+              },
+              "tooltipValueColor" : "rgba(255, 255, 255, 0.76)",
+              "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
+              "tooltipBackgroundBlur" : 4,
+              "background" : {
+                "type" : "color",
+                "color" : "#07111D",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                },
+                "imageUrl" : null
+              },
+              "padding" : "12px",
+              "showLabel" : true,
+              "labelPosition" : "outside",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "normal",
+                "lineHeight" : "1.2"
+              },
+              "labelColor" : "#FFFFFF",
+              "borderWidth" : 4,
+              "borderColor" : "#000",
+              "radius" : 80,
+              "clockwise" : false
+            },
+            "title" : "Time Breakdown ",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : null,
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : {
+              "border" : "2px solid white"
+            },
+            "actions" : {
+              "headerButton" : [ ]
+            },
+            "configMode" : "advanced",
+            "displayTimewindow" : true,
+            "margin" : "0px",
+            "borderRadius" : "",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "24px"
+            },
+            "titleIcon" : "pie_chart",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "timewindowStyle" : {
+              "showIcon" : false,
+              "iconSize" : "24px",
+              "icon" : null,
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "400",
+                "style" : "normal",
+                "lineHeight" : "16px"
+              },
+              "color" : "rgba(0, 0, 0, 0.38)",
+              "displayTypePrefix" : true
+            },
+            "enableDataExport" : false,
+            "titleColor" : "#FFFFFF"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e71140b3-6b64-44fc-2ccc-d404f9b49330"
         }
       },
       "states" : {
@@ -11465,10 +11713,16 @@
                       "col" : 87
                     },
                     "7dbe9c2f-27c2-1042-89ca-b55e8c087956" : {
-                      "sizeX" : 37,
+                      "sizeX" : 43,
                       "sizeY" : 38,
                       "row" : 30,
                       "col" : 1
+                    },
+                    "e71140b3-6b64-44fc-2ccc-d404f9b49330" : {
+                      "sizeX" : 43,
+                      "sizeY" : 38,
+                      "row" : 30,
+                      "col" : 44
                     }
                   }
                 }
