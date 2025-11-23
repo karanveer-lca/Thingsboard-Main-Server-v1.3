@@ -4344,10 +4344,12 @@
             "showLegend" : false,
             "widgetStyle" : { },
             "actions" : {
-              "headerButton" : [ ],
-              "actionCellButton" : [ {
+              "headerButton" : [ {
                 "name" : "Download Report",
+                "buttonType" : "icon",
                 "icon" : "download",
+                "buttonColor" : "rgba(255, 255, 255, 0.87)",
+                "customButtonStyle" : { },
                 "useShowWidgetActionFunction" : null,
                 "showWidgetActionFunction" : "return true;",
                 "type" : "customPretty",
@@ -4358,7 +4360,8 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "c577d76f-3fcb-01d5-6ef8-ca27f2fedcaa"
-              } ]
+              } ],
+              "actionCellButton" : [ ]
             },
             "showTitleIcon" : false,
             "iconColor" : "rgba(0, 0, 0, 0.87)",
