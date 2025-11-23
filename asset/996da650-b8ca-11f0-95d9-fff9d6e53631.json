@@ -1,0 +1,41 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "228456d0-9168-11f0-84d5-efc64010e13c"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : {
+      "entityType" : "ASSET",
+      "id" : "996da650-b8ca-11f0-95d9-fff9d6e53631"
+    },
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "996da650-b8ca-11f0-95d9-fff9d6e53631"
+    },
+    "label" : null,
+    "name" : "VARIABLES",
+    "ownerId" : null,
+    "type" : "default"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ai_response",
+      "lastUpdateTs" : 1763853856922,
+      "longValue" : null,
+      "strValue" : "{\n  \"summary\": \"The production system has experienced significant downtime due to a few critical alarms, with Alarm 2 being the most impactful by far. High-duration and high-frequency alarms are causing substantial disruptions, requiring immediate attention to improve operational efficiency.\",\n  \"criticalIssues\": [\n    \"Alarm 2 - Extremely high duration (199,473 seconds) despite low occurrence, indicating a severe issue.\",\n    \"Alarm 5 - Both high occurrence (21 times) and significant duration (32,780 seconds) indicate chronic disruptions.\",\n    \"Alarm 9 - Moderate occurrence (16 times) but high duration (26,333 seconds) suggests sustained impact.\"\n  ],\n  \"metrics\": {\n    \"totalDowntime\": \"286,733 seconds (approximately 79.66 hours or 44.2% of potential production time in a 18073-unit cycle)\",\n    \"mostProblematicAlarm\": \"Alarm 2 - Exceptionally high duration compared to all other alarms, suggesting a critical failure or bottleneck.\",\n    \"estimatedProductionLoss\": \"Approximately 8,816 units (based on downtime vs average production rate)\"\n  },\n  \"recommendations\": [\n    \"Investigate and resolve root cause of Alarm 2 immediately, as its high duration heavily impacts production.\",\n    \"Perform detailed analysis of Alarm 5's triggers, as its combination of frequency and duration suggests it is a recurring issue.\",\n    \"Review equipment linked to Alarm 9 to address prolonged disruptions and prevent cascading downtime.\",\n    \"Implement preventive maintenance focused on systems triggering Alarms 2, 5, and 9 to reduce future failures.\",\n    \"Provide targeted operator training to address potential human errors associated with recurrent alarms.\"\n  ],\n  \"predictions\": \"If current trends continue, Alarm 2 will cause another 99,736 seconds of downtime in the next shift, potentially resulting in a production loss of approximately 4,408 units. Alarm 5 and Alarm 9 may also trigger prolonged disruptions, compounding the loss.\",\n  \"urgencyLevel\": \"CRITICAL\"\n}"
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

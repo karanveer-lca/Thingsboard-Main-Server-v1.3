@@ -1,0 +1,50 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "new_card2",
+    "name" : "NEw Card",
+    "deprecated" : false,
+    "image" : null,
+    "description" : null,
+    "descriptor" : {
+      "type" : "timeseries",
+      "sizeX" : 4.5,
+      "sizeY" : 2,
+      "resources" : [ ],
+      "templateCss" : "/* Hide the entire chart area */\r\n.tb-card-chart,\r\n.legend,\r\n.flot-overlay,\r\n.flot-base,\r\n.chart-panel,\r\n.chart-container,\r\ncanvas,\r\nsvg {\r\n  display: none !important;\r\n  height: 0 !important;\r\n  width: 0 !important;\r\n  visibility: hidden !important;\r\n}\r\n\r\n/* Optional: tighten up padding after chart removal */\r\n.tb-card {\r\n  padding-bottom: 0 !important;\r\n}\r\n",
+      "hasBasicMode" : true,
+      "settingsForm" : [ {
+        "id" : "unitSize",
+        "hint" : "Set font size of the unit in px",
+        "name" : "Unit size (px)",
+        "type" : "number",
+        "default" : 20,
+        "required" : true
+      } ],
+      "templateHtml" : "<tb-value-chart-card-widget \n    [ctx]=\"ctx\"\n    [widgetTitlePanel]=\"widgetTitlePanel\">\n</tb-value-chart-card-widget>\n",
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"function\",\"name\":\"\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Temperature\",\"color\":\"var(--tb-primary-500)\",\"settings\":{},\"_hash\":0.8587686344902596,\"funcBody\":\"var value = prevValue + Math.random() * 40 - 20;\\nif (value < -60) {\\n\\tvalue = -60;\\n} else if (value > 60) {\\n\\tvalue = 60;\\n}\\nreturn value;\",\"aggregationType\":null,\"units\":null,\"decimals\":null,\"usePostProcessing\":null,\"postFuncBody\":null}],\"latestDataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Latest\",\"color\":\"var(--tb-primary-500)\",\"settings\":{},\"_hash\":0.8587686344902596,\"funcBody\":\"var value = prevValue + Math.random() * 40 - 20;\\nif (value < -60) {\\n\\tvalue = -60;\\n} else if (value > 60) {\\n\\tvalue = 60;\\n}\\nreturn value;\",\"aggregationType\":null,\"units\":null,\"decimals\":null,\"usePostProcessing\":null,\"postFuncBody\":null}]}],\"showTitle\":true,\"backgroundColor\":\"rgba(0, 0, 0, 0)\",\"color\":null,\"padding\":\"0\",\"settings\":{\"layout\":\"left\",\"autoScale\":true,\"showValue\":true,\"valueFont\":{\"family\":\"Roboto\",\"size\":28,\"sizeUnit\":\"px\",\"style\":\"normal\",\"weight\":\"500\",\"lineHeight\":\"32px\"},\"valueColor\":{\"type\":\"constant\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"colorFunction\":\"var temperature = value;\\nif (typeof temperature !== undefined) {\\n  var percent = (temperature + 60)/120 * 100;\\n  return tinycolor.mix('blue', 'red', percent).toHexString();\\n}\\nreturn 'blue';\"},\"background\":{\"type\":\"color\",\"color\":\"#fff\",\"overlay\":{\"enabled\":false,\"color\":\"rgba(255,255,255,0.72)\",\"blur\":3}}},\"title\":\"NEw Card\",\"dropShadow\":true,\"enableFullscreen\":false,\"titleStyle\":null,\"mobileHeight\":null,\"configMode\":\"basic\",\"actions\":{},\"showTitleIcon\":false,\"titleIcon\":\"thermostat\",\"iconColor\":\"rgba(0, 0, 0, 0.87)\",\"titleFont\":{\"size\":16,\"sizeUnit\":\"px\",\"family\":\"Roboto\",\"weight\":\"500\",\"style\":\"normal\",\"lineHeight\":\"24px\"},\"iconSize\":\"18px\",\"titleTooltip\":\"\",\"widgetStyle\":{},\"widgetCss\":\"\",\"pageSize\":1024,\"noDataDisplayMessage\":\"\",\"useDashboardTimewindow\":true,\"decimals\":0,\"titleColor\":\"rgba(0, 0, 0, 0.87)\",\"borderRadius\":null,\"units\":\"°C\",\"displayTimewindow\":true,\"timewindow\":{\"hideInterval\":false,\"hideLastInterval\":false,\"hideQuickInterval\":false,\"hideAggregation\":false,\"hideAggInterval\":false,\"hideTimezone\":false,\"selectedTab\":1,\"history\":{\"historyType\":2,\"timewindowMs\":60000,\"interval\":43200000,\"fixedTimewindow\":{\"startTimeMs\":1697382151041,\"endTimeMs\":1697468551041},\"quickInterval\":\"CURRENT_MONTH_SO_FAR\"},\"aggregation\":{\"type\":\"AVG\",\"limit\":25000}},\"timewindowStyle\":{\"showIcon\":false,\"iconSize\":\"24px\",\"icon\":\"query_builder\",\"iconPosition\":\"left\",\"font\":{\"size\":12,\"sizeUnit\":\"px\",\"family\":\"Roboto\",\"weight\":\"400\",\"style\":\"normal\",\"lineHeight\":\"16px\"},\"color\":\"rgba(0, 0, 0, 0.38)\",\"displayTypePrefix\":true},\"enableDataExport\":false}",
+      "controllerScript" : "// ----- helper: apply unit font size from settings -----\r\nfunction applyUnitSize() {\r\n  // read from settings; fallback to 20px if not set\r\n  var size = (self.ctx && self.ctx.settings && +self.ctx.settings.unitSize) ? +self.ctx.settings.unitSize : 20;\r\n\r\n  // find this widget's root element\r\n  var root = (self.ctx.$container && self.ctx.$container[0]) ||\r\n             (self.ctx.$scope && self.ctx.$scope.$element && self.ctx.$scope.$element[0]) ||\r\n             null;\r\n  if (!root) return;\r\n\r\n  // common ThingsBoard unit selectors (covers value/and_chart cards)\r\n  var unitNodes = root.querySelectorAll(\r\n    '.tb-card-value .tb-value-unit, .tb-card-value .unit, .tb-value-unit, .value-unit'\r\n  );\r\n\r\n  unitNodes.forEach(function(n) {\r\n    n.style.fontSize = size + 'px';\r\n    // keep line-height sane so big units don't clip\r\n    n.style.lineHeight = '1.1';\r\n  });\r\n}\r\n\r\n// ----- original controller hooks with unit-size application -----\r\nself.onInit = function() {\r\n  self.ctx.$scope.valueChartCardWidget.onInit();\r\n  // after initial render\r\n  setTimeout(applyUnitSize, 0);\r\n};\r\n\r\nself.onDataUpdated = function() {\r\n  self.ctx.$scope.valueChartCardWidget.onDataUpdated();\r\n  applyUnitSize();\r\n};\r\n\r\nself.onLatestDataUpdated = function() {\r\n  self.ctx.$scope.valueChartCardWidget.onLatestDataUpdated();\r\n  applyUnitSize();\r\n};\r\n\r\nself.onEditModeChanged = function() {\r\n  self.ctx.$scope.valueChartCardWidget.onEditModeChanged();\r\n  applyUnitSize();\r\n};\r\n\r\nself.onDestroy = function() {\r\n  self.ctx.$scope.valueChartCardWidget.onDestroy();\r\n};\r\n\r\nself.typeParameters = function() {\r\n  return {\r\n    maxDatasources: 1,\r\n    maxDataKeys: 1,\r\n    singleEntity: true,\r\n    previewWidth: '300px',\r\n    previewHeight: '150px',\r\n    embedTitlePanel: true,\r\n    supportsUnitConversion: true,\r\n    hasAdditionalLatestDataKeys: true,\r\n    defaultDataKeysFunction: function() {\r\n      return [\r\n        { name: 'temperature', label: 'Temperature', type: 'timeseries', color: 'var(--tb-primary-500)'}\r\n      ];\r\n    },\r\n    defaultLatestDataKeysFunction: function(configComponent) {\r\n      return [{ name: 'temperature', label: 'Latest', type: 'timeseries'}];\r\n    }\r\n  };\r\n};\r\n",
+      "settingsDirective" : "tb-value-chart-card-widget-settings",
+      "basicModeDirective" : "tb-value-chart-card-basic-config",
+      "dataKeySettingsForm" : [ ],
+      "dataKeySettingsDirective" : "",
+      "latestDataKeySettingsForm" : [ ],
+      "latestDataKeySettingsDirective" : ""
+    },
+    "externalId" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "fd00d7a0-9282-11f0-8111-6db5412d1741"
+    },
+    "resources" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "fd00d7a0-9282-11f0-8111-6db5412d1741"
+    },
+    "scada" : false,
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
