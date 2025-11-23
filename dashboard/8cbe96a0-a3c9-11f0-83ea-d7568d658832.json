@@ -4330,7 +4330,7 @@
             "titleFont" : null,
             "titleColor" : null,
             "titleIcon" : null,
-            "enableDataExport" : false,
+            "enableDataExport" : true,
             "titleTooltip" : "",
             "widgetCss" : "",
             "pageSize" : 1024,
