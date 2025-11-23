@@ -6494,7 +6494,8 @@
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : "",
-            "margin" : "0px"
+            "margin" : "0px",
+            "borderRadius" : "10px"
           },
           "row" : 0,
           "col" : 0,
