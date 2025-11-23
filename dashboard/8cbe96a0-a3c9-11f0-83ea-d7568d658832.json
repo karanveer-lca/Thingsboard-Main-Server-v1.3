@@ -8986,7 +8986,7 @@
                 "xl" : {
                   "gridSettings" : {
                     "layoutType" : "default",
-                    "backgroundColor" : "#0F243E",
+                    "backgroundColor" : "#07111D",
                     "columns" : 200,
                     "margin" : 8,
                     "outerMargin" : true,
