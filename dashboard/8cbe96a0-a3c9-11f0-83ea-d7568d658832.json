@@ -8264,7 +8264,10 @@
             "borderRadius" : null,
             "units" : null,
             "decimals" : 0,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "border" : "2px solid white",
+              "border-right" : "0px solid black"
+            },
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
@@ -8432,7 +8435,10 @@
             "borderRadius" : null,
             "units" : null,
             "decimals" : 0,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "border-top" : "2px solid white",
+              "border-bottom" : "2px solid white"
+            },
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
@@ -8600,7 +8606,10 @@
             "borderRadius" : null,
             "units" : null,
             "decimals" : 0,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "border-top" : "2px solid white",
+              "border-bottom" : "2px solid white"
+            },
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
@@ -8772,7 +8781,11 @@
             "borderRadius" : null,
             "units" : null,
             "decimals" : 0,
-            "widgetStyle" : { },
+            "widgetStyle" : {
+              "border-top" : "2px solid white",
+              "border-bottom" : "2px solid white",
+              "border-right" : "2px solid white"
+            },
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
@@ -10191,7 +10204,7 @@
                     "layoutType" : "default",
                     "backgroundColor" : "#07111D",
                     "columns" : 200,
-                    "margin" : 8,
+                    "margin" : 0,
                     "outerMargin" : true,
                     "backgroundSizeMode" : "100%",
                     "minColumns" : 10,
@@ -10218,26 +10231,26 @@
                     "530b4ed3-de5f-9067-307c-6828286916cb" : {
                       "sizeX" : 22,
                       "sizeY" : 23,
-                      "row" : 5,
+                      "row" : 7,
                       "col" : 1
                     },
                     "c599e647-2f1b-51e5-f036-6b8aa7635933" : {
-                      "sizeX" : 16,
-                      "sizeY" : 16,
-                      "row" : 8,
+                      "sizeX" : 14,
+                      "sizeY" : 23,
+                      "row" : 7,
                       "col" : 23
                     },
                     "91c8d382-b3ea-ec57-5441-d963f61378ba" : {
-                      "sizeX" : 16,
-                      "sizeY" : 16,
-                      "row" : 8,
-                      "col" : 39
+                      "sizeX" : 14,
+                      "sizeY" : 23,
+                      "row" : 7,
+                      "col" : 37
                     },
                     "f3a8ec59-2a58-e7be-876d-d17290ac13cf" : {
-                      "sizeX" : 16,
-                      "sizeY" : 16,
-                      "row" : 8,
-                      "col" : 55
+                      "sizeX" : 14,
+                      "sizeY" : 23,
+                      "row" : 7,
+                      "col" : 51
                     }
                   }
                 }
