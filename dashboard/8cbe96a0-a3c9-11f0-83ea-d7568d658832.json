@@ -9623,8 +9623,8 @@
             }
           }
         },
-        "gauge_display" : {
-          "name" : "Gauge Display",
+        "visualize_metrics" : {
+          "name" : "Visualize Metrics",
           "root" : false,
           "layouts" : {
             "main" : {
