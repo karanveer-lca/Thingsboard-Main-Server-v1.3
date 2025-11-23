@@ -8793,6 +8793,169 @@
           "row" : 0,
           "col" : 0,
           "id" : "f3a8ec59-2a58-e7be-876d-d17290ac13cf"
+        },
+        "d8b8ad88-79e6-142b-94d2-04e245b11e8a" : {
+          "typeFullFqn" : "system.digital_gauges.gauge_justgage",
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "dataKeys" : [ {
+                "name" : "parts_per_hour",
+                "type" : "timeseries",
+                "label" : "parts_per_hour",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.8058094952173707
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1763831905243,
+                  "endTimeMs" : 1763918305243
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#07111D",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "gaugeType" : "arc",
+              "donutStartAngle" : 90,
+              "showMinMax" : false,
+              "minValue" : 0,
+              "maxValue" : 100,
+              "minMaxFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#666666"
+              },
+              "minMaxColor" : "#666666",
+              "showValue" : true,
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 36,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#FFFFFF"
+              },
+              "valueColor" : "#FFFFFF",
+              "showTitle" : true,
+              "title" : "PARTS/HOUR",
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#FFFFFF"
+              },
+              "titleColor" : "#FFFFFF",
+              "showUnitTitle" : false,
+              "unitTitle" : null,
+              "showTimestamp" : false,
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : null
+              },
+              "labelColor" : null,
+              "gaugeWidthScale" : 0.75,
+              "neonGlowBrightness" : 0,
+              "dashThickness" : 0,
+              "roundedLineCap" : false,
+              "gaugeColor" : "#eeeeee",
+              "barColor" : {
+                "type" : "constant",
+                "color" : "#2196f3",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 100
+                }
+              },
+              "showTicks" : false,
+              "tickWidth" : 4,
+              "colorTicks" : "#666",
+              "ticksValue" : [ ],
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "useFixedLevelColor" : false,
+              "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ]
+            },
+            "title" : "Gauge",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "configMode" : "advanced",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "actions" : { },
+            "enableDataExport" : true,
+            "borderRadius" : null,
+            "units" : null,
+            "decimals" : 0,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "d8b8ad88-79e6-142b-94d2-04e245b11e8a"
         }
       },
       "states" : {
@@ -10251,6 +10414,12 @@
                       "sizeY" : 23,
                       "row" : 7,
                       "col" : 51
+                    },
+                    "d8b8ad88-79e6-142b-94d2-04e245b11e8a" : {
+                      "sizeX" : 19,
+                      "sizeY" : 16,
+                      "row" : 12,
+                      "col" : 66
                     }
                   }
                 }
