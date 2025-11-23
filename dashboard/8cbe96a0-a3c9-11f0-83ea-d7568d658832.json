@@ -4273,16 +4273,37 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
+              "selectedTab" : 0,
               "realtime" : {
+                "realtimeType" : 0,
                 "interval" : 1000,
-                "timewindowMs" : 60000
+                "timewindowMs" : 86400000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : null,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
               },
               "aggregation" : {
                 "type" : "NONE",
                 "limit" : 200
-              }
+              },
+              "timezone" : null
             },
-            "showTitle" : false,
+            "showTitle" : true,
             "backgroundColor" : "#0F243E",
             "color" : "rgba(255, 255, 255, 0.87)",
             "padding" : "8px",
@@ -4295,12 +4316,15 @@
               "reserveSpaceForHiddenAction" : "true",
               "showTimestamp" : true,
               "dateFormat" : {
-                "format" : "yyyy-MM-dd HH:mm:ss"
+                "format" : "MM/dd/yyyy HH:mm",
+                "lastUpdateAgo" : false,
+                "custom" : false,
+                "auto" : false
               },
               "timestampExportOption" : "onlyVisible",
               "displayPagination" : true,
               "useEntityLabel" : false,
-              "defaultPageSize" : 10,
+              "defaultPageSize" : 30,
               "pageStepCount" : 3,
               "pageStepIncrement" : 10,
               "hideEmptyLines" : false,
@@ -4308,7 +4332,7 @@
               "useRowStyleFunction" : false,
               "rowStyleFunction" : ""
             },
-            "title" : "Duration",
+            "title" : "Duration Header",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "titleStyle" : {
