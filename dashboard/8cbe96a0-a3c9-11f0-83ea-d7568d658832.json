@@ -4312,14 +4312,14 @@
             "padding" : "8px",
             "settings" : {
               "enableSearch" : false,
-              "enableSelectColumnDisplay" : false,
+              "enableSelectColumnDisplay" : true,
               "enableStickyHeader" : true,
               "enableStickyAction" : true,
               "showCellActionsMenu" : true,
               "reserveSpaceForHiddenAction" : "true",
               "showTimestamp" : true,
               "dateFormat" : {
-                "format" : "MM/dd/yyyy HH:mm",
+                "format" : "dd MMM yyyy HH:mm:ss",
                 "lastUpdateAgo" : false,
                 "custom" : false,
                 "auto" : false
@@ -4379,7 +4379,7 @@
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
             "displayTimewindow" : true,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "titleFont" : null,
             "titleColor" : null,
             "titleIcon" : null,
