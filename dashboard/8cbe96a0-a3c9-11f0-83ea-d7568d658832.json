@@ -6417,7 +6417,10 @@
               "reserveSpaceForHiddenAction" : "true",
               "showTimestamp" : true,
               "dateFormat" : {
-                "format" : "yyyy-MM-dd HH:mm:ss"
+                "format" : "dd MMM yyyy HH:mm:ss",
+                "lastUpdateAgo" : false,
+                "custom" : false,
+                "auto" : false
               },
               "timestampExportOption" : "onlyVisible",
               "displayPagination" : true,
