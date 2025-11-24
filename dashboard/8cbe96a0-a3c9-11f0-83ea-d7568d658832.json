@@ -10228,6 +10228,314 @@
           "row" : 0,
           "col" : 0,
           "id" : "e71140b3-6b64-44fc-2ccc-d404f9b49330"
+        },
+        "f73da4e6-df96-5d81-0d08-b0b1aab3c6fe" : {
+          "typeFullFqn" : "system.bars",
+          "type" : "latest",
+          "sizeX" : 5,
+          "sizeY" : 4,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "dataKeys" : [ {
+                "name" : "act_duration_s_1",
+                "type" : "timeseries",
+                "label" : "DUR-1",
+                "color" : "#F44336",
+                "settings" : { },
+                "_hash" : 0.4918252054514983,
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
+              }, {
+                "name" : "act_duration_s_2",
+                "type" : "timeseries",
+                "label" : "DUR-2",
+                "color" : "#E89623",
+                "settings" : { },
+                "_hash" : 0.2065172543533489,
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
+              }, {
+                "name" : "act_duration_s_3",
+                "type" : "timeseries",
+                "label" : "DUR-3",
+                "color" : "#F5DD00",
+                "settings" : { },
+                "_hash" : 0.35166850453359677,
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
+              }, {
+                "name" : "act_duration_s_4",
+                "type" : "timeseries",
+                "label" : "DUR-4",
+                "color" : "#044AD3",
+                "settings" : { },
+                "_hash" : 0.4023577248731197,
+                "decimals" : 1,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
+              }, {
+                "name" : "act_duration_s_5",
+                "type" : "timeseries",
+                "label" : "DUR-5",
+                "color" : "#4CAF50",
+                "settings" : { },
+                "_hash" : 0.8264135958369384,
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
+              }, {
+                "name" : "act_duration_s_6",
+                "type" : "timeseries",
+                "label" : "DUR-6",
+                "color" : "#F44336",
+                "settings" : { },
+                "_hash" : 0.1472761691915515,
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
+              }, {
+                "name" : "act_duration_s_7",
+                "type" : "timeseries",
+                "label" : "DUR-7",
+                "color" : "#E89623",
+                "settings" : { },
+                "_hash" : 0.7949894279413012,
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
+              }, {
+                "name" : "act_duration_s_8",
+                "type" : "timeseries",
+                "label" : "DUR-8",
+                "color" : "#F5DD00",
+                "settings" : { },
+                "_hash" : 0.9522202929383626,
+                "decimals" : 0,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1758317402506,
+                  "endTimeMs" : 1758403802506
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : null,
+            "padding" : "0",
+            "settings" : {
+              "sortSeries" : false,
+              "animation" : {
+                "animation" : true,
+                "animationThreshold" : 2000,
+                "animationDuration" : 1000,
+                "animationEasing" : "cubicOut",
+                "animationDelay" : 0,
+                "animationDurationUpdate" : 500,
+                "animationEasingUpdate" : "cubicOut",
+                "animationDelayUpdate" : 0
+              },
+              "showLegend" : true,
+              "legendPosition" : "top",
+              "legendLabelFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "legendLabelColor" : "#FFFFFF47",
+              "legendValueFont" : {
+                "family" : "Roboto",
+                "size" : 25,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "20px"
+              },
+              "legendValueColor" : "rgba(255, 255, 255, 0.87)",
+              "showTooltip" : true,
+              "tooltipValueType" : "absolute",
+              "tooltipValueDecimals" : 0,
+              "tooltipValueFont" : {
+                "family" : "Roboto",
+                "size" : 13,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "16px"
+              },
+              "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
+              "tooltipBackgroundBlur" : 4,
+              "background" : {
+                "type" : "color",
+                "color" : "#244062",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                },
+                "imageUrl" : null
+              },
+              "padding" : "12px",
+              "barSettings" : {
+                "showBorder" : false,
+                "borderWidth" : 2,
+                "borderRadius" : 0,
+                "showLabel" : true,
+                "labelPosition" : "top",
+                "labelFont" : {
+                  "family" : "Roboto",
+                  "size" : 11,
+                  "sizeUnit" : "px",
+                  "style" : "normal",
+                  "weight" : "400",
+                  "lineHeight" : "1"
+                },
+                "labelColor" : "rgba(255, 255, 255, 0.76)",
+                "enableLabelBackground" : false,
+                "labelBackground" : "rgba(255,255,255,0.56)",
+                "backgroundSettings" : {
+                  "type" : "none",
+                  "opacity" : 0.4,
+                  "gradient" : {
+                    "start" : 100,
+                    "end" : 0
+                  }
+                },
+                "barWidth" : 80
+              },
+              "axisMin" : null,
+              "axisMax" : null,
+              "axisTickLabelFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "1"
+              },
+              "axisTickLabelColor" : "rgb(255, 255, 255)"
+            },
+            "title" : "Bars",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : null,
+            "decimals" : 1,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : null,
+            "actions" : {
+              "headerButton" : [ ]
+            },
+            "configMode" : "advanced",
+            "displayTimewindow" : true,
+            "margin" : "0",
+            "borderRadius" : "",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "24px"
+            },
+            "titleIcon" : "bar_chart",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "timewindowStyle" : {
+              "showIcon" : false,
+              "iconSize" : "24px",
+              "icon" : null,
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "400",
+                "style" : "normal",
+                "lineHeight" : "16px"
+              },
+              "color" : "rgba(0, 0, 0, 0.38)",
+              "displayTypePrefix" : true
+            },
+            "enableDataExport" : false,
+            "titleColor" : null
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "f73da4e6-df96-5d81-0d08-b0b1aab3c6fe"
         }
       },
       "states" : {
@@ -12048,6 +12356,12 @@
                       "sizeY" : 38,
                       "row" : 30,
                       "col" : 44
+                    },
+                    "f73da4e6-df96-5d81-0d08-b0b1aab3c6fe" : {
+                      "sizeX" : 64,
+                      "sizeY" : 27,
+                      "row" : 43,
+                      "col" : 113
                     }
                   }
                 },
