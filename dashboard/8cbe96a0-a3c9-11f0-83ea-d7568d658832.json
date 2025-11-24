@@ -11527,6 +11527,178 @@
                       "col" : 0
                     }
                   }
+                },
+                "lg" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "#07111D",
+                    "columns" : 200,
+                    "margin" : 8,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "100%",
+                    "minColumns" : 10,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : true,
+                    "rowHeight" : 70,
+                    "backgroundImageUrl" : null,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "d7d0b944-aecc-9e3d-c00a-1f347d2b37f1" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 0,
+                      "col" : 0
+                    },
+                    "95a520a8-be88-89ea-69f5-59a762e3814c" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 6,
+                      "col" : 1
+                    },
+                    "a2f2f295-0cdc-bab5-0bf8-05c3b75a253c" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 6,
+                      "col" : 25
+                    },
+                    "922598ca-5644-ab96-0682-4dad344f11cf" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 69,
+                      "col" : 0
+                    }
+                  }
+                },
+                "md" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "#07111D",
+                    "columns" : 200,
+                    "margin" : 8,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "100%",
+                    "minColumns" : 10,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : true,
+                    "rowHeight" : 70,
+                    "backgroundImageUrl" : null,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "d7d0b944-aecc-9e3d-c00a-1f347d2b37f1" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 0,
+                      "col" : 0
+                    },
+                    "95a520a8-be88-89ea-69f5-59a762e3814c" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 6,
+                      "col" : 1
+                    },
+                    "a2f2f295-0cdc-bab5-0bf8-05c3b75a253c" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 6,
+                      "col" : 25
+                    },
+                    "922598ca-5644-ab96-0682-4dad344f11cf" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 69,
+                      "col" : 0
+                    }
+                  }
+                },
+                "sm" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "#07111D",
+                    "columns" : 200,
+                    "margin" : 8,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "100%",
+                    "minColumns" : 10,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : true,
+                    "rowHeight" : 70,
+                    "backgroundImageUrl" : null,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "d7d0b944-aecc-9e3d-c00a-1f347d2b37f1" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 0,
+                      "col" : 0
+                    },
+                    "95a520a8-be88-89ea-69f5-59a762e3814c" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 6,
+                      "col" : 1
+                    },
+                    "a2f2f295-0cdc-bab5-0bf8-05c3b75a253c" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 6,
+                      "col" : 25
+                    },
+                    "922598ca-5644-ab96-0682-4dad344f11cf" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 69,
+                      "col" : 0
+                    }
+                  }
+                },
+                "xs" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "#07111D",
+                    "columns" : 200,
+                    "margin" : 8,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "100%",
+                    "minColumns" : 10,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : true,
+                    "rowHeight" : 70,
+                    "backgroundImageUrl" : null,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "d7d0b944-aecc-9e3d-c00a-1f347d2b37f1" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 0,
+                      "col" : 0
+                    },
+                    "95a520a8-be88-89ea-69f5-59a762e3814c" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 6,
+                      "col" : 1
+                    },
+                    "a2f2f295-0cdc-bab5-0bf8-05c3b75a253c" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 6,
+                      "col" : 25
+                    },
+                    "922598ca-5644-ab96-0682-4dad344f11cf" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 69,
+                      "col" : 0
+                    }
+                  }
                 }
               }
             }
