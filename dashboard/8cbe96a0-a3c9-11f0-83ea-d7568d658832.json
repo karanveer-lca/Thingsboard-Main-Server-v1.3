@@ -6573,7 +6573,8 @@
               "attributeName" : "ai_response",
               "attributeScope" : "SERVER_SCOPE",
               "requestMethod" : "GET",
-              "includePayload" : true
+              "includePayload" : true,
+              "targetEntitySource" : "machine"
             },
             "title" : "HTML Card",
             "dropShadow" : false,
