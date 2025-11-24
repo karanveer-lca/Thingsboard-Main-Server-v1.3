@@ -11768,6 +11768,154 @@
                       "col" : 0
                     }
                   }
+                },
+                "lg" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "#07111D",
+                    "columns" : 200,
+                    "margin" : 8,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "100%",
+                    "minColumns" : 10,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : true,
+                    "rowHeight" : 70,
+                    "backgroundImageUrl" : null,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "2b5002ff-3460-7727-39dd-76e0e8b57388" : {
+                      "sizeX" : 113,
+                      "sizeY" : 64,
+                      "row" : 5,
+                      "col" : 0
+                    },
+                    "601e1427-cb15-8022-0fcd-81d7321e820d" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 0,
+                      "col" : 0
+                    },
+                    "f2d0b56e-c234-8d4a-3fdc-f60aa9de8b7a" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 69,
+                      "col" : 0
+                    }
+                  }
+                },
+                "md" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "#07111D",
+                    "columns" : 200,
+                    "margin" : 8,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "100%",
+                    "minColumns" : 10,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : true,
+                    "rowHeight" : 70,
+                    "backgroundImageUrl" : null,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "2b5002ff-3460-7727-39dd-76e0e8b57388" : {
+                      "sizeX" : 113,
+                      "sizeY" : 64,
+                      "row" : 5,
+                      "col" : 0
+                    },
+                    "601e1427-cb15-8022-0fcd-81d7321e820d" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 0,
+                      "col" : 0
+                    },
+                    "f2d0b56e-c234-8d4a-3fdc-f60aa9de8b7a" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 69,
+                      "col" : 0
+                    }
+                  }
+                },
+                "sm" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "#07111D",
+                    "columns" : 200,
+                    "margin" : 8,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "100%",
+                    "minColumns" : 10,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : true,
+                    "rowHeight" : 70,
+                    "backgroundImageUrl" : null,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "2b5002ff-3460-7727-39dd-76e0e8b57388" : {
+                      "sizeX" : 113,
+                      "sizeY" : 64,
+                      "row" : 5,
+                      "col" : 0
+                    },
+                    "601e1427-cb15-8022-0fcd-81d7321e820d" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 0,
+                      "col" : 0
+                    },
+                    "f2d0b56e-c234-8d4a-3fdc-f60aa9de8b7a" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 69,
+                      "col" : 0
+                    }
+                  }
+                },
+                "xs" : {
+                  "gridSettings" : {
+                    "layoutType" : "default",
+                    "backgroundColor" : "#07111D",
+                    "columns" : 200,
+                    "margin" : 8,
+                    "outerMargin" : true,
+                    "backgroundSizeMode" : "100%",
+                    "minColumns" : 10,
+                    "viewFormat" : "grid",
+                    "autoFillHeight" : true,
+                    "rowHeight" : 70,
+                    "backgroundImageUrl" : null,
+                    "mobileAutoFillHeight" : false,
+                    "mobileRowHeight" : 70
+                  },
+                  "widgets" : {
+                    "2b5002ff-3460-7727-39dd-76e0e8b57388" : {
+                      "sizeX" : 113,
+                      "sizeY" : 64,
+                      "row" : 5,
+                      "col" : 0
+                    },
+                    "601e1427-cb15-8022-0fcd-81d7321e820d" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 0,
+                      "col" : 0
+                    },
+                    "f2d0b56e-c234-8d4a-3fdc-f60aa9de8b7a" : {
+                      "sizeX" : 113,
+                      "sizeY" : 5,
+                      "row" : 69,
+                      "col" : 0
+                    }
+                  }
                 }
               }
             }
