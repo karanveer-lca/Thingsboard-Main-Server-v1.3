@@ -6574,7 +6574,7 @@
               "attributeScope" : "SERVER_SCOPE",
               "requestMethod" : "GET",
               "includePayload" : true,
-              "targetEntitySource" : "machine"
+              "targetEntitySource" : "jobcard"
             },
             "title" : "HTML Card",
             "dropShadow" : false,
