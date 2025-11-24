@@ -78,19 +78,6 @@
     "type" : "ACTIVE_JOB",
     "typeGroup" : "COMMON",
     "version" : 13334
-  }, {
-    "additionalInfo" : null,
-    "from" : {
-      "entityType" : "DEVICE",
-      "id" : "6bb3a990-c328-11f0-9786-450cd38b38bb"
-    },
-    "to" : {
-      "entityType" : "ASSET",
-      "id" : "40114da0-c7b1-11f0-ba24-45a5d1fbd209"
-    },
-    "type" : "ACTIVE_JOB",
-    "typeGroup" : "COMMON",
-    "version" : 13352
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -98,7 +85,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1763855733697,
+      "lastUpdateTs" : 1763907516983,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -106,16 +93,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1763855733691,
-      "longValue" : 1763855733691,
+      "lastUpdateTs" : 1763907516975,
+      "longValue" : 1763907516975,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1763855108488,
-      "longValue" : 1763855108202,
+      "lastUpdateTs" : 1763906902452,
+      "longValue" : 1763906901012,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
