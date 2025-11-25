@@ -13313,7 +13313,7 @@
           "filter" : {
             "type" : "stateEntity",
             "resolveMultiple" : false,
-            "stateEntityParamName" : "entityGroupId",
+            "stateEntityParamName" : "lineName",
             "defaultStateEntity" : null
           }
         }
