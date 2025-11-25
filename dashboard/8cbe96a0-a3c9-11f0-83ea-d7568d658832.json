@@ -4592,7 +4592,7 @@
             "padding" : "8px",
             "settings" : {
               "imageUrl" : "tb-image;/api/images/tenant/floorplan.webp",
-              "groupId" : "5a89ea50-c9ca-11f0-a09c-911c53809081",
+              "groupId" : "1d6d5390-c9d0-11f0-a09c-911c53809081",
               "targetStateId" : "machine_dashboard",
               "stateParamName" : "jobcard",
               "positions" : "[\n    {\n        \"by\": \"name\",\n        \"match\": \"MACHINE #1\",\n        \"x\": 40,\n        \"y\": 20,\n        \"label\": \"MACHINE #1\"\n    }, {\n        \"by\": \"name\",\n        \"match\": \"MACHINE #2\",\n        \"x\": 40,\n        \"y\": 50,\n        \"label\": \"MACHINE #2\"\n    }, {\n        \"by\": \"name\",\n        \"match\": \"MACHINE #3\",\n        \"x\": 70,\n        \"y\": 50,\n        \"label\": \"MACHINE #3\"\n    }, {\n        \"by\": \"name\",\n        \"match\": \"__ingestion_fastapi__\",\n        \"x\": 60,\n        \"y\": 40,\n        \"label\": \"__ingestion_fastapi__\"\n    }\n]",
@@ -10921,7 +10921,7 @@
             "padding" : "0px",
             "settings" : {
               "useMarkdownTextFunction" : false,
-              "markdownTextPattern" : "<div style=\"position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\">\r\n  <div style=\"\r\n    height:100%; \r\n    width:100%;\r\n    display:flex; \r\n    align-items:center; \r\n    justify-content:center;\r\n    background:#0f243e; \r\n    color:#ffffff;\r\n    <!--border:5px solid #000000;-->\r\n    border-radius:10px;\r\n    padding:6px 12px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700; \r\n    line-height:1; \r\n    text-transform:none; \r\n    letter-spacing:0.3px;\r\n    font-size: clamp(24px, 1.9vw, 50px);\r\n    box-sizing:border-box;\r\n  \">\r\n   LINE VIEW\r\n  </div>\r\n</div>\r\n",
+              "markdownTextPattern" : "<div style=\"position:absolute; inset:0; margin:0; padding:0; box-sizing:border-box;\">\r\n  <div style=\"\r\n    height:100%; \r\n    width:100%;\r\n    display:flex; \r\n    align-items:center; \r\n    justify-content:center;\r\n    background:#0f243e; \r\n    color:#ffffff;\r\n    <!--border:5px solid #000000;-->\r\n    border-radius:10px;\r\n    padding:6px 12px;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-weight:700; \r\n    line-height:1; \r\n    text-transform:none; \r\n    letter-spacing:0.3px;\r\n    font-size: clamp(24px, 1.9vw, 50px);\r\n    box-sizing:border-box;\r\n  \">\r\n   PLANT VIEW\r\n  </div>\r\n</div>\r\n",
               "markdownTextFunction" : "return '# Some title\\n - Entity name: ' + data[0]['entityName'];",
               "applyDefaultMarkdownStyle" : true,
               "markdownCss" : ""
