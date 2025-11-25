@@ -10877,43 +10877,6 @@
             }
           }
         },
-        "plant_sld" : {
-          "name" : "SLD Plant View",
-          "root" : true,
-          "layouts" : {
-            "main" : {
-              "widgets" : {
-                "922f72e5-a582-fcd6-c9a8-7dfa283e585f" : {
-                  "sizeX" : 25,
-                  "sizeY" : 12,
-                  "row" : 1,
-                  "col" : 0
-                },
-                "cefb73d5-cf20-db72-ee92-044b927f7b6c" : {
-                  "sizeX" : 25,
-                  "sizeY" : 1,
-                  "row" : 0,
-                  "col" : 0
-                }
-              },
-              "gridSettings" : {
-                "layoutType" : "default",
-                "backgroundColor" : "#07111D",
-                "columns" : 24,
-                "margin" : 5,
-                "outerMargin" : true,
-                "backgroundSizeMode" : "100%",
-                "minColumns" : 24,
-                "viewFormat" : "grid",
-                "autoFillHeight" : true,
-                "rowHeight" : 70,
-                "backgroundImageUrl" : null,
-                "mobileAutoFillHeight" : false,
-                "mobileRowHeight" : 70
-              }
-            }
-          }
-        },
         "machine_dashboard" : {
           "name" : "Machine Dashboard",
           "root" : false,
@@ -13061,6 +13024,60 @@
                     }
                   }
                 }
+              }
+            }
+          }
+        },
+        "line_view" : {
+          "name" : "Line View",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "922f72e5-a582-fcd6-c9a8-7dfa283e585f" : {
+                  "sizeX" : 25,
+                  "sizeY" : 12,
+                  "row" : 1,
+                  "col" : 0
+                },
+                "cefb73d5-cf20-db72-ee92-044b927f7b6c" : {
+                  "sizeX" : 25,
+                  "sizeY" : 1,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#07111D",
+                "columns" : 24,
+                "margin" : 5,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 24,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "backgroundImageUrl" : null,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
+        },
+        "plant_view" : {
+          "name" : "Plant View",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : { },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
               }
             }
           }
