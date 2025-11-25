@@ -10880,8 +10880,10 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "cardHtml" : "<div class='card'>HTML code here</div>",
-              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+              "imageUrl" : "tb-image;/api/images/tenant/plant_blueprint.jpg",
+              "linesConfig" : "[\n  {\n    \"id\": \"line_1\",\n    \"label\": \"Line 1\",\n    \"groupId\": \"5a89ea50-c9ca-11f0-a09c-911c53809081\",\n    \"x\": 30,\n    \"y\": 30\n  },\n  {\n    \"id\": \"line_2\",\n    \"label\": \"Line 2\",\n    \"groupId\": \"221d3090-9168-11f0-84d5-efc64010e13c\",\n    \"x\": 60,\n    \"y\": 50\n  }\n]",
+              "targetStateId" : "machine_sld_view",
+              "stateParamName" : "entityGroupId"
             },
             "title" : "HTML Card",
             "dropShadow" : true
