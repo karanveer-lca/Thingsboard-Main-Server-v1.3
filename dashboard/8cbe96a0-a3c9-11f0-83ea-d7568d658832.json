@@ -4592,7 +4592,7 @@
             "padding" : "8px",
             "settings" : {
               "imageUrl" : "tb-image;/api/images/tenant/floorplan.webp",
-              "groupId" : "45504450-ae8f-11f0-a60f-a7f9e67d958a",
+              "groupId" : "5a89ea50-c9ca-11f0-a09c-911c53809081",
               "targetStateId" : "machine_dashboard",
               "stateParamName" : "jobcard",
               "positions" : "[\n    {\n        \"by\": \"name\",\n        \"match\": \"MACHINE #1\",\n        \"x\": 40,\n        \"y\": 20,\n        \"label\": \"MACHINE #1\"\n    }, {\n        \"by\": \"name\",\n        \"match\": \"MACHINE #2\",\n        \"x\": 40,\n        \"y\": 50,\n        \"label\": \"MACHINE #2\"\n    }, {\n        \"by\": \"name\",\n        \"match\": \"MACHINE #3\",\n        \"x\": 70,\n        \"y\": 50,\n        \"label\": \"MACHINE #3\"\n    }, {\n        \"by\": \"name\",\n        \"match\": \"__ingestion_fastapi__\",\n        \"x\": 60,\n        \"y\": 40,\n        \"label\": \"__ingestion_fastapi__\"\n    }\n]",
