@@ -13071,7 +13071,7 @@
         },
         "line_view" : {
           "name" : "Line View",
-          "root" : true,
+          "root" : false,
           "layouts" : {
             "main" : {
               "widgets" : {
@@ -13108,7 +13108,7 @@
         },
         "plant_view" : {
           "name" : "Plant View",
-          "root" : false,
+          "root" : true,
           "layouts" : {
             "main" : {
               "widgets" : {
