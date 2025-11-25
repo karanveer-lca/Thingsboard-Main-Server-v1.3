@@ -48,15 +48,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "availability",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : null,
-      "strValue" : "0.32226664349035283"
+      "strValue" : "0.37665867306155076"
     }, {
       "booleanValue" : null,
-      "doubleValue" : 32.23,
+      "doubleValue" : 37.67,
       "jsonValue" : null,
       "key" : "availability_pct",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -64,7 +64,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "bad_production_switch",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : 2,
       "strValue" : null
     }, {
@@ -72,7 +72,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "bad_qty_pcs",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : 23,
       "strValue" : null
     }, {
@@ -416,7 +416,7 @@
       "doubleValue" : 60.0,
       "jsonValue" : null,
       "key" : "ideal_cycle_time",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -424,7 +424,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "job_status",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : null,
       "strValue" : "active"
     }, {
@@ -448,7 +448,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "machine_bad_prod_count_pcs",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : 314,
       "strValue" : null
     }, {
@@ -472,15 +472,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "oee",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : null,
-      "strValue" : "0.22723929989704367"
+      "strValue" : "0.27708224225217526"
     }, {
       "booleanValue" : null,
-      "doubleValue" : 22.72,
+      "doubleValue" : 27.71,
       "jsonValue" : null,
       "key" : "oee_pct",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -493,10 +493,10 @@
       "strValue" : "Part A"
     }, {
       "booleanValue" : null,
-      "doubleValue" : 151.45631067961165,
+      "doubleValue" : 132.937181663837,
       "jsonValue" : null,
       "key" : "parts_per_hour",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -504,7 +504,7 @@
       "doubleValue" : 1.0,
       "jsonValue" : null,
       "key" : "performance",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -512,7 +512,7 @@
       "doubleValue" : 100.0,
       "jsonValue" : null,
       "key" : "performance_pct",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -525,18 +525,18 @@
       "strValue" : "Plant A"
     }, {
       "booleanValue" : null,
-      "doubleValue" : 0.7051282051282052,
+      "doubleValue" : 0.735632183908046,
       "jsonValue" : null,
       "key" : "quality",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
-      "doubleValue" : 70.51,
+      "doubleValue" : 73.56,
       "jsonValue" : null,
       "key" : "quality_pct",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -552,7 +552,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "user_bad_prod_count_pcs",
-      "lastUpdateTs" : 1764073253326,
+      "lastUpdateTs" : 1764073755750,
       "longValue" : 0,
       "strValue" : null
     } ]
