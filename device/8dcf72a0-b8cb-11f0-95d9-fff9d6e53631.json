@@ -32,7 +32,7 @@
       "id" : "8dcf72a0-b8cb-11f0-95d9-fff9d6e53631"
     },
     "label" : "",
-    "name" : "MACHINE #2",
+    "name" : "DA_M01",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "Machines"
@@ -42,23 +42,65 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
-  "relations" : [ ],
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "8dcf72a0-b8cb-11f0-95d9-fff9d6e53631"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "bd4e7ae0-c9eb-11f0-a09c-911c53809081"
+    },
+    "type" : "ACTIVE_JOB",
+    "typeGroup" : "COMMON",
+    "version" : 13547
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "8dcf72a0-b8cb-11f0-95d9-fff9d6e53631"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "1880d980-c8a2-11f0-84bd-911c53809081"
+    },
+    "type" : "ACTIVE_JOB",
+    "typeGroup" : "COMMON",
+    "version" : 13516
+  } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1762185102760,
+      "lastUpdateTs" : 1763988416060,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "ai_response",
+      "lastUpdateTs" : 1764019268990,
+      "longValue" : null,
+      "strValue" : "{\n  \"summary\": \"The production system is experiencing significant downtime caused by a few alarms with high durations and/or occurrences, which are negatively impacting efficiency. Alarm 2 is the most critical due to its extreme duration, and chronic alarms like Alarm 1 and Alarm 5 also need immediate attention.\",\n  \"criticalIssues\": [\n    \"Alarm 2: Longest total duration (3324.55 minutes), suggesting a critical issue with extended impact.\",\n    \"Alarm 5: High impact score due to a combination of frequency (25 occurrences) and long duration (651.27 minutes).\",\n    \"Alarm 6: Significant duration (1093.28 minutes) despite low frequency (2 occurrences), indicating a critical issue.\"\n  ],\n  \"metrics\": {\n    \"totalDowntime\": \"6050.08 minutes (~30.84% of potential production time assuming a 24-hour shift).\",\n    \"mostProblematicAlarm\": \"Alarm 2 - Extremely long duration with moderate occurrence, likely causing the bulk of downtime.\",\n    \"estimatedProductionLoss\": \"Approximately 495 units (assuming 19624 units produced over 1440 minutes, ~13.63 units lost per minute of downtime).\"\n  },\n  \"recommendations\": [\n    \"Investigate and prioritize resolving Alarm 2, as it is causing the largest downtime impact. Check machine components or processes associated with this alarm.\",\n    \"Conduct root cause analysis on Alarm 5, which has both high frequency and duration, to identify and mitigate recurring issues.\",\n    \"Implement preventive maintenance for Alarm 6 to address the critical failures causing long durations despite low occurrence.\",\n    \"Train operators on Alarm 1 and Alarm 5 to reduce repeat occurrences through better handling or process adjustments.\",\n    \"Set up real-time monitoring and alert escalation for Alarm 2, Alarm 5, and Alarm 6 to proactively address issues before they escalate.\"\n  ],\n  \"predictions\": \"If current trends continue, Alarm 2's extended durations and Alarm 5's high frequency will likely result in an additional 200-250 minutes of downtime, causing a potential production loss of 45-60 units in the next 8-hour shift. Alarm 1 also shows signs of becoming more frequent and requires monitoring.\",\n  \"urgencyLevel\": \"CRITICAL\"\n}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1762185102753,
-      "longValue" : 1762185102753,
+      "lastUpdateTs" : 1763959524202,
+      "longValue" : 1763959524202,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1764074406955,
+      "longValue" : 1764074406249,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

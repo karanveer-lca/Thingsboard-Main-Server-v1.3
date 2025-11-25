@@ -47,11 +47,11 @@
     },
     "to" : {
       "entityType" : "ASSET",
-      "id" : "0fcd7100-c482-11f0-9f8a-911c53809081"
+      "id" : "db7e2360-c6e6-11f0-ba24-45a5d1fbd209"
     },
     "type" : "ACTIVE_JOB",
     "typeGroup" : "COMMON",
-    "version" : 13328
+    "version" : 13349
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -65,14 +65,27 @@
     "type" : "ACTIVE_JOB",
     "typeGroup" : "COMMON",
     "version" : 13307
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "6bb3a990-c328-11f0-9786-450cd38b38bb"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "2df3fe20-c625-11f0-9f8a-911c53809081"
+    },
+    "type" : "ACTIVE_JOB",
+    "typeGroup" : "COMMON",
+    "version" : 13334
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1763473963300,
+      "lastUpdateTs" : 1764057763418,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -80,16 +93,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1763473732616,
-      "longValue" : 1763473732616,
+      "lastUpdateTs" : 1764057763412,
+      "longValue" : 1764057763412,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1763482561298,
-      "longValue" : 1763482560609,
+      "lastUpdateTs" : 1764057135955,
+      "longValue" : 1764057133046,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

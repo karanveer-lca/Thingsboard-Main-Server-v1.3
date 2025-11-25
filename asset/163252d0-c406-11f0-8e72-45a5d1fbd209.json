@@ -39,6 +39,14 @@
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "ai_response",
+      "lastUpdateTs" : 1764018611021,
+      "longValue" : null,
+      "strValue" : "{\n  \"summary\": \"The production system shows significant downtime, with multiple alarms frequently triggering and causing disruptions. Alarm 3, Alarm 8, and Alarm 1 are the most problematic, contributing to high downtime and potential cascading failure risks.\",\n  \"criticalIssues\": [\n    \"Alarm 3: Highest occurrence rate (632 times) with a significant potential impact despite undefined duration.\",\n    \"Alarm 8: Triggered 158 times with a cumulative impact score of 0.00 due to undefined duration but high frequency.\",\n    \"Alarm 1: Triggered 130 times with an impact score of 1.52, indicating a notable contribution to downtime.\"\n  ],\n  \"metrics\": {\n    \"totalDowntime\": \"23.97 minutes (369.67% of potential production time)\",\n    \"mostProblematicAlarm\": \"Alarm 3 - High occurrence rate with undefined duration data, suggesting significant unresolved issues.\",\n    \"estimatedProductionLoss\": \"Potentially 220 units if alarms continue to disrupt production.\"\n  },\n  \"recommendations\": [\n    \"Investigate and resolve the root cause of Alarm 3 immediately as it has the highest occurrence rate.\",\n    \"Perform a detailed analysis of Alarm 8 to understand and address its frequent triggers, even though the duration is undefined.\",\n    \"Prioritize operator training to manage Alarm 1 occurrences more effectively and reduce its downtime impact.\",\n    \"Implement a predictive maintenance schedule to proactively address recurring alarms and minimize downtime.\",\n    \"Optimize alarm monitoring and response protocols to ensure critical alarms are addressed promptly without cascading failures.\"\n  ],\n  \"predictions\": \"If current alarm patterns persist, downtime may increase in the next shift, leading to an estimated production loss of 200–250 units. Alarm 3 and Alarm 8 are likely to continue trending upward, requiring immediate attention to prevent extended disruptions.\",\n  \"urgencyLevel\": \"CRITICAL\"\n}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "baseline_duration_ms",
       "lastUpdateTs" : 1763419106219,
       "longValue" : 6048000,
@@ -360,7 +368,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "job_status",
-      "lastUpdateTs" : 1763470476928,
+      "lastUpdateTs" : 1763815218178,
       "longValue" : null,
       "strValue" : "expired"
     }, {
