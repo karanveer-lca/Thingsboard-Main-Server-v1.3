@@ -4664,7 +4664,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "entityAliasId" : "06e21580-fce2-8838-3e7f-a02f9c439c3e",
               "dataKeys" : [ ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -13304,6 +13304,16 @@
             "type" : "stateEntity",
             "resolveMultiple" : false,
             "stateEntityParamName" : "machineId",
+            "defaultStateEntity" : null
+          }
+        },
+        "06e21580-fce2-8838-3e7f-a02f9c439c3e" : {
+          "id" : "06e21580-fce2-8838-3e7f-a02f9c439c3e",
+          "alias" : "Line",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "entityGroupLabel",
             "defaultStateEntity" : null
           }
         }
