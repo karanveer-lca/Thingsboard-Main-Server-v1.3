@@ -21,6 +21,12 @@
         "type" : "ENTITY_FIELD",
         "key" : "label",
         "sortOrder" : "NONE"
+      }, {
+        "type" : "ENTITY_FIELD",
+        "key" : "assigned_customer",
+        "sortOrder" : "NONE",
+        "mobileHide" : false,
+        "title" : null
       } ],
       "settings" : { },
       "actions" : { }

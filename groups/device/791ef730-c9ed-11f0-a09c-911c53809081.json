@@ -30,9 +30,9 @@
     "groupAll" : false,
     "id" : {
       "entityType" : "ENTITY_GROUP",
-      "id" : "5a89ea50-c9ca-11f0-a09c-911c53809081"
+      "id" : "791ef730-c9ed-11f0-a09c-911c53809081"
     },
-    "name" : "Differential Assembly",
+    "name" : "Final Assembly",
     "ownerId" : {
       "entityType" : "TENANT",
       "id" : "f78edf10-ae8e-11f0-a60f-a7f9e67d958a"

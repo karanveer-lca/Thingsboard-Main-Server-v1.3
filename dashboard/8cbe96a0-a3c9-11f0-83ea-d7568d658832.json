@@ -4595,7 +4595,7 @@
               "groupId" : "5a89ea50-c9ca-11f0-a09c-911c53809081",
               "targetStateId" : "machine_dashboard",
               "stateParamName" : "jobcard",
-              "positions" : "[\n    {\n        \"by\": \"name\",\n        \"match\": \"MACHINE #1\",\n        \"x\": 40,\n        \"y\": 20,\n        \"label\": \"MACHINE #1\"\n    }, {\n        \"by\": \"name\",\n        \"match\": \"MACHINE #2\",\n        \"x\": 40,\n        \"y\": 50,\n        \"label\": \"MACHINE #2\"\n    }, {\n        \"by\": \"name\",\n        \"match\": \"MACHINE #3\",\n        \"x\": 70,\n        \"y\": 50,\n        \"label\": \"MACHINE #3\"\n    }, {\n        \"by\": \"name\",\n        \"match\": \"__ingestion_fastapi__\",\n        \"x\": 60,\n        \"y\": 40,\n        \"label\": \"__ingestion_fastapi__\"\n    }\n]",
+              "positions" : "[{\r\n    \"by\": \"name\",\r\n    \"match\": \"MACHINE #1\",\r\n    \"x\": 60,\r\n    \"y\": 60,\r\n    \"label\": \"MACHINE #1\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"MACHINE #2\",\r\n    \"x\": 60,\r\n    \"y\": 68,\r\n    \"label\": \"MACHINE #2\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"MACHINE #3\",\r\n    \"x\": 70,\r\n    \"y\": 60,\r\n    \"label\": \"MACHINE #3\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"DA-M01\",\r\n    \"x\": 40,\r\n    \"y\": 50,\r\n    \"label\": \"DA-M01\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"DA-M02\",\r\n    \"x\": 50,\r\n    \"y\": 50,\r\n    \"label\": \"DA-M02\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"DA-M03\",\r\n    \"x\": 60,\r\n    \"y\": 50,\r\n    \"label\": \"DA-M03\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"DA-M04\",\r\n    \"x\": 70,\r\n    \"y\": 50,\r\n    \"label\": \"DA-M04\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"DA-M05\",\r\n    \"x\": 80,\r\n    \"y\": 50,\r\n    \"label\": \"DA-M05\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"RCA-M01\",\r\n    \"x\": 40,\r\n    \"y\": 65,\r\n    \"label\": \"RCA-M01\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"RCA-M02\",\r\n    \"x\": 50,\r\n    \"y\": 65,\r\n    \"label\": \"RCA-M02\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"RCA-M03\",\r\n    \"x\": 60,\r\n    \"y\": 65,\r\n    \"label\": \"RCA-M03\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"RCA-M04\",\r\n    \"x\": 70,\r\n    \"y\": 65,\r\n    \"label\": \"RCA-M04\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"RCA-M05\",\r\n    \"x\": 80,\r\n    \"y\": 65,\r\n    \"label\": \"RCA-M05\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"GBA-M01\",\r\n    \"x\": 40,\r\n    \"y\": 40,\r\n    \"label\": \"GBA-M01\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"GBA-M02\",\r\n    \"x\": 50,\r\n    \"y\": 40,\r\n    \"label\": \"GBA-M02\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"GBA-M03\",\r\n    \"x\": 60,\r\n    \"y\": 40,\r\n    \"label\": \"GBA-M03\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"GBA-M04\",\r\n    \"x\": 70,\r\n    \"y\": 40,\r\n    \"label\": \"GBA-M04\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"GBA-M05\",\r\n    \"x\": 80,\r\n    \"y\": 40,\r\n    \"label\": \"GBA-M05\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"TC-M01\",\r\n    \"x\": 40,\r\n    \"y\": 55,\r\n    \"label\": \"TC-M01\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"TC-M02\",\r\n    \"x\": 50,\r\n    \"y\": 55,\r\n    \"label\": \"TC-M02\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"TC-M03\",\r\n    \"x\": 60,\r\n    \"y\": 55,\r\n    \"label\": \"TC-M03\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"TC-M04\",\r\n    \"x\": 70,\r\n    \"y\": 55,\r\n    \"label\": \"TC-M04\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"TC-M05\",\r\n    \"x\": 80,\r\n    \"y\": 55,\r\n    \"label\": \"TC-M05\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"FRA-M01\",\r\n    \"x\": 40,\r\n    \"y\": 45,\r\n    \"label\": \"FRA-M01\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"FRA-M02\",\r\n    \"x\": 50,\r\n    \"y\": 45,\r\n    \"label\": \"FRA-M02\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"FRA-M03\",\r\n    \"x\": 60,\r\n    \"y\": 45,\r\n    \"label\": \"FRA-M03\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"FRA-M04\",\r\n    \"x\": 70,\r\n    \"y\": 45,\r\n    \"label\": \"FRA-M04\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"FRA-M05\",\r\n    \"x\": 80,\r\n    \"y\": 45,\r\n    \"label\": \"FRA-M05\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"EA-M01\",\r\n    \"x\": 40,\r\n    \"y\": 35,\r\n    \"label\": \"EA-M01\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"EA-M02\",\r\n    \"x\": 50,\r\n    \"y\": 35,\r\n    \"label\": \"EA-M02\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"EA-M03\",\r\n    \"x\": 60,\r\n    \"y\": 35,\r\n    \"label\": \"EA-M03\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"EA-M04\",\r\n    \"x\": 70,\r\n    \"y\": 35,\r\n    \"label\": \"EA-M04\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"EA-M05\",\r\n    \"x\": 80,\r\n    \"y\": 35,\r\n    \"label\": \"EA-M05\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"MLA-M01\",\r\n    \"x\": 40,\r\n    \"y\": 30,\r\n    \"label\": \"MLA-M01\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"MLA-M02\",\r\n    \"x\": 50,\r\n    \"y\": 30,\r\n    \"label\": \"MLA-M02\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"MLA-M03\",\r\n    \"x\": 60,\r\n    \"y\": 30,\r\n    \"label\": \"MLA-M03\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"MLA-M04\",\r\n    \"x\": 70,\r\n    \"y\": 30,\r\n    \"label\": \"MLA-M04\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"MLA-M05\",\r\n    \"x\": 80,\r\n    \"y\": 30,\r\n    \"label\": \"MLA-M05\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"FA-M01\",\r\n    \"x\": 40,\r\n    \"y\": 75,\r\n    \"label\": \"FA-M01\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"FA-M02\",\r\n    \"x\": 50,\r\n    \"y\": 75,\r\n    \"label\": \"FA-M02\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"FA-M03\",\r\n    \"x\": 60,\r\n    \"y\": 75,\r\n    \"label\": \"FA-M03\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"FA-M04\",\r\n    \"x\": 70,\r\n    \"y\": 75,\r\n    \"label\": \"FA-M04\"\r\n}, {\r\n    \"by\": \"name\",\r\n    \"match\": \"FA-M05\",\r\n    \"x\": 80,\r\n    \"y\": 75,\r\n    \"label\": \"FA-M05\"\r\n}]\r\n",
               "dataKeys" : "[\r\n  {\r\n    \"key\": \"runtime_s\",\r\n    \"label\": \"Runtime\",\r\n    \"formula\": \"value/60\",\r\n    \"decimals\": 1,\r\n    \"unit\": \" min\"\r\n  },\r\n  {\r\n    \"key\": \"uptime_s\",\r\n    \"label\": \"Uptime\",\r\n    \"formula\": \"value/60\",\r\n    \"decimals\": 1,\r\n    \"unit\": \" min\"\r\n  },\r\n  {\r\n    \"key\": \"downtime_s\",\r\n    \"label\": \"Downtime\",\r\n    \"formula\": \"value/60\",\r\n    \"decimals\": 1,\r\n    \"unit\": \" min\"\r\n  },\r\n  {\r\n    \"key\": \"act_qty_pcs\",\r\n    \"label\": \"Produced\",\r\n    \"formula\": \"\",\r\n    \"decimals\": 0,\r\n    \"unit\": \" pcs.\"\r\n  },\r\n  {\r\n    \"key\": \"oee_pct\",\r\n    \"label\": \"OEE\",\r\n    \"formula\": \"\",\r\n    \"decimals\": 1,\r\n    \"unit\": \" %\"\r\n  }\r\n]",
               "statusRules" : "[\r\n    {\r\n        \"id\": \"inactive\",\r\n        \"label\": \"Device inactive → grey\",\r\n        \"match\": {\r\n            \"deviceActive\": false\r\n        },\r\n        \"color\": \"#9e9e9e\"\r\n    },\r\n    {\r\n        \"id\": \"unplanned\",\r\n        \"label\": \"No ACTIVE_JOB (unplanned) → yellow\",\r\n        \"match\": {\r\n            \"hasActiveJob\": false\r\n        },\r\n        \"color\": \"#ffd740\"\r\n    },\r\n    {\r\n        \"id\": \"low_oee\",\r\n        \"label\": \"OEE < 70% → orange\",\r\n        \"match\": {\r\n            \"deviceActive\": true,\r\n            \"hasActiveJob\": true,\r\n            \"oee_pct_lt\": 70\r\n        },\r\n        \"color\": \"#ff9800\"\r\n    },\r\n    {\r\n        \"id\": \"default_active\",\r\n        \"label\": \"Active fallback → green\",\r\n        \"match\": {\r\n            \"deviceActive\": true\r\n        },\r\n        \"color\": \"#4caf50\"\r\n    },\r\n    {\r\n        \"id\": \"default_other\",\r\n        \"label\": \"Fallback → bluish grey\",\r\n        \"match\": {},\r\n        \"color\": \"#b0bec5\"\r\n    }\r\n]",
               "pollInterval" : 5000
@@ -4663,8 +4663,7 @@
           "config" : {
             "datasources" : [ {
               "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "210d83f9-3810-9fbe-2714-a6e2ac772620",
+              "entityAliasId" : "06e21580-fce2-8838-3e7f-a02f9c439c3e",
               "dataKeys" : [ ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -7251,7 +7250,7 @@
               "showResultMessage" : true,
               "labelValue" : "For OEE",
               "minValue" : 0,
-              "maxValue" : 2
+              "maxValue" : 9999
             },
             "title" : "Cycle Time Estimate",
             "dropShadow" : false,
@@ -10982,8 +10981,8 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "imageUrl" : "tb-image;/api/images/tenant/plant_blueprint.jpg",
-              "linesConfig" : "[\n  {\n    \"id\": \"line_1\",\n    \"label\": \"Line 1\",\n    \"groupId\": \"5a89ea50-c9ca-11f0-a09c-911c53809081\",\n    \"x\": 30,\n    \"y\": 30\n  },\n  {\n    \"id\": \"line_2\",\n    \"label\": \"Line 2\",\n    \"groupId\": \"1d6d5390-c9d0-11f0-a09c-911c53809081\",\n    \"x\": 60,\n    \"y\": 50\n  }\n]",
+              "imageUrl" : "tb-image;/api/images/tenant/floorplan.webp",
+              "linesConfig" : "[\r\n  {\r\n    \"id\": \"line_differential\",\r\n    \"label\": \"Differential Assembly\",\r\n    \"groupId\": \"5a89ea50-c9ca-11f0-a09c-911c53809081\",\r\n    \"x\": 65,\r\n    \"y\": 65\r\n  },\r\n  {\r\n    \"id\": \"line_engine\",\r\n    \"label\": \"Engine Assembly\",\r\n    \"groupId\": \"6ebeb730-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 55,\r\n    \"y\": 22\r\n  },\r\n  {\r\n    \"id\": \"line_front_axle\",\r\n    \"label\": \"Front Axle Assembly\",\r\n    \"groupId\": \"6b151020-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 80,\r\n    \"y\": 28\r\n  },\r\n  {\r\n    \"id\": \"line_main_loop\",\r\n    \"label\": \"Main Loop Assembly\",\r\n    \"groupId\": \"74e93cc0-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 55,\r\n    \"y\": 42\r\n  },\r\n  {\r\n    \"id\": \"line_gearbox\",\r\n    \"label\": \"GearBox Assembly\",\r\n    \"groupId\": \"5f9b97f0-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 80,\r\n    \"y\": 50\r\n  },\r\n  {\r\n    \"id\": \"line_trans_coupling\",\r\n    \"label\": \"Transmission Coupling\",\r\n    \"groupId\": \"65f4a790-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 35,\r\n    \"y\": 55\r\n  },\r\n  {\r\n    \"id\": \"line_rear_cover\",\r\n    \"label\": \"Rear Cover Assembly\",\r\n    \"groupId\": \"5961a910-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 35,\r\n    \"y\": 75\r\n  },\r\n  {\r\n    \"id\": \"line_final\",\r\n    \"label\": \"Final Assembly\",\r\n    \"groupId\": \"791ef730-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 70,\r\n    \"y\": 82\r\n  }\r\n]\r\n",
               "targetStateId" : "line_view",
               "stateParamName" : "entityGroupId"
             },
@@ -13294,7 +13293,7 @@
             "type" : "entityList",
             "resolveMultiple" : true,
             "entityType" : "DEVICE",
-            "entityList" : [ "a94d03f0-a2c1-11f0-bfaa-5dcc0fb52ded", "f78edf10-ae8e-11f0-a60f-a7f9e67d958a", "f78edf10-ae8e-11f0-a60f-a7f9e67d958a", "f78edf10-ae8e-11f0-a60f-a7f9e67d958a" ]
+            "entityList" : [ "f0d3e040-b8c9-11f0-95d9-fff9d6e53631", "f78edf10-ae8e-11f0-a60f-a7f9e67d958a", "f78edf10-ae8e-11f0-a60f-a7f9e67d958a", "f78edf10-ae8e-11f0-a60f-a7f9e67d958a" ]
           }
         },
         "577f7cce-91ca-ceb3-dcb7-0a5fbcbc1c85" : {
@@ -13304,6 +13303,16 @@
             "type" : "stateEntity",
             "resolveMultiple" : false,
             "stateEntityParamName" : "machineId",
+            "defaultStateEntity" : null
+          }
+        },
+        "06e21580-fce2-8838-3e7f-a02f9c439c3e" : {
+          "id" : "06e21580-fce2-8838-3e7f-a02f9c439c3e",
+          "alias" : "Line",
+          "filter" : {
+            "type" : "stateEntity",
+            "resolveMultiple" : false,
+            "stateEntityParamName" : "lineName",
             "defaultStateEntity" : null
           }
         }

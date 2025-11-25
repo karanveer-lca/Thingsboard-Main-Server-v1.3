@@ -32,7 +32,7 @@
       "id" : "8dcf72a0-b8cb-11f0-95d9-fff9d6e53631"
     },
     "label" : "",
-    "name" : "MACHINE #2",
+    "name" : "DA_M01",
     "ownerId" : null,
     "softwareId" : null,
     "type" : "Machines"
@@ -50,11 +50,11 @@
     },
     "to" : {
       "entityType" : "ASSET",
-      "id" : "88325810-c976-11f0-aaf6-450cd38b38bb"
+      "id" : "bd4e7ae0-c9eb-11f0-a09c-911c53809081"
     },
     "type" : "ACTIVE_JOB",
     "typeGroup" : "COMMON",
-    "version" : 13525
+    "version" : 13547
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -99,8 +99,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1764057543954,
-      "longValue" : 1764057542287,
+      "lastUpdateTs" : 1764073248954,
+      "longValue" : 1764073248239,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
