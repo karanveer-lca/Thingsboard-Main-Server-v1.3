@@ -7201,7 +7201,7 @@
                 "label" : "ideal_cycle_time",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.20929397288824292
+                "_hash" : 0.7410010213672269
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
