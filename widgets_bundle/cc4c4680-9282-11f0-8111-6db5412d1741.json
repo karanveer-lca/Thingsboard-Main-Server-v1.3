@@ -17,7 +17,7 @@
     "scada" : false,
     "title" : "PMS WIDGETS"
   },
-  "fqns" : [ "sld_diagram", "ai_summary", "navigation_ribbon" ],
+  "fqns" : [ "plant_view", "sld_diagram", "ai_summary", "navigation_ribbon" ],
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
