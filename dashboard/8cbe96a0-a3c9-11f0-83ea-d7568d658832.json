@@ -4621,6 +4621,24 @@
                 "openInSeparateDialog" : false,
                 "openInPopover" : false,
                 "id" : "45f7ba73-0a91-cd8b-c63c-f8e7173c07be"
+              }, {
+                "name" : "Plant View",
+                "buttonType" : "raised",
+                "showIcon" : true,
+                "icon" : "more_horiz",
+                "buttonColor" : "#ffffff",
+                "buttonFillColor" : "#0F243E",
+                "customButtonStyle" : { },
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "plant_view",
+                "setEntityId" : false,
+                "stateEntityParamName" : null,
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "07d64cc5-42b0-e67d-2247-7fdd06d63497"
               } ]
             },
             "enableFullscreen" : false,
