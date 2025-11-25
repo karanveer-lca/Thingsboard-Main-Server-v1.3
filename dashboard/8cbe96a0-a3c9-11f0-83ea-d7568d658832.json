@@ -10899,7 +10899,7 @@
             "padding" : "8px",
             "settings" : {
               "imageUrl" : "tb-image;/api/images/tenant/plant_blueprint.jpg",
-              "linesConfig" : "[\n  {\n    \"id\": \"line_1\",\n    \"label\": \"Line 1\",\n    \"groupId\": \"5a89ea50-c9ca-11f0-a09c-911c53809081\",\n    \"x\": 30,\n    \"y\": 30\n  },\n  {\n    \"id\": \"line_2\",\n    \"label\": \"Line 2\",\n    \"groupId\": \"221d3090-9168-11f0-84d5-efc64010e13c\",\n    \"x\": 60,\n    \"y\": 50\n  }\n]",
+              "linesConfig" : "[\n  {\n    \"id\": \"line_1\",\n    \"label\": \"Line 1\",\n    \"groupId\": \"5a89ea50-c9ca-11f0-a09c-911c53809081\",\n    \"x\": 30,\n    \"y\": 30\n  },\n  {\n    \"id\": \"line_2\",\n    \"label\": \"Line 2\",\n    \"groupId\": \"1d6d5390-c9d0-11f0-a09c-911c53809081\",\n    \"x\": 60,\n    \"y\": 50\n  }\n]",
               "targetStateId" : "line_view",
               "stateParamName" : "entityGroupId"
             },
