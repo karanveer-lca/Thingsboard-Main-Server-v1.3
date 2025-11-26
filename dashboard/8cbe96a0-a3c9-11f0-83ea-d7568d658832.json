@@ -9522,12 +9522,18 @@
               "name" : "",
               "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
               "dataKeys" : [ {
-                "name" : "act_occ_total",
+                "name" : "downtime_s",
                 "type" : "timeseries",
-                "label" : "Machine Stopped",
+                "label" : "downtime_s",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.9336554820818297
+                "_hash" : 0.36444374023755444,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -9661,7 +9667,7 @@
               },
               "padding" : ""
             },
-            "title" : "Number of Machine Stoppages",
+            "title" : "Total Downtime",
             "dropShadow" : true,
             "enableFullscreen" : false,
             "titleStyle" : {
@@ -10999,6 +11005,213 @@
           "row" : 0,
           "col" : 0,
           "id" : "d5872289-c46b-3344-ba88-0ed7416f74e1"
+        },
+        "cd2e1819-1972-1f4f-cbe2-0847d6c78ea5" : {
+          "typeFullFqn" : "system.cards.value_card",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "dataKeys" : [ {
+                "name" : "act_occ_total",
+                "type" : "timeseries",
+                "label" : "Machine Stopped",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.9336554820818297
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1763833306907,
+                  "endTimeMs" : 1763919706907
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "layout" : "square",
+              "autoScale" : true,
+              "showLabel" : false,
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 32,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "1.5"
+              },
+              "labelColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "showIcon" : false,
+              "iconSize" : 40,
+              "iconSizeUnit" : "px",
+              "icon" : "thermostat",
+              "iconColor" : {
+                "type" : "constant",
+                "color" : "#5469FF",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "valueFont" : {
+                "size" : 58,
+                "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "500",
+                "style" : "normal",
+                "lineHeight" : "100%"
+              },
+              "valueColor" : {
+                "type" : "constant",
+                "color" : "rgba(255, 255, 255, 0.87)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 100
+                },
+                "rangeList" : {
+                  "advancedMode" : false,
+                  "range" : [ ],
+                  "rangeAdvanced" : [ ]
+                }
+              },
+              "showDate" : false,
+              "dateFormat" : {
+                "format" : null,
+                "lastUpdateAgo" : true,
+                "custom" : false,
+                "auto" : false
+              },
+              "dateFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "1.33"
+              },
+              "dateColor" : {
+                "type" : "constant",
+                "color" : "rgba(0, 0, 0, 0.38)",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
+              },
+              "background" : {
+                "type" : "color",
+                "color" : "#07111D",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                },
+                "imageUrl" : null
+              },
+              "padding" : ""
+            },
+            "title" : "Number of Stoppages",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "units" : null,
+            "decimals" : 0,
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "widgetStyle" : {
+              "border" : "2px solid white"
+            },
+            "actions" : { },
+            "configMode" : "advanced",
+            "displayTimewindow" : true,
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "enableDataExport" : false,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : null,
+              "lineHeight" : "1"
+            },
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "14px",
+            "timewindowStyle" : {
+              "showIcon" : true,
+              "iconSize" : "14px",
+              "icon" : "query_builder",
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : null,
+                "weight" : null,
+                "style" : null,
+                "lineHeight" : "1"
+              },
+              "color" : null
+            },
+            "titleColor" : "#FFFFFF"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "cd2e1819-1972-1f4f-cbe2-0847d6c78ea5"
         }
       },
       "states" : {
@@ -12766,7 +12979,7 @@
                       "col" : 88
                     },
                     "46f08196-70a0-612b-cf9c-495f2c1e675c" : {
-                      "sizeX" : 26,
+                      "sizeX" : 13,
                       "sizeY" : 9,
                       "row" : 14,
                       "col" : 87
@@ -12782,6 +12995,12 @@
                       "sizeY" : 38,
                       "row" : 30,
                       "col" : 48
+                    },
+                    "cd2e1819-1972-1f4f-cbe2-0847d6c78ea5" : {
+                      "sizeX" : 13,
+                      "sizeY" : 9,
+                      "row" : 14,
+                      "col" : 100
                     }
                   }
                 },
