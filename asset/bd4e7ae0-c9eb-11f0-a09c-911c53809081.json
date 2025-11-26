@@ -40,23 +40,23 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "ai_response",
-      "lastUpdateTs" : 1764073194426,
+      "lastUpdateTs" : 1764089490900,
       "longValue" : null,
-      "strValue" : "{\n  \"summary\": \"The production system is experiencing significant downtime, primarily driven by a critical alarm with an extended duration and low availability. The OEE is very low at 21.99%, with quality also being a major concern at 70.13%. Immediate intervention is required to address the key alarms and improve performance.\",\n  \"criticalIssues\": [\n    \"Alarm 8 is the primary issue, with the highest impact score of 50.53 and a duration of 62.78 minutes.\",\n    \"Alarm 3 has a moderate impact with an impact score of 0.06 and a duration of 2.12 minutes.\",\n    \"Alarm 4 has the lowest impact of the top three, with an impact score of 0.001 and a duration of 0.08 minutes.\"\n  ],\n  \"metrics\": {\n    \"totalDowntime\": \"64.98 minutes (68.64% of potential production time)\",\n    \"mostProblematicAlarm\": \"Alarm 8 - extremely high duration of 62.78 minutes, contributing to the majority of downtime.\",\n    \"estimatedProductionLoss\": \"20 units\"\n  },\n  \"recommendations\": [\n    \"Prioritize resolving Alarm 8 to significantly reduce downtime, as it is the most critical issue.\",\n    \"Conduct a root cause analysis for Alarm 3 and Alarm 4 to understand their underlying causes and prevent recurrence.\",\n    \"Implement preventive maintenance for the machine to address recurring quality issues and reduce bad quantity.\",\n    \"Train operators to identify and respond to Alarm 8 scenarios more efficiently to minimize reaction time.\",\n    \"Improve quality control processes to increase the Good Quantity ratio, targeting a reduction in the current 29.87% defect rate.\"\n  ],\n  \"predictions\": \"If the current trends continue, Alarm 8 will likely cause over 60 minutes of downtime in the next shift, leading to an estimated production loss of 20-25 units. Alarm 3 may also recur, contributing to additional delays.\",\n  \"urgencyLevel\": \"CRITICAL\"\n}"
+      "strValue" : "{\n  \"summary\": \"The manufacturing system is performing at 95.63% of the target but is hindered by significant downtime caused primarily by Alarm 8. OEE is 76.83%, with availability being the key limiting factor due to prolonged alarm durations.\",\n  \"criticalIssues\": [\n    \"Alarm 8: Prolonged duration of 62.78 minutes, contributing to the majority of downtime.\",\n    \"Alarm 3: Active for 2.20 minutes, indicating a potential recurring issue.\",\n    \"Alarm 4: Occurrence combined with Alarm 8 suggests possible cascading or linked failures.\"\n  ],\n  \"metrics\": {\n    \"totalDowntime\": \"65.06 minutes (17.76% of potential production time)\",\n    \"mostProblematicAlarm\": \"Alarm 8 - Significant duration of 62.78 minutes, causing major production impact.\",\n    \"estimatedProductionLoss\": \"41 units\"\n  },\n  \"recommendations\": [\n    \"Investigate and resolve the root cause of Alarm 8 to reduce prolonged downtime and improve availability.\",\n    \"Perform a detailed analysis of Alarm 3 to identify potential recurring issues and implement preventive measures.\",\n    \"Review the sequence and timing of Alarm 4 and Alarm 8 to determine if they are linked or cascading failures.\",\n    \"Implement enhanced operator training focused on resolving alarms quickly, particularly those with long durations.\",\n    \"Schedule predictive maintenance targeting the systems triggering Alarm 8 to prevent future occurrences.\"\n  ],\n  \"predictions\": \"If current trends persist, Alarm 8 could significantly impact the next shift, leading to an estimated additional downtime of 60-65 minutes and a production loss of 40-45 units.\",\n  \"urgencyLevel\": \"CRITICAL\"\n}"
     }, {
       "booleanValue" : null,
-      "doubleValue" : null,
+      "doubleValue" : 0.9457777777777778,
       "jsonValue" : null,
       "key" : "availability",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139500325,
       "longValue" : null,
-      "strValue" : "0.37665867306155076"
+      "strValue" : null
     }, {
       "booleanValue" : null,
-      "doubleValue" : 37.67,
+      "doubleValue" : 94.58,
       "jsonValue" : null,
       "key" : "availability_pct",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139500325,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -64,7 +64,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "bad_production_switch",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139500325,
       "longValue" : 2,
       "strValue" : null
     }, {
@@ -72,7 +72,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "bad_qty_pcs",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139500325,
       "longValue" : 23,
       "strValue" : null
     }, {
@@ -416,7 +416,7 @@
       "doubleValue" : 60.0,
       "jsonValue" : null,
       "key" : "ideal_cycle_time",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139500325,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -424,9 +424,9 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "job_status",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139505529,
       "longValue" : null,
-      "strValue" : "active"
+      "strValue" : "expired"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
@@ -448,7 +448,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "machine_bad_prod_count_pcs",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139500325,
       "longValue" : 314,
       "strValue" : null
     }, {
@@ -469,18 +469,18 @@
       "strValue" : "DA_M01"
     }, {
       "booleanValue" : null,
-      "doubleValue" : null,
+      "doubleValue" : 0.9273587355348575,
       "jsonValue" : null,
       "key" : "oee",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139500325,
       "longValue" : null,
-      "strValue" : "0.27708224225217526"
+      "strValue" : null
     }, {
       "booleanValue" : null,
-      "doubleValue" : 27.71,
+      "doubleValue" : 92.74,
       "jsonValue" : null,
       "key" : "oee_pct",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139500325,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -493,10 +493,10 @@
       "strValue" : "Part A"
     }, {
       "booleanValue" : null,
-      "doubleValue" : 132.937181663837,
+      "doubleValue" : 62.43538533834587,
       "jsonValue" : null,
       "key" : "parts_per_hour",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139500325,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -504,7 +504,7 @@
       "doubleValue" : 1.0,
       "jsonValue" : null,
       "key" : "performance",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139500325,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -512,7 +512,7 @@
       "doubleValue" : 100.0,
       "jsonValue" : null,
       "key" : "performance_pct",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139500325,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -525,18 +525,18 @@
       "strValue" : "Plant A"
     }, {
       "booleanValue" : null,
-      "doubleValue" : 0.735632183908046,
+      "doubleValue" : 0.9805249788314987,
       "jsonValue" : null,
       "key" : "quality",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139500325,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
-      "doubleValue" : 73.56,
+      "doubleValue" : 98.05,
       "jsonValue" : null,
       "key" : "quality_pct",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139500325,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -552,7 +552,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "user_bad_prod_count_pcs",
-      "lastUpdateTs" : 1764073755750,
+      "lastUpdateTs" : 1764139500325,
       "longValue" : 0,
       "strValue" : null
     } ]
