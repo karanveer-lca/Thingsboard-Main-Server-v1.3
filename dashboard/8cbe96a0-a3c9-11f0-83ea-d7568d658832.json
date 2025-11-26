@@ -8992,6 +8992,19 @@
               "name" : "",
               "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
               "dataKeys" : [ {
+                "name" : "act_qty_pcs",
+                "type" : "timeseries",
+                "label" : "act_qty_pcs",
+                "color" : "#36C7F4",
+                "settings" : { },
+                "_hash" : 0.5711742597899366,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
                 "name" : "good_qty_pcs",
                 "type" : "timeseries",
                 "label" : "Good Qty.",
