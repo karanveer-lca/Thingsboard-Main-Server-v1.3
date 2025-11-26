@@ -32,7 +32,7 @@
       "entityType" : "ENTITY_GROUP",
       "id" : "5a89ea50-c9ca-11f0-a09c-911c53809081"
     },
-    "name" : "Differential Assembly",
+    "name" : "Line-1",
     "ownerId" : {
       "entityType" : "TENANT",
       "id" : "f78edf10-ae8e-11f0-a60f-a7f9e67d958a"
