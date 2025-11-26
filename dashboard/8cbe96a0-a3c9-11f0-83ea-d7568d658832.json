@@ -8994,7 +8994,7 @@
               "dataKeys" : [ {
                 "name" : "act_qty_pcs",
                 "type" : "timeseries",
-                "label" : "act_qty_pcs",
+                "label" : "Total Prod.",
                 "color" : "#36C7F4",
                 "settings" : { },
                 "_hash" : 0.5711742597899366,
