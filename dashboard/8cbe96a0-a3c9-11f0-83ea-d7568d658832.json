@@ -4592,7 +4592,7 @@
             "padding" : "8px",
             "settings" : {
               "imageUrl" : "tb-image;/api/images/tenant/floorplan.webp",
-              "groupId" : "6b151020-c9ed-11f0-a09c-911c53809081",
+              "groupId" : "5a89ea50-c9ca-11f0-a09c-911c53809081",
               "targetStateId" : "machine_dashboard",
               "stateParamName" : "jobcard",
               "positions" : "[{\r\n        \"by\": \"name\",\r\n        \"match\": \"MACHINE #1\",\r\n        \"x\": 15,\r\n        \"y\": 54,\r\n        \"label\": \"MACHINE #1\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"MACHINE #2\",\r\n        \"x\": 15,\r\n        \"y\": 81,\r\n        \"label\": \"MACHINE #2\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"MACHINE #3\",\r\n        \"x\": 70,\r\n        \"y\": 86,\r\n        \"label\": \"MACHINE #3\"\r\n    },\r\n\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"DA-M01\",\r\n        \"x\": 5,\r\n        \"y\": 54,\r\n        \"label\": \"DA-M01\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"DA-M02\",\r\n        \"x\": 15,\r\n        \"y\": 54,\r\n        \"label\": \"DA-M02\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"DA-M03\",\r\n        \"x\": 25,\r\n        \"y\": 54,\r\n        \"label\": \"DA-M03\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"DA-M04\",\r\n        \"x\": 35,\r\n        \"y\": 54,\r\n        \"label\": \"DA-M04\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"DA-M05\",\r\n        \"x\": 45,\r\n        \"y\": 54,\r\n        \"label\": \"DA-M05\"\r\n    },\r\n\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"RCA-M01\",\r\n        \"x\": 5,\r\n        \"y\": 81,\r\n        \"label\": \"RCA-M01\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"RCA-M02\",\r\n        \"x\": 15,\r\n        \"y\": 81,\r\n        \"label\": \"RCA-M02\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"RCA-M03\",\r\n        \"x\": 25,\r\n        \"y\": 81,\r\n        \"label\": \"RCA-M03\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"RCA-M04\",\r\n        \"x\": 35,\r\n        \"y\": 81,\r\n        \"label\": \"RCA-M04\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"RCA-M05\",\r\n        \"x\": 45,\r\n        \"y\": 81,\r\n        \"label\": \"RCA-M05\"\r\n    },\r\n\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"GBA-M01\",\r\n        \"x\": 55,\r\n        \"y\": 32,\r\n        \"label\": \"GBA-M01\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"GBA-M02\",\r\n        \"x\": 65,\r\n        \"y\": 32,\r\n        \"label\": \"GBA-M02\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"GBA-M03\",\r\n        \"x\": 75,\r\n        \"y\": 32,\r\n        \"label\": \"GBA-M03\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"GBA-M04\",\r\n        \"x\": 85,\r\n        \"y\": 32,\r\n        \"label\": \"GBA-M04\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"GBA-M05\",\r\n        \"x\": 95,\r\n        \"y\": 32,\r\n        \"label\": \"GBA-M05\"\r\n    },\r\n\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"TC-M01\",\r\n        \"x\": 48,\r\n        \"y\": 58,\r\n        \"label\": \"TC-M01\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"TC-M02\",\r\n        \"x\": 58,\r\n        \"y\": 58,\r\n        \"label\": \"TC-M02\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"TC-M03\",\r\n        \"x\": 68,\r\n        \"y\": 58,\r\n        \"label\": \"TC-M03\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"TC-M04\",\r\n        \"x\": 78,\r\n        \"y\": 58,\r\n        \"label\": \"TC-M04\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"TC-M05\",\r\n        \"x\": 88,\r\n        \"y\": 58,\r\n        \"label\": \"TC-M05\"\r\n    },\r\n\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FRA-M01\",\r\n        \"x\": 23,\r\n        \"y\": 46,\r\n        \"label\": \"FRA-M01\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FRA-M02\",\r\n        \"x\": 33,\r\n        \"y\": 46,\r\n        \"label\": \"FRA-M02\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FRA-M03\",\r\n        \"x\": 43,\r\n        \"y\": 46,\r\n        \"label\": \"FRA-M03\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FRA-M04\",\r\n        \"x\": 53,\r\n        \"y\": 46,\r\n        \"label\": \"FRA-M04\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FRA-M05\",\r\n        \"x\": 63,\r\n        \"y\": 46,\r\n        \"label\": \"FRA-M05\"\r\n    },\r\n\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"EA-M01\",\r\n        \"x\": 23,\r\n        \"y\": 24,\r\n        \"label\": \"EA-M01\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"EA-M02\",\r\n        \"x\": 33,\r\n        \"y\": 24,\r\n        \"label\": \"EA-M02\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"EA-M03\",\r\n        \"x\": 43,\r\n        \"y\": 24,\r\n        \"label\": \"EA-M03\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"EA-M04\",\r\n        \"x\": 53,\r\n        \"y\": 24,\r\n        \"label\": \"EA-M04\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"EA-M05\",\r\n        \"x\": 63,\r\n        \"y\": 24,\r\n        \"label\": \"EA-M05\"\r\n    },\r\n\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"MLA-M01\",\r\n        \"x\": 5,\r\n        \"y\": 18,\r\n        \"label\": \"MLA-M01\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"MLA-M02\",\r\n        \"x\": 15,\r\n        \"y\": 18,\r\n        \"label\": \"MLA-M02\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"MLA-M03\",\r\n        \"x\": 25,\r\n        \"y\": 18,\r\n        \"label\": \"MLA-M03\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"MLA-M04\",\r\n        \"x\": 35,\r\n        \"y\": 18,\r\n        \"label\": \"MLA-M04\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"MLA-M05\",\r\n        \"x\": 45,\r\n        \"y\": 18,\r\n        \"label\": \"MLA-M05\"\r\n    },\r\n\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FA-M01\",\r\n        \"x\": 50,\r\n        \"y\": 86,\r\n        \"label\": \"FA-M01\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FA-M02\",\r\n        \"x\": 60,\r\n        \"y\": 86,\r\n        \"label\": \"FA-M02\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FA-M03\",\r\n        \"x\": 70,\r\n        \"y\": 86,\r\n        \"label\": \"FA-M03\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FA-M04\",\r\n        \"x\": 80,\r\n        \"y\": 86,\r\n        \"label\": \"FA-M04\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FA-M05\",\r\n        \"x\": 90,\r\n        \"y\": 86,\r\n        \"label\": \"FA-M05\"\r\n    },\r\n\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FAA-M01\",\r\n        \"x\": 23,\r\n        \"y\": 52,\r\n        \"label\": \"FAA-M01\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FAA-M02\",\r\n        \"x\": 33,\r\n        \"y\": 52,\r\n        \"label\": \"FAA-M02\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FAA-M03\",\r\n        \"x\": 43,\r\n        \"y\": 52,\r\n        \"label\": \"FAA-M03\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FAA-M04\",\r\n        \"x\": 53,\r\n        \"y\": 52,\r\n        \"label\": \"FAA-M04\"\r\n    },\r\n    {\r\n        \"by\": \"name\",\r\n        \"match\": \"FAA-M05\",\r\n        \"x\": 63,\r\n        \"y\": 52,\r\n        \"label\": \"FAA-M05\"\r\n    }\r\n]",
@@ -6990,7 +6990,7 @@
               "showResultMessage" : true,
               "labelValue" : "0: INPUT, 1: MACH, 2: SUM",
               "minValue" : 0,
-              "maxValue" : 2
+              "maxValue" : 999999
             },
             "title" : "Bad Production Source",
             "dropShadow" : false,
@@ -7250,7 +7250,7 @@
               "showResultMessage" : true,
               "labelValue" : "For OEE",
               "minValue" : 0,
-              "maxValue" : 9999
+              "maxValue" : 999999
             },
             "title" : "Cycle Time Estimate",
             "dropShadow" : false,
@@ -11225,6 +11225,915 @@
           "row" : 0,
           "col" : 0,
           "id" : "cd2e1819-1972-1f4f-cbe2-0847d6c78ea5"
+        },
+        "a0d9d896-9a31-1ddf-8c85-9b2037ed3a35" : {
+          "typeFullFqn" : "system.input_widgets.update_server_integer_attribute",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "dataKeys" : [ {
+                "name" : "bad_production_switch",
+                "type" : "attribute",
+                "label" : "bad_production_switch",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2549586253502979
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1763764499069,
+                  "endTimeMs" : 1763850899069
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.76)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : false,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : true,
+              "labelValue" : "",
+              "minValue" : 0,
+              "maxValue" : 999999
+            },
+            "title" : "MC AUTO CONTROL OFF TIME (SEC)",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "borderRadius" : "10px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a0d9d896-9a31-1ddf-8c85-9b2037ed3a35"
+        },
+        "dff583a9-0f16-676a-590b-e510c88896c3" : {
+          "typeFullFqn" : "system.input_widgets.update_server_integer_attribute",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "dataKeys" : [ {
+                "name" : "bad_production_switch",
+                "type" : "attribute",
+                "label" : "bad_production_switch",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2549586253502979
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1763764499069,
+                  "endTimeMs" : 1763850899069
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.76)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : false,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : true,
+              "labelValue" : "",
+              "minValue" : 0,
+              "maxValue" : 999999
+            },
+            "title" : "CONTROL OFF RELAY ON TIME(SEC)",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "borderRadius" : "10px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "dff583a9-0f16-676a-590b-e510c88896c3"
+        },
+        "2be53bf5-d2b9-01f6-9192-6fbe08134604" : {
+          "typeFullFqn" : "system.input_widgets.update_server_integer_attribute",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "dataKeys" : [ {
+                "name" : "bad_production_switch",
+                "type" : "attribute",
+                "label" : "bad_production_switch",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2549586253502979
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1763764499069,
+                  "endTimeMs" : 1763850899069
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.76)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : false,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : true,
+              "labelValue" : "",
+              "minValue" : 0,
+              "maxValue" : 999999
+            },
+            "title" : "PROD. TRIGGER RETAIN TIME (SEC)",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "borderRadius" : "10px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "2be53bf5-d2b9-01f6-9192-6fbe08134604"
+        },
+        "e27842d2-4a71-57a1-ab64-4bc5333b6ba5" : {
+          "typeFullFqn" : "system.input_widgets.update_server_integer_attribute",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "dataKeys" : [ {
+                "name" : "bad_production_switch",
+                "type" : "attribute",
+                "label" : "bad_production_switch",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2549586253502979
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1763764499069,
+                  "endTimeMs" : 1763850899069
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.76)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : false,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : true,
+              "labelValue" : "",
+              "minValue" : 0,
+              "maxValue" : 999999
+            },
+            "title" : "M/C IDLE ALARM WAIT TIME (SEC)",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "borderRadius" : "10px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e27842d2-4a71-57a1-ab64-4bc5333b6ba5"
+        },
+        "9a63d613-9fc9-d1fb-ae7e-22ff996d5b87" : {
+          "typeFullFqn" : "system.input_widgets.update_server_integer_attribute",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "dataKeys" : [ {
+                "name" : "bad_production_switch",
+                "type" : "attribute",
+                "label" : "bad_production_switch",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2549586253502979
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1763764499069,
+                  "endTimeMs" : 1763850899069
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.76)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : false,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : true,
+              "labelValue" : "",
+              "minValue" : 0,
+              "maxValue" : 999999
+            },
+            "title" : "FLAG CHANGE PROTECTION TIME (SEC)",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "borderRadius" : "10px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "9a63d613-9fc9-d1fb-ae7e-22ff996d5b87"
+        },
+        "e42ecc80-5c1a-dd9b-79be-ca321518a0fc" : {
+          "typeFullFqn" : "system.input_widgets.update_server_integer_attribute",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "dataKeys" : [ {
+                "name" : "bad_production_switch",
+                "type" : "attribute",
+                "label" : "bad_production_switch",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2549586253502979
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1763764499069,
+                  "endTimeMs" : 1763850899069
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.76)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : false,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : true,
+              "labelValue" : "",
+              "minValue" : 0,
+              "maxValue" : 999999
+            },
+            "title" : "FLAG DISABLE PUSH TO ON TIME (SEC)",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "borderRadius" : "10px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "e42ecc80-5c1a-dd9b-79be-ca321518a0fc"
+        },
+        "a1b98a39-1bd6-3f37-781b-d4109a6803d0" : {
+          "typeFullFqn" : "system.input_widgets.update_server_integer_attribute",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "dataKeys" : [ {
+                "name" : "bad_production_switch",
+                "type" : "attribute",
+                "label" : "bad_production_switch",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2549586253502979
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1763764499069,
+                  "endTimeMs" : 1763850899069
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.76)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : false,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : true,
+              "labelValue" : "",
+              "minValue" : 0,
+              "maxValue" : 999999
+            },
+            "title" : "BUZZER PULSE TIME (SEC)",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "borderRadius" : "10px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a1b98a39-1bd6-3f37-781b-d4109a6803d0"
+        },
+        "9e14775d-c9ee-c893-8cce-de3dd8c0a24f" : {
+          "typeFullFqn" : "system.input_widgets.update_server_integer_attribute",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "dataKeys" : [ {
+                "name" : "bad_production_switch",
+                "type" : "attribute",
+                "label" : "bad_production_switch",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2549586253502979
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1763764499069,
+                  "endTimeMs" : 1763850899069
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.76)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : false,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : true,
+              "minValue" : 0,
+              "maxValue" : 999999
+            },
+            "title" : "BUZZER CONTINUE BEEP ON TIME(SEC)",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "borderRadius" : "10px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "9e14775d-c9ee-c893-8cce-de3dd8c0a24f"
+        },
+        "46480dd1-fbf7-ca1b-8f73-29d492ccf739" : {
+          "typeFullFqn" : "system.input_widgets.update_server_integer_attribute",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "dataKeys" : [ {
+                "name" : "bad_production_switch",
+                "type" : "attribute",
+                "label" : "bad_production_switch",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2549586253502979
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1763764499069,
+                  "endTimeMs" : 1763850899069
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.76)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : false,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : true,
+              "labelValue" : "",
+              "minValue" : 0,
+              "maxValue" : 999999
+            },
+            "title" : "POWER ON SAFETY DELAY TIME (SEC)",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "borderRadius" : "10px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "46480dd1-fbf7-ca1b-8f73-29d492ccf739"
+        },
+        "8cd5248a-256f-8814-4865-8f16c07f9fda" : {
+          "typeFullFqn" : "system.input_widgets.update_server_integer_attribute",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
+              "dataKeys" : [ {
+                "name" : "bad_production_switch",
+                "type" : "attribute",
+                "label" : "bad_production_switch",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.2549586253502979
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1763764499069,
+                  "endTimeMs" : 1763850899069
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.76)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : false,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : true,
+              "labelValue" : "",
+              "minValue" : 0,
+              "maxValue" : 999999
+            },
+            "title" : "MACHINE WARM-UP TIME (SEC)",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "enableDataExport" : false,
+            "borderRadius" : "10px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "8cd5248a-256f-8814-4865-8f16c07f9fda"
         }
       },
       "states" : {
@@ -12490,6 +13399,66 @@
                       "sizeY" : 5,
                       "row" : 69,
                       "col" : 0
+                    },
+                    "a0d9d896-9a31-1ddf-8c85-9b2037ed3a35" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 17,
+                      "col" : 1
+                    },
+                    "dff583a9-0f16-676a-590b-e510c88896c3" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 17,
+                      "col" : 25
+                    },
+                    "2be53bf5-d2b9-01f6-9192-6fbe08134604" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 17,
+                      "col" : 49
+                    },
+                    "e27842d2-4a71-57a1-ab64-4bc5333b6ba5" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 17,
+                      "col" : 73
+                    },
+                    "9a63d613-9fc9-d1fb-ae7e-22ff996d5b87" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 28,
+                      "col" : 1
+                    },
+                    "e42ecc80-5c1a-dd9b-79be-ca321518a0fc" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 28,
+                      "col" : 25
+                    },
+                    "a1b98a39-1bd6-3f37-781b-d4109a6803d0" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 28,
+                      "col" : 49
+                    },
+                    "9e14775d-c9ee-c893-8cce-de3dd8c0a24f" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 28,
+                      "col" : 73
+                    },
+                    "46480dd1-fbf7-ca1b-8f73-29d492ccf739" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 6,
+                      "col" : 49
+                    },
+                    "8cd5248a-256f-8814-4865-8f16c07f9fda" : {
+                      "sizeX" : 23,
+                      "sizeY" : 10,
+                      "row" : 6,
+                      "col" : 73
                     }
                   }
                 },
