@@ -11964,12 +11964,18 @@
               "name" : "",
               "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
               "dataKeys" : [ {
-                "name" : "bad_production_switch",
+                "name" : "temp",
                 "type" : "attribute",
-                "label" : "bad_production_switch",
+                "label" : "temp",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.2549586253502979
+                "_hash" : 0.3487615845295753,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return \"999999\";"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -12055,12 +12061,18 @@
               "name" : "",
               "entityAliasId" : "dbe37a10-b5bf-fe07-3e96-6c6bc341cb1a",
               "dataKeys" : [ {
-                "name" : "bad_production_switch",
+                "name" : "temp",
                 "type" : "attribute",
-                "label" : "bad_production_switch",
+                "label" : "temp",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.2549586253502979
+                "_hash" : 0.7051019358991799,
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return \"999999\";"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
