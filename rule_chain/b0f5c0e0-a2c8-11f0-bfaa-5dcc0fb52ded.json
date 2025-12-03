@@ -1,0 +1,1002 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : true,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "b0f5c0e0-a2c8-11f0-bfaa-5dcc0fb52ded"
+    },
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "f0074171-b8c9-11f0-95d9-fff9d6e53631"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "b0f5c0e0-a2c8-11f0-bfaa-5dcc0fb52ded"
+    },
+    "name" : "JOB_CARD_CALCULATOR",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 3,
+      "type" : "Post attributes"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 8,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 9,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 6,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 4,
+      "type" : "NOT_EXPIRED"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 12,
+      "type" : "ACTIVE"
+    }, {
+      "fromIndex" : 6,
+      "toIndex" : 26,
+      "type" : "ACTIVE"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 9,
+      "toIndex" : 1,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 0,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 10,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 13,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 14,
+      "type" : "INIT"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 16,
+      "type" : "CHANGED"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 15,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 18,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 20,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 25,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 21,
+      "type" : "FIRE"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 23,
+      "type" : "NO_FIRE"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 22,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 24,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 23,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 24,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 26,
+      "toIndex" : 19,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : 11,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 415,
+        "layoutY" : 301
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "cfg_start_ts", "cfg_target_qty_pcs", "cfg_shift_hours", "baseline_snapshot_ts", "baseline_start_ts", "baseline_prod_count_pcs", "baseline_occ_total", "baseline_duration_ms", "baseline_occ_1", "baseline_occ_2", "baseline_occ_3", "baseline_occ_4", "baseline_occ_5", "baseline_occ_6", "baseline_occ_7", "baseline_occ_8", "baseline_occ_9", "baseline_occ_10", "baseline_duration_ms_1", "baseline_duration_ms_2", "baseline_duration_ms_3", "baseline_duration_ms_4", "baseline_duration_ms_5", "baseline_duration_ms_6", "baseline_duration_ms_7", "baseline_duration_ms_8", "baseline_duration_ms_9", "baseline_duration_ms_10", "job_status", "prev_status_code", "prev_status_label", "status_changed_ts", "last_alert_event_id", "active_status_cur", "status_code_cur", "status_label" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761153341225,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f006f350-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Get Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 605,
+        "layoutY" : 796
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1760451236335,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0071a60-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Switch",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 564,
+        "layoutY" : 947
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "timeseries" : {
+            "type" : "ON_EVERY_MESSAGE"
+          },
+          "latest" : {
+            "type" : "ON_EVERY_MESSAGE"
+          },
+          "webSockets" : {
+            "type" : "ON_EVERY_MESSAGE"
+          },
+          "calculatedFields" : {
+            "type" : "ON_EVERY_MESSAGE"
+          },
+          "type" : "ADVANCED"
+        },
+        "defaultTTL" : 0,
+        "useServerTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1760776349266,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0071a61-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Save Timeseries",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 782,
+        "layoutY" : 1437
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1760775843670,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0071a62-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Save Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 604,
+        "layoutY" : 571
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Transform: stage snapshot attributes under msg.msg_attr (if needed) + telemetry under msg.msg_telemetry,\r\n// and DO NOT include raw incoming payload fields in the output.\r\n// Downstream: connect two parallel nodes that (a) post attributes if msg.msg_attr exists,\r\n// and (b) post telemetry from msg.msg_telemetry.\r\n\r\n//// ---------- helpers ----------\r\nfunction toInt(x){ var n = Number(x); return isFinite(n) ? Math.max(0, Math.floor(n)) : 0; }\r\nfunction toNum(x){ var n = Number(x); return isFinite(n) ? n : 0; }\r\nfunction toMillis(ts){ var n = Number(ts) || 0; return n < 1000000000000 ? n * 1000 : n; }\r\nfunction msToSecFloor(ms){ return Math.floor((Number(ms) || 0) / 1000); }\r\n// seconds in, seconds out (ES5-safe)\r\nfunction parseDurSec(v){\r\n  var n = Number(v);\r\n  return (isFinite(n) && n > 0) ? Math.floor(n) : 0;\r\n}\r\nfunction pct(n, d){ if (d <= 0) return 0; return Math.round((n / d) * 10000) / 100; }\r\n\r\n// read attr regardless of scope prefix\r\nfunction mget(name){\r\n  if (typeof metadata !== 'object' || metadata === null) return null;\r\n  var k;\r\n  k = \"ss_\" + name;     if (metadata.hasOwnProperty(k) && metadata[k] !== null && metadata[k] !== undefined && metadata[k] !== \"\") return metadata[k];\r\n  k = \"cs_\" + name;     if (metadata.hasOwnProperty(k) && metadata[k] !== null && metadata[k] !== undefined && metadata[k] !== \"\") return metadata[k];\r\n  k = \"shared_\" + name; if (metadata.hasOwnProperty(k) && metadata[k] !== null && metadata[k] !== undefined && metadata[k] !== \"\") return metadata[k];\r\n  if (metadata.hasOwnProperty(name) && metadata[name] !== null && metadata[name] !== undefined && metadata[name] !== \"\") return metadata[name];\r\n  return null;\r\n}\r\n\r\n// find channel indices present (1..n) in the incoming msg (we only *read* them; we won't forward them)\r\nfunction detectIndices(m){\r\n  var seen = {};\r\n  for (var key in m){\r\n    if (!m.hasOwnProperty(key)) continue;\r\n    var a = /^OCCURRENCE-(\\d+)$/.exec(key);\r\n    var b = /^OCCURANCE-(\\d+)$/.exec(key);\r\n    var c = /^DURATION-(\\d+)$/.exec(key);\r\n    var idx = a ? +a[1] : (b ? +b[1] : (c ? +c[1] : null));\r\n    if (idx !== null) seen[idx] = true;\r\n  }\r\n  var out = [];\r\n  for (var n in seen){ if (seen.hasOwnProperty(n)) out.push(+n); }\r\n  out.sort(function(x,y){ return x - y; });\r\n  return out;\r\n}\r\n\r\n// prefer *_s baselines; fallback to *_ms converted to seconds\r\nfunction getBaseDurSec(idx){\r\n  var sVal = mget(\"baseline_duration_s_\" + idx);\r\n  if (sVal !== null && sVal !== undefined && sVal !== \"\") return toInt(sVal);       // seconds\r\n  var msVal = mget(\"baseline_duration_ms_\" + idx);\r\n  if (msVal !== null && msVal !== undefined && msVal !== \"\") return msToSecFloor(msVal); // ms→s\r\n  return 0;\r\n}\r\nfunction getBaseDurTotalSec(){\r\n  var sVal = mget(\"baseline_duration_s\");\r\n  if (sVal !== null && sVal !== undefined && sVal !== \"\") return toInt(sVal);       // seconds\r\n  var msVal = mget(\"baseline_duration_ms\");\r\n  if (msVal !== null && msVal !== undefined && msVal !== \"\") return msToSecFloor(msVal); // ms→s\r\n  return 0;\r\n}\r\n\r\n//// ---------- main ----------\r\n\r\n// read time inputs (we only read; we won't forward them)\r\nvar tsSec = toInt((msg && msg.timestamp) || (msg && msg.data && msg.data.timestamp));\r\nvar tsMs  = toMillis(tsSec);\r\n\r\n// guard: shift start\r\nvar startTsMs = toMillis(mget(\"cfg_start_ts\"));\r\nif (!startTsMs || !tsMs || tsMs < startTsMs){\r\n  // Not started yet → output empty msg, no raw fields\r\n  return { msg: {}, metadata: metadata, msgType: 'OTHER' };\r\n}\r\n\r\n// read current cumulative payload (we *read* from raw msg but won't forward it)\r\nvar curProd = toInt(msg[\"PRODUCTION-COUNT\"]);\r\nvar idxs = detectIndices(msg);\r\nvar curOcc = {}, curDurS = {}, curOccTot = 0, curDurTotS = 0;\r\nfor (var i = 0; i < idxs.length; i++){\r\n  var n = idxs[i];\r\n  var occVal = msg[\"OCCURRENCE-\" + n];\r\n  var occ = (occVal === undefined || occVal === null || occVal === \"\") ? toInt(msg[\"OCCURANCE-\" + n]) : toInt(occVal);\r\n  var durS = parseDurSec(msg[\"DURATION-\" + n]); // already seconds\r\n  curOcc[n] = occ; curDurS[n] = durS; curOccTot += occ; curDurTotS += durS;\r\n}\r\n\r\n// read existing baselines\r\nvar baseSnapTsMs  = toMillis(mget(\"baseline_snapshot_ts\"));\r\nvar baseStartTsMs = toMillis(mget(\"baseline_start_ts\"));\r\nvar baseProd      = toInt(mget(\"baseline_prod_count_pcs\"));\r\nvar baseOcc = {}, baseDurS = {};\r\nfor (i = 0; i < idxs.length; i++){\r\n  var k = idxs[i];\r\n  baseOcc[k] = toInt(mget(\"baseline_occ_\" + k));\r\n  baseDurS[k] = getBaseDurSec(k);\r\n}\r\nvar baseDurTotS = getBaseDurTotalSec();\r\n\r\n// decide snapshot requirement\r\nvar needSnapshot = (!baseSnapTsMs) || (baseStartTsMs && baseStartTsMs !== startTsMs);\r\n\r\n// shared time math\r\nvar runtimeS  = Math.max(0, Math.floor((tsMs - startTsMs) / 1000));\r\nvar shiftHrs  = toNum(mget(\"cfg_shift_hours\"));\r\nvar shiftDurS = shiftHrs > 0 ? Math.floor(shiftHrs * 3600) : 0;\r\nvar fracElapsed = (shiftDurS > 0) ? Math.min(1, Math.max(0, runtimeS / shiftDurS)) : 0;\r\nvar shiftTarget = toInt(mget(\"cfg_target_qty_pcs\"));\r\nvar targetNow   = (shiftTarget > 0 && shiftDurS > 0) ? Math.min(shiftTarget, Math.floor(shiftTarget * fracElapsed)) : 0;\r\n\r\n// pluck active_status (top-level or under msg.data) to mirror into telemetry\r\nvar activeStatus;\r\nif (msg && Object.prototype.hasOwnProperty.call(msg, \"active_status\")) {\r\n  activeStatus = msg[\"active_status\"];\r\n} else if (msg && msg.data && Object.prototype.hasOwnProperty.call(msg.data, \"active_status\")) {\r\n  activeStatus = msg.data[\"active_status\"];\r\n}\r\n\r\n// build output containers (no raw fields)\r\nvar outMsg = {};\r\nvar tel = {};               // msg.msg_telemetry (always)\r\nvar attrs = null;           // msg.msg_attr (only if snapshot)\r\n\r\n// include ss_machine_number in telemetry if present in metadata\r\nvar ssMachineNumber = (metadata && Object.prototype.hasOwnProperty.call(metadata, \"ss_machine_number\") && metadata[\"ss_machine_number\"] !== null && metadata[\"ss_machine_number\"] !== undefined && metadata[\"ss_machine_number\"] !== \"\") ? metadata[\"ss_machine_number\"] : null;\r\nif (ssMachineNumber !== null) { tel[\"machine_number\"] = ssMachineNumber; }\r\n\r\n// create snapshot dict if needed\r\nif (needSnapshot){\r\n  var jobStatusRaw = mget(\"job_status\"); // picks up ss_job_status if present\r\n  var jobStatus = (jobStatusRaw !== null && jobStatusRaw !== undefined && jobStatusRaw !== \"\")\r\n                  ? String(jobStatusRaw).toLowerCase()\r\n                  : \"unknown\";\r\n\r\n  attrs = {\r\n    baseline_snapshot_ts: tsMs,\r\n    baseline_start_ts: startTsMs,\r\n    baseline_prod_count_pcs: curProd,\r\n    baseline_occ_total: curOccTot,\r\n    baseline_duration_s: curDurTotS,\r\n    baseline_duration_ms: curDurTotS * 1000,\r\n    job_status: jobStatus,\r\n    job_status_ts: tsMs\r\n  };\r\n  for (i = 0; i < idxs.length; i++){\r\n    k = idxs[i];\r\n    var dS = curDurS[k];\r\n    attrs[\"baseline_occ_\" + k]         = curOcc[k];\r\n    attrs[\"baseline_duration_s_\" + k]  = dS;\r\n    attrs[\"baseline_duration_ms_\" + k] = dS * 1000;\r\n  }\r\n  outMsg.msg_attr = attrs;\r\n}\r\n\r\n// build telemetry dict\r\nif (attrs){\r\n  // snapshot now → actuals are zero at this tick\r\n  tel.act_qty_pcs = 0;\r\n  for (i = 0; i < idxs.length; i++){\r\n    k = idxs[i];\r\n    tel[\"act_occ_\" + k] = 0;\r\n    tel[\"act_duration_s_\" + k] = 0;\r\n  }\r\n  tel.act_occ_total = 0;\r\n  tel.runtime_s = runtimeS;\r\n  tel.downtime_s = 0;\r\n  tel.uptime_s = runtimeS;\r\n  tel.downtime_pct = pct(0, runtimeS);\r\n} else {\r\n  // use existing baselines from metadata\r\n  tel.act_qty_pcs = Math.max(0, curProd - baseProd);\r\n\r\n  // Carry-in knob: count a spanning stoppage if duration grew but occurrences didn't.\r\n  var carryMinS = toInt(mget(\"cfg_carry_min_s\")) || 1; // default >=1s\r\n\r\n  var actOccTot = 0, actDurTotS = 0;\r\n  for (i = 0; i < idxs.length; i++){\r\n    k = idxs[i];\r\n\r\n    var dOcc  = Math.max(0, curOcc[k]  - (baseOcc[k]  || 0));\r\n    var dDurS = Math.max(0, curDurS[k] - (baseDurS[k] || 0));\r\n\r\n    // infer exactly one carry-in occurrence when a stoppage spans the snapshot\r\n    var carry = (dOcc === 0 && dDurS >= carryMinS) ? 1 : 0;\r\n\r\n    var effOcc = dOcc + carry;\r\n\r\n    tel[\"act_occ_\" + k]        = effOcc;   // effective occurrences for this shift\r\n    tel[\"act_duration_s_\" + k] = dDurS;    // duration since snapshot (seconds)\r\n\r\n    actOccTot  += effOcc;\r\n    actDurTotS += dDurS;\r\n\r\n    // optional debug breadcrumb (comment out if noisy)\r\n    // if (carry && typeof logger !== 'undefined') logger.info(\"Carry-in inferred for DUR-\" + k + \" (dDurS=\" + dDurS + \"s)\");\r\n  }\r\n\r\n  tel.act_occ_total = actOccTot;\r\n  tel.runtime_s = runtimeS;\r\n  tel.downtime_s = actDurTotS;\r\n  tel.uptime_s = Math.max(0, runtimeS - actDurTotS);\r\n  tel.downtime_pct = pct(actDurTotS, runtimeS);\r\n}\r\n\r\n// common fields\r\ntel.target_till_now_pcs = targetNow;\r\nvar actual = toInt(tel.act_qty_pcs);\r\ntel.achieved_pct = (targetNow > 0) ? Math.round((actual / targetNow) * 10000) / 100 : 0;\r\n\r\n// mirror active_status into telemetry if present (do NOT forward anything else)\r\nif (activeStatus !== undefined && activeStatus !== null) {\r\n  tel.active_status = activeStatus;\r\n}\r\n\r\n// attach telemetry\r\noutMsg.msg_telemetry = tel;\r\n\r\n// return only the staged dicts; no raw passthrough\r\nreturn {\r\n  msg: outMsg,\r\n  metadata: metadata,\r\n  msgType: 'OTHER'   // lets your two emitter nodes decide what to write\r\n};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1760777803061,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0071a63-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Actual Occurrences and Durations",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 423,
+        "layoutY" : 394
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Transform Script: compute job status -> write ONLY to metadata, keep msg unchanged\r\n// Inputs expected (any missing => status=\"unknown\"):\r\n//   - msg.data.timestamp (seconds) OR msg.timestamp (seconds)\r\n//   - metadata.ss_cfg_start_ts (milliseconds) via mget(\"cfg_start_ts\")\r\n//   - metadata.ss_cfg_shift_hours (hours) via mget(\"cfg_shift_hours\")\r\n// Output:\r\n//   - Pass-through: original msg + msgType\r\n//   - metadata.ss_job_status (and alias metadata.job_status) updated\r\n\r\n// ---------- helpers ----------\r\nfunction toNum(x, dflt){ var n = Number(x); return isFinite(n) ? n : dflt; }\r\nfunction toMillis(ts){ var n = Number(ts) || 0; return n < 1000000000000 ? n * 1000 : n; }\r\n\r\n// read attr regardless of scope prefix (ss_, cs_, shared_, or bare)\r\nfunction mget(name){\r\n  if (typeof metadata !== 'object' || metadata === null) metadata = {};\r\n  var k;\r\n  k = \"ss_\" + name;     if (metadata.hasOwnProperty(k) && metadata[k] !== null && metadata[k] !== undefined && metadata[k] !== \"\") return metadata[k];\r\n  k = \"cs_\" + name;     if (metadata.hasOwnProperty(k) && metadata[k] !== null && metadata[k] !== undefined && metadata[k] !== \"\") return metadata[k];\r\n  k = \"shared_\" + name; if (metadata.hasOwnProperty(k) && metadata[k] !== null && metadata[k] !== undefined && metadata[k] !== \"\") return metadata[k];\r\n  if (metadata.hasOwnProperty(name) && metadata[name] !== null && metadata[name] !== undefined && metadata[name] !== \"\") return metadata[name];\r\n  return null;\r\n}\r\n\r\n// ---------- main ----------\r\nvar tsSec  = toNum((msg && msg.data && msg.data.timestamp != null) ? msg.data.timestamp : (msg && msg.timestamp), NaN);\r\nvar startMs = toMillis(mget(\"cfg_start_ts\"));      // picks up ss_cfg_start_ts\r\nvar shiftH  = toNum(mget(\"cfg_shift_hours\"), NaN); // picks up ss_cfg_shift_hours\r\n\r\nvar status = \"unknown\";\r\nif (isFinite(tsSec) && isFinite(startMs) && isFinite(shiftH)) {\r\n  var startSec = Math.floor(startMs / 1000);\r\n  var shiftSec = Math.max(0, Math.floor(shiftH * 3600));\r\n  var endSec   = startSec + shiftSec;\r\n\r\n  if (tsSec < startSec)      status = \"queued\";\r\n  else if (tsSec <= endSec)  status = \"active\";\r\n  else                       status = \"expired\";\r\n}\r\n\r\n// ensure metadata exists, write status (with an alias for convenience)\r\nif (typeof metadata !== 'object' || metadata === null) metadata = {};\r\nmetadata.ss_job_status = status;\r\nmetadata.job_status    = status; // optional alias for nodes that don't look for ss_\r\n\r\n// pass-through: keep the original message and type untouched\r\nreturn { msg: msg || {}, metadata: metadata, msgType: msgType };\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1760776910749,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0071a64-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Job status",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1115,
+        "layoutY" : 377
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Switch Node: route by job status (TOP-LEVEL return, no IIFE)\r\n\r\n// helper: read status from metadata (prefer ss_ prefix)\r\nfunction readStatus(meta) {\r\n  if (!meta || typeof meta !== 'object') return 'unknown';\r\n  var candidates = ['ss_job_status', 'job_status', 'cs_job_status', 'shared_job_status'];\r\n  for (var i = 0; i < candidates.length; i++) {\r\n    var k = candidates[i];\r\n    var v = meta[k];\r\n    if (v !== undefined && v !== null && v !== '') return String(v).toLowerCase();\r\n  }\r\n  return 'unknown';\r\n}\r\n\r\nvar status = readStatus(metadata);\r\n\r\n// You can return multiple relation names; wire these on the node.\r\nvar routes = ['ANY']; // optional catch-all\r\n\r\nif (status === 'active') {\r\n  routes.push('ACTIVE', 'NOT_EXPIRED');\r\n} else if (status === 'queued') {\r\n  routes.push('QUEUED', 'NOT_EXPIRED');\r\n} else if (status === 'expired') {\r\n  routes.push('EXPIRED');\r\n} else {\r\n  routes.push('UNKNOWN');\r\n}\r\n\r\nreturn routes;   // <-- TOP-LEVEL return is required\r\n",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1760758988340,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0071a65-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Filter statuses",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 81,
+        "layoutY" : 657
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Transform: read job status from metadata -> POST_ATTRIBUTES_REQUEST { job_status }\r\n\r\n// helper: prefer ss_ key, but accept fallbacks\r\nfunction readStatus(meta) {\r\n  if (!meta || typeof meta !== 'object') return 'unknown';\r\n  var keys = ['ss_job_status', 'job_status', 'cs_job_status', 'shared_job_status'];\r\n  for (var i = 0; i < keys.length; i++) {\r\n    var v = meta[keys[i]];\r\n    if (v !== undefined && v !== null && v !== '') return String(v).toLowerCase();\r\n  }\r\n  return 'unknown';\r\n}\r\n\r\nvar status = readStatus(metadata);\r\n\r\n// If you want to skip writes when status is unknown, uncomment the next 3 lines:\r\n// if (status === 'unknown') {\r\n//   return { msg: {}, metadata: metadata, msgType: 'OTHER' };\r\n// }\r\n\r\nreturn {\r\n  msg: { job_status: status },           // only this attribute is written\r\n  metadata: metadata,                    // pass-through metadata\r\n  msgType: 'POST_ATTRIBUTES_REQUEST'     // attribute write\r\n};\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1760775747059,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0071a66-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Send status",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 444,
+        "layoutY" : 652
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Node 2: emit attributes if msg.msg_attr exists\r\nif (msg && typeof msg.msg_attr === 'object') {\r\n  var attrs = JSON.parse(JSON.stringify(msg.msg_attr)); // defensive clone\r\n  // optional tidy so nothing leaks further\r\n  delete msg.msg_attr;\r\n  delete msg.msg_telemetry;\r\n  return { msg: attrs, metadata: metadata, msgType: 'POST_ATTRIBUTES_REQUEST' };\r\n}\r\n\r\n// nothing to write on this tick\r\nreturn { msg: {}, metadata: metadata, msgType: 'OTHER' };\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1760777803061,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0071a67-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "For Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 814,
+        "layoutY" : 668
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Node 3: emit telemetry from msg.msg_telemetry\r\nif (msg && typeof msg.msg_telemetry === 'object') {\r\n  var tel = JSON.parse(JSON.stringify(msg.msg_telemetry)); // defensive clone\r\n  // optional tidy\r\n  delete msg.msg_attr;\r\n  delete msg.msg_telemetry;\r\n  return { msg: tel, metadata: metadata, msgType: 'POST_TELEMETRY_REQUEST' };\r\n}\r\n\r\n// nothing staged (shouldn't happen if builder always sets it)\r\nreturn { msg: {}, metadata: metadata, msgType: 'OTHER' };\r\n",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1760777803061,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0071a68-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "For telemetry",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 419,
+        "layoutY" : 202
+      },
+      "configuration" : {
+        "relationsQuery" : {
+          "fetchLastLevelOnly" : false,
+          "direction" : "FROM",
+          "maxLevel" : 1,
+          "filters" : [ {
+            "relationType" : "ACTIVE_JOB",
+            "entityTypes" : [ "ASSET" ]
+          } ]
+        }
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1760532145525,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0074170-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Change to originator",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToRelatedNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 416,
+        "layoutY" : 117
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "machine_number" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1762085826371,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0074171-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Get Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1827,
+        "layoutY" : 393
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// ---------- helpers ----------\r\nfunction toInt(x){ var n = Number(x); return isFinite(n) ? Math.floor(n) : 0; }\r\nfunction toMillis(x){ var n = Number(x)||0; return n < 1000000000000 ? n*1000 : n; }\r\nfunction statusLabel(code, msg){\r\n  if (msg && msg.status_label != null && msg.status_label !== '') return String(msg.status_label);\r\n  if (code === 11) return 'IN_PRODUCTION';\r\n  if (code >= 1 && code <= 10) return 'ALARM-' + code;\r\n  if (code === 0)  return 'IDLE';\r\n  return 'UNKNOWN';\r\n}\r\n\r\n// ---------- inputs ----------\r\nvar m   = metadata || {};\r\nvar now = toMillis(msg.timestamp) || Number(m.ts) || Date.now();\r\n\r\n// current code strictly from incoming message (fallbacks last)\r\nvar curCode = toInt(\r\n  (msg.active_status != null) ? msg.active_status :\r\n  (msg.status_code   != null) ? msg.status_code   :\r\n  (msg.value         != null) ? msg.value         :\r\n  m.prev_status_code || m.ss_prev_status_code\r\n);\r\nvar curLabel = statusLabel(curCode, msg);\r\n\r\n// prev can be in new (no prefix) or legacy (ss_) keys\r\nvar prevRaw =\r\n  (m.prev_status_code !== undefined && m.prev_status_code !== '') ? m.prev_status_code :\r\n  (m.ss_prev_status_code !== undefined && m.ss_prev_status_code !== '') ? m.ss_prev_status_code :\r\n  null;\r\n\r\nvar hasPrev   = (prevRaw !== null && isFinite(Number(prevRaw)));\r\nvar prevCode  = hasPrev ? toInt(prevRaw) : null;\r\nvar prevLabel = hasPrev ? String(m.prev_status_label || m.ss_prev_status_label || '') : '';\r\n\r\n// live snapshot we store on the asset (UN-prefixed)\r\nvar liveAttrs = {\r\n  active_status_cur: curCode,\r\n  status_code_cur:   curCode,\r\n  status_label:      curLabel\r\n};\r\n\r\n// ----------- INIT (no alert; seed prev_*) -----------\r\nif (!hasPrev) {\r\n  var initEventId = (m.originatorName || m.assetName || m.deviceName || 'job') + ':init:' + now;\r\n  var seedAttrs = Object.assign({}, liveAttrs, {\r\n    prev_status_code:    curCode,\r\n    prev_status_label:   curLabel,\r\n    status_changed_ts:   now,\r\n    last_alert_event_id: initEventId\r\n  });\r\n\r\n  metadata._attr_json  = JSON.stringify(seedAttrs); // for Save Attributes later\r\n  metadata._alert_json = '';                        // no webhook on INIT\r\n  metadata._init = '1';\r\n  metadata._changed = '0';\r\n  metadata._why = 'seed prev';\r\n\r\n  // debug breadcrumbs\r\n  metadata._dbg_prev_raw  = String(prevRaw);\r\n  metadata._dbg_prev_code = String(prevCode);\r\n  metadata._dbg_cur_code  = String(curCode);\r\n  return { msg: msg, metadata: metadata, msgType: msgType };\r\n}\r\n\r\n// ----------- NO CHANGE -----------\r\nvar changed = (curCode !== prevCode);\r\nif (!changed) {\r\n  metadata._attr_json  = '';   // no write on no-change\r\n  metadata._alert_json = '';\r\n  metadata._init = '0';\r\n  metadata._changed = '0';\r\n  metadata._why = 'no change';\r\n\r\n  metadata._dbg_prev_raw  = String(prevRaw);\r\n  metadata._dbg_prev_code = String(prevCode);\r\n  metadata._dbg_cur_code  = String(curCode);\r\n  return { msg: msg, metadata: metadata, msgType: msgType };\r\n}\r\n\r\n// ----------- CHANGED (send clean alert; then save) -----------\r\nvar jobName = m.originatorName || m.assetName || m.deviceName || msg.job_id || 'job';\r\nvar evId    = jobName + ':' + prevCode + '->' + curCode + ':' + now;\r\n\r\n// CLEAN body (no prefixes at all)\r\nvar alertPayload = {\r\n  schema: 1,\r\n  event_id: evId,\r\n  event_ts: now,\r\n  event_type: 'status_changed',\r\n  origin: {\r\n    job_asset_id:   m.originatorId ? m.originatorId.id : null,\r\n    job_asset_name: jobName,\r\n    device_id:      m.deviceId || null,\r\n    device_name:    m.deviceName || null\r\n  },\r\n  job: { job_id: msg.job_id || jobName },\r\n  status: {\r\n    prev_code:  prevCode,\r\n    prev_label: prevLabel,\r\n    code:       curCode,\r\n    label:      curLabel\r\n  },\r\n  metrics: { production_count: toInt(msg['PRODUCTION-COUNT']) },\r\n  extra: {}\r\n};\r\n\r\n// stage new prev_* to be saved AFTER REST success\r\nvar newPrev = Object.assign({}, liveAttrs, {\r\n  prev_status_code:    curCode,\r\n  prev_status_label:   curLabel,\r\n  status_changed_ts:   now,\r\n  last_alert_event_id: evId\r\n});\r\n\r\n// stash; never put them on msg\r\nmetadata._alert_json = JSON.stringify(alertPayload);\r\nmetadata._attr_json  = JSON.stringify(newPrev);\r\n\r\nmetadata._init = '0';\r\nmetadata._changed = '1';\r\nmetadata._why = 'status changed';\r\n\r\n// debug breadcrumbs\r\nmetadata._dbg_prev_raw  = String(prevRaw);\r\nmetadata._dbg_prev_code = String(prevCode);\r\nmetadata._dbg_cur_code  = String(curCode);\r\n\r\nreturn { msg: msg, metadata: metadata, msgType: msgType };\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761220143514,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f007ddb0-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Compare & Stage",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1830,
+        "layoutY" : 496
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "\r\nvar init    = String(metadata._init    || '0') === '1';\r\nvar changed = String(metadata._changed || '0') === '1';\r\n\r\nif (init)    return ['INIT'];\r\nif (changed) return ['CHANGED'];\r\nreturn ['NO_CHANGE'];\r\n\r\n",
+        "tbelScript" : "function nextRelation(metadata, msg) {\n    return ['one','nine'];\n}\nif(msgType == 'POST_TELEMETRY_REQUEST') {\n    return ['two'];\n}\nreturn nextRelation(metadata, msg);"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761220159183,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f00804c0-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Init Or Change?",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1697,
+        "layoutY" : 598
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// INIT → restore attributes staged by Compare & Stage\r\nvar attrs = {};\r\ntry { attrs = JSON.parse(metadata._attr_json || '{}'); } catch (e) {}\r\nreturn { msg: attrs, metadata: metadata, msgType: 'POST_ATTRIBUTES_REQUEST' };\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761152136769,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f00804c1-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Save Request",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2073,
+        "layoutY" : 745
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://n8n.lcaforyou.com/webhook/send-alert",
+        "requestMethod" : "POST",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : false,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "proxyScheme" : null,
+        "proxyHost" : null,
+        "proxyPort" : 0,
+        "proxyUser" : null,
+        "proxyPassword" : null,
+        "readTimeoutMs" : "8000",
+        "maxParallelRequestsCount" : 0,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "maxInMemoryBufferSizeInKb" : 256
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761220213860,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0082bd0-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Send",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1979,
+        "layoutY" : 608
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// CHANGED → set HTTP body to the clean alert from metadata\r\nvar body = {};\r\ntry { body = JSON.parse(metadata._alert_json || '{}'); } catch (e) {}\r\nreturn { msg: body, metadata: metadata, msgType: msgType };\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761152929249,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0082bd1-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Save Request",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1810,
+        "layoutY" : 901
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761152879176,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0082bd2-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Save Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2302,
+        "layoutY" : 752
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Restore attrs that we stashed before REST\r\nvar attrs = {};\r\ntry { attrs = JSON.parse(metadata._attr_json || '{}'); } catch (e) {}\r\nreturn { msg: attrs, metadata: metadata, msgType: 'POST_ATTRIBUTES_REQUEST' };\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761154268160,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f0082bd3-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Save Request",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1168,
+        "layoutY" : 670
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function toMillis(x){ var n=Number(x)||0; return n<1e12? n*1000 : n; }\r\nfunction readStatus(msg,m){\r\n  var c=[msg.job_status,msg.status,m.job_status,m.ss_job_status,m.shared_job_status];\r\n  for (var i=0;i<c.length;i++){ var v=c[i]; if(v!=null && String(v).trim()!=='') return String(v).toLowerCase(); }\r\n  return 'unknown';\r\n}\r\nfunction pick(){ for(var i=0;i<arguments.length;i++){ var v=arguments[i]; if(v!==undefined&&v!==null&&String(v)!=='') return v; } return null; }\r\n\r\nvar m   = metadata || {};\r\nvar now = toMillis(msg.timestamp) || Number(m.ts) || Date.now();\r\n\r\nvar statusNow   = readStatus(msg, m);\r\nvar isActiveNow = (statusNow === 'active');\r\n\r\n// memory: prefer new keys, fall back to legacy ss_*\r\nvar prevStatusRaw = pick(m.prev_job_status, m.ss_prev_job_status);\r\nvar wasActivePrev = prevStatusRaw && String(prevStatusRaw).toLowerCase() === 'active';\r\nvar prevFlagRaw   = pick(m.job_is_active, m.ss_job_is_active);\r\nvar wasActiveFlag = (String(prevFlagRaw) === '1');\r\n\r\n// FIRE when active now and neither memory says \"already active\"\r\nvar fire = isActiveNow && !(wasActivePrev || wasActiveFlag);\r\n\r\n// flag for switch\r\nmsg.job_is_active = isActiveNow ? '1' : '0';\r\n\r\n// always stage attrs (this CREATES new keys if missing)\r\nvar attrs = {\r\n  job_is_active: msg.job_is_active,\r\n  prev_job_status: statusNow\r\n};\r\n\r\nif (fire) {\r\n  var jobName = m.originatorName || m.assetName || m.deviceName || 'job';\r\n  var evId    = jobName + ':job_active:' + now;\r\n\r\n  attrs.job_activation_ts = now;\r\n  attrs.last_job_active_event_id = evId;\r\n\r\n  metadata._alert_active_json = JSON.stringify({\r\n    schema: 1, event_id: evId, event_ts: now, event_type: 'job_active',\r\n    origin: {\r\n      job_asset_id:   m.originatorId ? m.originatorId.id : null,\r\n      job_asset_name: jobName,\r\n      device_id:      m.deviceId || null,\r\n      device_name:    m.deviceName || null\r\n    },\r\n    job: { job_id: msg.job_id || jobName },\r\n    status: { value: 'active' }\r\n  });\r\n  metadata._why_active = (prevStatusRaw==null && prevFlagRaw==null) ? 'first-ever active' : 'rising edge';\r\n} else {\r\n  metadata._alert_active_json = '';\r\n  if (wasActivePrev && !isActiveNow) attrs.job_deactivation_ts = now; // optional stamp when leaving active\r\n  metadata._why_active = isActiveNow ? 'suppressed (already active)' : 'not active';\r\n}\r\n\r\nmetadata._attr_active_json = JSON.stringify(attrs);\r\nmetadata._fire_active = fire ? '1' : '0';\r\n\r\n// breadcrumbs\r\nmetadata._dbg_now = statusNow;\r\nmetadata._dbg_prev_job_status = prevStatusRaw || '';\r\nmetadata._dbg_prev_flag = prevFlagRaw || '';\r\nmetadata._dbg_originator_id = m.originatorId ? m.originatorId.id : '';\r\nmetadata._dbg_originator_type = m.originatorEntityType || m.entityType || '';\r\n\r\nreturn { msg: msg, metadata: metadata, msgType: msgType };\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761216519541,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f00852e0-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Active edge detect",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1169,
+        "layoutY" : 751
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "\r\nreturn [ String(metadata._fire_active || '0') === '1' ? 'FIRE' : 'NOT_FIRE' ];\r\n",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761213725997,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f00852e1-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Fire?",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1169,
+        "layoutY" : 830
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var b={}; try{ b=JSON.parse(metadata._alert_active_json||'{}'); }catch(e){}\r\nreturn { msg:b, metadata:metadata, msgType: msgType };\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761213840066,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f00852e2-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "HTTP Body",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1179,
+        "layoutY" : 1004
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://n8n.lcaforyou.com/webhook/jobcard_start",
+        "requestMethod" : "POST",
+        "useSimpleClientHttpFactory" : false,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : false,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "proxyScheme" : null,
+        "proxyHost" : null,
+        "proxyPort" : 0,
+        "proxyUser" : null,
+        "proxyPassword" : null,
+        "readTimeoutMs" : "8000",
+        "maxParallelRequestsCount" : 0,
+        "headers" : {
+          "Content-Type" : "application/json"
+        },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "maxInMemoryBufferSizeInKb" : 256
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761219696855,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f00852e3-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Send",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1399,
+        "layoutY" : 1004
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var a={}; try{ a=JSON.parse(metadata._attr_active_json||'{}'); }catch(e){}\r\nreturn { msg:a, metadata:metadata, msgType:'POST_ATTRIBUTES_REQUEST' };\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761212758722,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f00852e4-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Restore",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 954,
+        "layoutY" : 1000
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var attrs = {};\r\ntry { attrs = JSON.parse(metadata._attr_active_json || '{}'); } catch (e) {}\r\nreturn { msg: attrs, metadata: metadata, msgType: 'POST_ATTRIBUTES_REQUEST' };\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761213995517,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f00852e5-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Restore",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1375,
+        "layoutY" : 671
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function v(x){ return (x===undefined || x===null) ? '' : String(x); }\r\nreturn '[EDGE-DBG] ' +\r\n       'now='  + v(metadata._dbg_now) +\r\n       ' prev=' + v(metadata._dbg_prev_job_status) +\r\n       ' flag=' + v(metadata._dbg_prev_flag) +\r\n       ' fire=' + v(metadata._fire_active) +\r\n       ' why='  + v(metadata._why_active) +\r\n       ' oid='  + v(metadata._dbg_originator_id) +\r\n       ' otype='+ v(metadata._dbg_originator_type);\r\n",
+        "tbelScript" : "[EDGE-DBG] now=${_dbg_now} prev=${_dbg_prev_job_status} flag=${_dbg_prev_flag} fire=${_fire_active} why=${_why_active} oid=${_dbg_originator_id} otype=${_dbg_originator_type}\r\n"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761217504490,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f00879f0-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Log",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1165,
+        "layoutY" : 606
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "prev_job_status", "job_is_active", "job_activation_ts", "last_job_active_event_id", "ss_prev_job_status", "ss_job_is_active", "ss_job_activation_ts", "ss_last_job_active_event_id" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1761217504490,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "f00879f1-b8c9-11f0-95d9-fff9d6e53631"
+      },
+      "name" : "Get Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "923e18e0-92e3-11f0-adaa-3dca45c43107"
+    },
+    "to" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "b0f5c0e0-a2c8-11f0-bfaa-5dcc0fb52ded"
+    },
+    "type" : "Uses",
+    "typeGroup" : "COMMON",
+    "version" : 13491
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

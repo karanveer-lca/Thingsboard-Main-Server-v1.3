@@ -1,0 +1,433 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : null,
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "66b46450-a14c-11f0-81cd-d7568d658832"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "163252d0-c406-11f0-8e72-45a5d1fbd209"
+    },
+    "label" : "",
+    "name" : "New",
+    "ownerId" : null,
+    "type" : "Job Card"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "6bb3a990-c328-11f0-9786-450cd38b38bb"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "163252d0-c406-11f0-8e72-45a5d1fbd209"
+    },
+    "type" : "ACTIVE_JOB",
+    "typeGroup" : "COMMON",
+    "version" : 13307
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ai_response",
+      "lastUpdateTs" : 1764018611021,
+      "longValue" : null,
+      "strValue" : "{\n  \"summary\": \"The production system shows significant downtime, with multiple alarms frequently triggering and causing disruptions. Alarm 3, Alarm 8, and Alarm 1 are the most problematic, contributing to high downtime and potential cascading failure risks.\",\n  \"criticalIssues\": [\n    \"Alarm 3: Highest occurrence rate (632 times) with a significant potential impact despite undefined duration.\",\n    \"Alarm 8: Triggered 158 times with a cumulative impact score of 0.00 due to undefined duration but high frequency.\",\n    \"Alarm 1: Triggered 130 times with an impact score of 1.52, indicating a notable contribution to downtime.\"\n  ],\n  \"metrics\": {\n    \"totalDowntime\": \"23.97 minutes (369.67% of potential production time)\",\n    \"mostProblematicAlarm\": \"Alarm 3 - High occurrence rate with undefined duration data, suggesting significant unresolved issues.\",\n    \"estimatedProductionLoss\": \"Potentially 220 units if alarms continue to disrupt production.\"\n  },\n  \"recommendations\": [\n    \"Investigate and resolve the root cause of Alarm 3 immediately as it has the highest occurrence rate.\",\n    \"Perform a detailed analysis of Alarm 8 to understand and address its frequent triggers, even though the duration is undefined.\",\n    \"Prioritize operator training to manage Alarm 1 occurrences more effectively and reduce its downtime impact.\",\n    \"Implement a predictive maintenance schedule to proactively address recurring alarms and minimize downtime.\",\n    \"Optimize alarm monitoring and response protocols to ensure critical alarms are addressed promptly without cascading failures.\"\n  ],\n  \"predictions\": \"If current alarm patterns persist, downtime may increase in the next shift, leading to an estimated production loss of 200–250 units. Alarm 3 and Alarm 8 are likely to continue trending upward, requiring immediate attention to prevent extended disruptions.\",\n  \"urgencyLevel\": \"CRITICAL\"\n}"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_ms",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 6048000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_ms_1",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 843000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_ms_10",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 162000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_ms_2",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 862000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_ms_3",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 533000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_ms_4",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 681000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_ms_5",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 736000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_ms_6",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 701000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_ms_7",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 20000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_ms_8",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 855000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_ms_9",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 655000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_s",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 6048,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_s_1",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 843,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_s_10",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 162,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_s_2",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 862,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_s_3",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 533,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_s_4",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 681,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_s_5",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 736,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_s_6",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 701,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_s_7",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 20,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_s_8",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 855,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_duration_s_9",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 655,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_occ_1",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 88,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_occ_10",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 861,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_occ_2",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 235,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_occ_3",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 114,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_occ_4",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 694,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_occ_5",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 587,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_occ_6",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 890,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_occ_7",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 933,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_occ_8",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 96,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_occ_9",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 903,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_occ_total",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 5401,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_prod_count_pcs",
+      "lastUpdateTs" : 1763419186091,
+      "longValue" : 0,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 1.763419081E12,
+      "jsonValue" : null,
+      "key" : "baseline_snapshot_ts",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "baseline_start_ts",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : 1763419080000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cfg_min_benchmark",
+      "lastUpdateTs" : 1763419087000,
+      "longValue" : 80,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cfg_shift_hours",
+      "lastUpdateTs" : 1763419087000,
+      "longValue" : 10,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cfg_start_ts",
+      "lastUpdateTs" : 1763419087000,
+      "longValue" : 1763419080000,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "cfg_target_qty_pcs",
+      "lastUpdateTs" : 1763419087000,
+      "longValue" : 600,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "job_status",
+      "lastUpdateTs" : 1763815218178,
+      "longValue" : null,
+      "strValue" : "expired"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : 1.763419081E12,
+      "jsonValue" : null,
+      "key" : "job_status_ts",
+      "lastUpdateTs" : 1763419106219,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "line_location",
+      "lastUpdateTs" : 1763419087000,
+      "longValue" : null,
+      "strValue" : "Line A"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machine_device_id",
+      "lastUpdateTs" : 1763419087000,
+      "longValue" : null,
+      "strValue" : "6bb3a990-c328-11f0-9786-450cd38b38bb"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "machine_device_name",
+      "lastUpdateTs" : 1763419087000,
+      "longValue" : null,
+      "strValue" : "__ingestion_fastapi__"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "part_name",
+      "lastUpdateTs" : 1763419087000,
+      "longValue" : null,
+      "strValue" : "Part A"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "plant_name",
+      "lastUpdateTs" : 1763419087000,
+      "longValue" : null,
+      "strValue" : "Plant A"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "shift_name",
+      "lastUpdateTs" : 1763419087000,
+      "longValue" : null,
+      "strValue" : "Shift A"
+    } ]
+  },
+  "calculatedFields" : [ ]
+}

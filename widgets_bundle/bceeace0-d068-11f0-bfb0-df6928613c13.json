@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "trendz_bundle",
+    "description" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "bceeace0-d068-11f0-bfb0-df6928613c13"
+    },
+    "image" : null,
+    "name" : "Trendz Bundle",
+    "order" : null,
+    "scada" : false,
+    "title" : "Trendz Bundle"
+  },
+  "fqns" : [ "trendz_bundle.trendz_view", "trendz_bundle.trendz_view_static", "trendz_bundle.trendz_builder" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
