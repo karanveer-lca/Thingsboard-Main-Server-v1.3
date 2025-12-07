@@ -4191,32 +4191,6 @@
                 "funcBody" : null,
                 "usePostProcessing" : true,
                 "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
-              }, {
-                "name" : "DURATION_7",
-                "type" : "timeseries",
-                "label" : "DURATION 7",
-                "color" : "#8bc34a",
-                "settings" : { },
-                "_hash" : 0.8467074853780997,
-                "aggregationType" : null,
-                "units" : "min",
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
-              }, {
-                "name" : "DURATION_8",
-                "type" : "timeseries",
-                "label" : "DURATION 8",
-                "color" : "#3f51b5",
-                "settings" : { },
-                "_hash" : 0.09041505341686795,
-                "aggregationType" : null,
-                "units" : "min",
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
