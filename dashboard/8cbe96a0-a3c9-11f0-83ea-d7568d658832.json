@@ -3225,32 +3225,6 @@
                 "funcBody" : null,
                 "usePostProcessing" : true,
                 "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
-              }, {
-                "name" : "act_duration_s_7",
-                "type" : "timeseries",
-                "label" : "DUR-7",
-                "color" : "#E89623",
-                "settings" : { },
-                "_hash" : 0.7949894279413012,
-                "decimals" : 0,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
-              }, {
-                "name" : "act_duration_s_8",
-                "type" : "timeseries",
-                "label" : "DUR-8",
-                "color" : "#F5DD00",
-                "settings" : { },
-                "_hash" : 0.9522202929383626,
-                "decimals" : 0,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -3779,32 +3753,6 @@
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
-              }, {
-                "name" : "act_occ_7",
-                "type" : "timeseries",
-                "label" : "OCC-7",
-                "color" : "#E89623",
-                "settings" : { },
-                "_hash" : 0.678009212306308,
-                "decimals" : 0,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "act_occ_8",
-                "type" : "timeseries",
-                "label" : "OCC-8",
-                "color" : "#F5DD00",
-                "settings" : { },
-                "_hash" : 0.6626913623026339,
-                "decimals" : 0,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -4237,32 +4185,6 @@
                 "color" : "#9c27b0",
                 "settings" : { },
                 "_hash" : 0.7474744072160737,
-                "aggregationType" : null,
-                "units" : "min",
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
-              }, {
-                "name" : "DURATION_7",
-                "type" : "timeseries",
-                "label" : "DURATION 7",
-                "color" : "#8bc34a",
-                "settings" : { },
-                "_hash" : 0.8467074853780997,
-                "aggregationType" : null,
-                "units" : "min",
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn Number(rounded);\r\n"
-              }, {
-                "name" : "DURATION_8",
-                "type" : "timeseries",
-                "label" : "DURATION 8",
-                "color" : "#3f51b5",
-                "settings" : { },
-                "_hash" : 0.09041505341686795,
                 "aggregationType" : null,
                 "units" : "min",
                 "decimals" : null,
@@ -6371,20 +6293,6 @@
                 "color" : "#9c27b0",
                 "settings" : { },
                 "_hash" : 0.8460145617263857
-              }, {
-                "name" : "OCCURRENCE_7",
-                "type" : "timeseries",
-                "label" : "OCCURRENCE 7",
-                "color" : "#8bc34a",
-                "settings" : { },
-                "_hash" : 0.291078213780656
-              }, {
-                "name" : "OCCURRENCE_9",
-                "type" : "timeseries",
-                "label" : "OCCURRENCE 8",
-                "color" : "#3f51b5",
-                "settings" : { },
-                "_hash" : 0.8649144542781827
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -10353,32 +10261,6 @@
                 "funcBody" : null,
                 "usePostProcessing" : true,
                 "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
-              }, {
-                "name" : "act_duration_s_7",
-                "type" : "timeseries",
-                "label" : "DUR-7",
-                "color" : "#E89623",
-                "settings" : { },
-                "_hash" : 0.7949894279413012,
-                "decimals" : 0,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
-              }, {
-                "name" : "act_duration_s_8",
-                "type" : "timeseries",
-                "label" : "DUR-8",
-                "color" : "#F5DD00",
-                "settings" : { },
-                "_hash" : 0.9522202929383626,
-                "decimals" : 0,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "if (value == null) return null;\r\nvar n = Number(value) / 60;       // convert seconds → minutes\r\nvar rounded = n.toFixed(1);       // keep 1 decimal, returns STRING\r\nreturn rounded;\r\n"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -10658,32 +10540,6 @@
                 "color" : "#F44336",
                 "settings" : { },
                 "_hash" : 0.818374410885415,
-                "decimals" : 0,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "act_occ_7",
-                "type" : "timeseries",
-                "label" : "OCC-7",
-                "color" : "#E89623",
-                "settings" : { },
-                "_hash" : 0.678009212306308,
-                "decimals" : 0,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "act_occ_8",
-                "type" : "timeseries",
-                "label" : "OCC-8",
-                "color" : "#F5DD00",
-                "settings" : { },
-                "_hash" : 0.6626913623026339,
                 "decimals" : 0,
                 "aggregationType" : "NONE",
                 "units" : null,
@@ -11001,7 +10857,7 @@
             "padding" : "8px",
             "settings" : {
               "imageUrl" : "tb-image;/api/images/tenant/floorplan.webp",
-              "linesConfig" : "[\r\n  {\r\n    \"id\": \"line_1\",\r\n    \"label\": \"Line-1\",\r\n    \"groupId\": \"5a89ea50-c9ca-11f0-a09c-911c53809081\",\r\n    \"x\": 17,\r\n    \"y\": 12\r\n  },\r\n  {\r\n    \"id\": \"line_6\",\r\n    \"label\": \"Line-6\",\r\n    \"groupId\": \"6ebeb730-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 43,\r\n    \"y\": 18\r\n  },\r\n  {\r\n    \"id\": \"line_5\",\r\n    \"label\": \"Line-5\",\r\n    \"groupId\": \"6b151020-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 82,\r\n    \"y\": 26\r\n  },\r\n  {\r\n    \"id\": \"line_7\",\r\n    \"label\": \"Line-7\",\r\n    \"groupId\": \"74e93cc0-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 43,\r\n    \"y\": 40\r\n  },\r\n  {\r\n    \"id\": \"line_3\",\r\n    \"label\": \"Line-3\",\r\n    \"groupId\": \"5f9b97f0-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 68,\r\n    \"y\": 52\r\n  },\r\n  {\r\n    \"id\": \"line_4\",\r\n    \"label\": \"Line-4\",\r\n    \"groupId\": \"65f4a790-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 15,\r\n    \"y\": 48\r\n  },\r\n  {\r\n    \"id\": \"line_2\",\r\n    \"label\": \"Line-2\",\r\n    \"groupId\": \"5961a910-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 15,\r\n    \"y\": 75\r\n  },\r\n  {\r\n    \"id\": \"line_8\",\r\n    \"label\": \"Line-8\",\r\n    \"groupId\": \"791ef730-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 70,\r\n    \"y\": 80\r\n  }\r\n]\r\n",
+              "linesConfig" : "[\r\n  {\r\n    \"id\": \"line_1\",\r\n    \"label\": \"Line-1\",\r\n    \"groupId\": \"5a89ea50-c9ca-11f0-a09c-911c53809081\",\r\n    \"x\": 17,\r\n    \"y\": 12\r\n  },\r\n  {\r\n    \"id\": \"line_6\",\r\n    \"label\": \"Line-6\",\r\n    \"groupId\": \"6ebeb730-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 39,\r\n    \"y\": 25\r\n  },\r\n  {\r\n    \"id\": \"line_5\",\r\n    \"label\": \"Line-5\",\r\n    \"groupId\": \"6b151020-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 82,\r\n    \"y\": 26\r\n  },\r\n  {\r\n    \"id\": \"line_7\",\r\n    \"label\": \"Line-7\",\r\n    \"groupId\": \"74e93cc0-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 43,\r\n    \"y\": 40\r\n  },\r\n  {\r\n    \"id\": \"line_3\",\r\n    \"label\": \"Line-3\",\r\n    \"groupId\": \"5f9b97f0-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 68,\r\n    \"y\": 52\r\n  },\r\n  {\r\n    \"id\": \"line_4\",\r\n    \"label\": \"Line-4\",\r\n    \"groupId\": \"65f4a790-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 15,\r\n    \"y\": 48\r\n  },\r\n  {\r\n    \"id\": \"line_2\",\r\n    \"label\": \"Line-2\",\r\n    \"groupId\": \"5961a910-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 15,\r\n    \"y\": 75\r\n  },\r\n  {\r\n    \"id\": \"line_8\",\r\n    \"label\": \"Line-8\",\r\n    \"groupId\": \"791ef730-c9ed-11f0-a09c-911c53809081\",\r\n    \"x\": 70,\r\n    \"y\": 80\r\n  }\r\n]\r\n",
               "targetStateId" : "line_view",
               "stateParamName" : "entityGroupId"
             },

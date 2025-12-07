@@ -1,0 +1,22 @@
+{
+  "entityType" : "WIDGETS_BUNDLE",
+  "entity" : {
+    "alias" : "avantec_widgets",
+    "description" : null,
+    "externalId" : null,
+    "id" : {
+      "entityType" : "WIDGETS_BUNDLE",
+      "id" : "bfe25f80-d06a-11f0-bfb0-df6928613c13"
+    },
+    "image" : null,
+    "name" : "Avantec widgets",
+    "order" : null,
+    "scada" : false,
+    "title" : "Avantec widgets"
+  },
+  "fqns" : [ "avantec_widgets.testattributescard", "avantec_widgets.styled_button_of_string_value", "avantec_widgets.segmented_switch_from_string_attribute_send_rpc", "avantec_widgets.rtc_button_with_method_params", "avantec_widgets.update_shared_integer_attribute_with_segmented_switch_", "avantec_widgets.html_attributes_cards", "avantec_widgets.update_time_value", "avantec_widgets.segment_switch_of_boolean", "avantec_widgets.select_double_value_with_state_parameter_from_flexiable_option", "avantec_widgets.select_timezone_value", "avantec_widgets.tabs_navigation_bar", "avantec_widgets.simple_state_param_card", "avantec_widgets.select_double_value_with_state_parameter_from_flexiable_option2", "avantec_widgets.styled_button_of_string_value_with_pattern_key", "avantec_widgets.select_double_value_from_flexiable_options", "avantec_widgets.update_time_value_with_pattern_key", "avantec_widgets.setting_list", "avantec_widgets.buttons_navigation_bar" ],
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

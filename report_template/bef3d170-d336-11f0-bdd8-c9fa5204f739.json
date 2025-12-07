@@ -1,0 +1,28 @@
+{
+  "entityType" : "REPORT_TEMPLATE",
+  "entity" : {
+    "configuration" : {
+      "format" : "CSV",
+      "components" : [ ],
+      "entityAliases" : [ ],
+      "filters" : [ ],
+      "format" : "CSV",
+      "namePattern" : "report-%d{yyyy-MM-dd_HH:mm:ss}",
+      "timeDataPattern" : "yyyy-MM-dd HH:mm:ss"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "description" : null,
+    "externalId" : null,
+    "format" : "CSV",
+    "id" : {
+      "entityType" : "REPORT_TEMPLATE",
+      "id" : "bef3d170-d336-11f0-bdd8-c9fa5204f739"
+    },
+    "name" : "a",
+    "ownerId" : null,
+    "type" : "REPORT"
+  }
+}

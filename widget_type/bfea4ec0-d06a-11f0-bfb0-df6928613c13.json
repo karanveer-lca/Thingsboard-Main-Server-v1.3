@@ -1,0 +1,34 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "avantec_widgets.rtc_button_with_method_params",
+    "name" : "RTC button with params & response",
+    "deprecated" : false,
+    "image" : null,
+    "description" : null,
+    "descriptor" : {
+      "type" : "rpc",
+      "sizeX" : 7,
+      "sizeY" : 4,
+      "resources" : [ ],
+      "templateHtml" : "    <form #rpcForm=\"ngForm\" (submit)=\"sendCommand()\">\r\n      <div class=\"mat-content mat-padding\" fxLayout=\"column\">\r\n        <mat-form-field [fxShow]=\"requireParam\" class=\"mat-block\">\r\n          <mat-label>{{ paramLabel }}</mat-label>  \r\n          <input matInput required name=\"rpcParams\" #rpcParamsField=\"ngModel\" [(ngModel)]=\"rpcParams\"/>\r\n          <mat-error *ngIf=\"rpcParamsField.hasError('required')\">\r\n            RPC params is required.\r\n          </mat-error>\r\n        </mat-form-field>\r\n        <button [disabled]=\"requireParam && (rpcForm.invalid || !rpcForm.dirty)\" mat-raised-button color=\"primary\"  type=\"submit\" >\r\n            {{ buttonLabel }}\r\n        </button>\r\n        <div style=\"margin-top: 18px;\">\r\n          <label>RPC command response</label>\r\n          <div style=\"width: 100%; height: 60px; border: solid 2px gray\" [innerHTML]=\"rpcCommandResponse\">\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </form>\r\n",
+      "templateCss" : "\n",
+      "controllerScript" : "self.onInit = function() {\r\n    let utils    = self.ctx.$scope.$injector.get(self.ctx.servicesMap.get('utils'));\r\n    let settings = utils.deepClone(self.ctx.settings) || {}; \r\n    \r\n    self.ctx.$scope.requireParam  = settings.requireParam;\r\n    self.ctx.$scope.paramLabel  = settings.paramLabel;\r\n    self.ctx.$scope.buttonLabel = settings.buttonLabel;\r\n    \r\n    self.ctx.$scope.sendCommand = function() {\r\n        //var rpcMethod = self.ctx.$scope.rpcMethod;\r\n        var rpcMethod = self.ctx.settings.rpcMethod;\r\n        var rpcParams = self.ctx.$scope.rpcParams;\r\n        var timeout = self.ctx.settings.requestTimeout;\r\n        var oneWayElseTwoWay = self.ctx.settings.oneWayElseTwoWay ? true : false;\r\n        \r\n        //console.log(\"sendCommand()\");\r\n        //console.log(rpcMethod);\r\n        //console.log(rpcParams);\r\n        //console.log(timeout);\r\n        //console.log(oneWayElseTwoWay);\r\n        \r\n        var commandObservable;\r\n        if (oneWayElseTwoWay) {\r\n            commandObservable = self.ctx.controlApi.sendOneWayCommand(rpcMethod, rpcParams, timeout);\r\n        } else {\r\n            commandObservable = self.ctx.controlApi.sendTwoWayCommand(rpcMethod, rpcParams, timeout);\r\n        }\r\n        commandObservable.subscribe(\r\n            function (response) {\r\n                if (oneWayElseTwoWay) {\r\n                    self.ctx.$scope.rpcCommandResponse = \"Command was successfully received by device.<br> No response body because of one way command mode.\";\r\n                } else {\r\n                    self.ctx.$scope.rpcCommandResponse = \"Response from device:<br>\";                    \r\n                    self.ctx.$scope.rpcCommandResponse += JSON.stringify(response, undefined, 2);\r\n                }\r\n                self.ctx.detectChanges();\r\n            },\r\n            function (rejection) {\r\n                self.ctx.$scope.rpcCommandResponse = \"Failed to send command to the device:<br>\"\r\n                self.ctx.$scope.rpcCommandResponse += \"Status: \" + rejection.status + \"<br>\";\r\n                self.ctx.$scope.rpcCommandResponse += \"Status text: '\" + rejection.statusText + \"'\";\r\n                self.ctx.detectChanges();\r\n            }\r\n            \r\n        );\r\n    }\r\n    \r\n}\r\n\r\n\r\n/* \r\n        <mat-form-field class=\"mat-block\">\r\n          <mat-label>RPC method</mat-label>\r\n          <input matInput required name=\"rpcMethod\" #rpcMethodField=\"ngModel\" [(ngModel)]=\"rpcMethod\"/>\r\n          <mat-error *ngIf=\"rpcMethodField.hasError('required')\">\r\n            RPC method name is required.\r\n          </mat-error>\r\n        </mat-form-field>\r\n*/\r\n",
+      "settingsSchema" : "{\r\n    \"schema\": {\r\n        \"type\": \"object\",\r\n        \"title\": \"Settings\",\r\n        \"properties\": {\r\n            \"rpcMethod\": {\r\n                \"title\": \"RPC method\",\r\n                \"type\": \"string\",\r\n                \"default\": \"rpcMethod\"\r\n            },\r\n            \"oneWayElseTwoWay\": {\r\n                \"title\": \"Is One Way Command\",\r\n                \"type\": \"boolean\",\r\n                \"default\": true\r\n            },\r\n            \"requestTimeout\": {\r\n                \"title\": \"RPC request timeout\",\r\n                \"type\": \"number\",\r\n                \"default\": 5000\r\n            },\r\n            \"requireParam\": {\r\n                \"title\": \"Is RPC param required\",\r\n                \"type\": \"boolean\",\r\n                \"default\": true\r\n            },\r\n            \"paramLabel\": {\r\n                \"title\": \"RPC param label\",\r\n                \"type\": \"string\",\r\n                \"default\": \"RPC param label\"\r\n            },\r\n            \"buttonLabel\": {\r\n                \"title\": \"Button label\",\r\n                \"type\": \"string\",\r\n                \"default\": \"Send RPC Command\"\r\n            }\r\n        },\r\n        \"required\": [\"rpcMethod\",\r\n            \"paramLabel\",\r\n            \"buttonLabel\"\r\n            ]\r\n    },\r\n    \"form\": [\r\n        \"rpcMethod\",\r\n        \"oneWayElseTwoWay\",\r\n        \"requestTimeout\",\r\n        \"requireParam\",\r\n        \"paramLabel\",\r\n        \"buttonLabel\"\r\n        ]\r\n} ",
+      "dataKeySettingsSchema" : "{}\n",
+      "defaultConfig" : "{\"targetDeviceAliases\":[],\"showTitle\":true,\"backgroundColor\":\"#fff\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"0px\",\"settings\":{\"requestTimeout\":5000,\"rpcMethod\":\"rpcMethod\",\"oneWayElseTwoWay\":true,\"paramLabel\":\"RPC param label\",\"buttonLabel\":\"Send RPC Command\",\"requireParam\":true},\"title\":\"RTC button with params & response\",\"showTitleIcon\":false,\"titleIcon\":\"more_horiz\",\"iconColor\":\"rgba(0, 0, 0, 0.87)\",\"iconSize\":\"24px\",\"titleTooltip\":\"\",\"dropShadow\":true,\"enableFullscreen\":true,\"widgetStyle\":{},\"titleStyle\":{\"fontSize\":\"16px\",\"fontWeight\":400},\"useDashboardTimewindow\":true,\"displayTimewindow\":true,\"showLegend\":false,\"actions\":{}}"
+    },
+    "externalId" : null,
+    "resources" : null,
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "bfea4ec0-d06a-11f0-bfb0-df6928613c13"
+    },
+    "scada" : false,
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

@@ -1,16 +1,4 @@
 [ {
   "entityType" : "DEVICE",
   "id" : "267a5ca0-c9f1-11f0-a09c-911c53809081"
-}, {
-  "entityType" : "DEVICE",
-  "id" : "26811360-c9f1-11f0-a09c-911c53809081"
-}, {
-  "entityType" : "DEVICE",
-  "id" : "2685f560-c9f1-11f0-a09c-911c53809081"
-}, {
-  "entityType" : "DEVICE",
-  "id" : "268ab050-c9f1-11f0-a09c-911c53809081"
-}, {
-  "entityType" : "DEVICE",
-  "id" : "268fe070-c9f1-11f0-a09c-911c53809081"
 } ]
