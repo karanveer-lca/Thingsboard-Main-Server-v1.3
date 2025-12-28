@@ -3964,6 +3964,13 @@
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.7921339383884377
+              }, {
+                "name" : "machine_device_name",
+                "type" : "attribute",
+                "label" : "machine_device_name",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.5241663282237344
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
